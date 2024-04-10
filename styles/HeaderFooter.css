@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: black;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: white;
+  height: max-content;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.062);
+  padding: 1rem;
+}
+
+footer div {
+  margin: 0.3rem;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+}
+
+header li {
+  list-style: none;
+  padding: 0rem 0.3rem;
+  padding-left: 0px;
+  text-align: center;
+  margin: 0rem 0.3rem;
+}
+
+header li a {
+  color: inherit;
+  text-decoration-color: transparent;
+}
+
+header li a:hover {
+  color: inherit;
+  text-decoration-color: black;
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.headName {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.headName:hover {
+  transform: scale(1.1);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.socials div:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.socials div {
+  margin: 0.7rem;
+}
+
+.socials a {
+  color: black;
+}
+
+.footerName {
+  b {
+    font-size: 1.5rem;
+  }
+}
+
+.mobileNavButton {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.onButtonClick {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    z-index: 1;
+  }
+
+  .header1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navMob ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0%;
+  }
+
+  .navMob li {
+    list-style: none;
+    padding: 0rem 0.3rem;
+    padding-left: 0px;
+    text-align: center;
+    margin: 0.3rem 0rem;
+  }
+
+  .navMob li a {
+    color: inherit;
+    text-decoration-color: transparent;
+  }
+
+  .navMob li a:hover {
+    color: inherit;
+    text-decoration-color: black;
+  }
+
+  .mobileNavButton {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+    width: 100%;
+  }
+
+  .navMob {
+    display: block;
+    margin-top: 10%;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .crossBtn {
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px black;
+  }
+
+  .crossButton {
+    margin-top: 10%;
+  }
+
+  .headName {
+    font-size: 1.5rem;
+  }
+
+  .footerInfo {
+    text-align: center;
+  }
+
+  .socials {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    padding: 0.5rem;
+  }
+
+  .footerName b,
+  .footerName p {
+    font-size: 1rem;
+  }
+}
