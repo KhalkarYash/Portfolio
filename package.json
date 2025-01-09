@@ -1,0 +1,36 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "[Check it out Here](a href=\"https://khalkaryash.github.io/Portfolio/\")",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khalkaryash/portfolio.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "React"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khalkaryash/portfolio/issues"
+  },
+  "homepage": "https://khalkaryash.github.io/Portfolio",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  }
+}
