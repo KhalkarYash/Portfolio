@@ -6,8 +6,12 @@ const Connect = () => {
       </div>
       <div className="ctaCont">
         <div className="ctaBtns">
-          <button className="hireMeBtn"><a href="mailto:yashmk2004@gmail.com">Hire Me 🚀</a></button>
-          <button className="collabBtn"><a href="mailto:yashmk2004@gmail.com">Let's Collaborate🤝🏻</a></button>
+          <button className="hireMeBtn">
+            <a href="mailto:yashmk2004@gmail.com">Hire Me 🚀</a>
+          </button>
+          <button className="collabBtn">
+            <a href="mailto:yashmk2004@gmail.com">Let's Collaborate🤝🏻</a>
+          </button>
         </div>
       </div>
       <div className="socials">

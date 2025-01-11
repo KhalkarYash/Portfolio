@@ -39,9 +39,11 @@ const Home = () => {
           - I'm interested in <span id="typedText" ref={el}></span>
         </p>
       </div>
-      <a href="https://drive.google.com/file/d/1XStazw9u1LUu84X8NHOX2Yml4fglkuwm/">
-        <button className="resumeBtn">Resume</button>
-      </a>
+      <div className="resumeBtnCont">
+        <a href="https://drive.google.com/file/d/1XStazw9u1LUu84X8NHOX2Yml4fglkuwm/">
+          <button className="resumeBtn">Resume</button>
+        </a>
+      </div>
     </div>
   );
 };
