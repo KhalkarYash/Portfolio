@@ -158,9 +158,7 @@ a::after {
     }
 
     .imgContainer:hover {
-        /* box-shadow: 0 0 5rem rgba(255, 255, 255); */
         border-color: var(--tertiary-color);
-        /* background-image: linear-gradient(90deg, var(--tertiary-color), rgb(53, 211, 127)); */
         transition: all 500ms;
     }
 
@@ -175,7 +173,6 @@ a::after {
         .name {
             color: var(--tertiary-color);
             font-size: 1.2rem;
-            /* text-shadow: 0 0 4px rgba(17, 24, 39, 0.5); */
             text-shadow: 0 0 10px rgba(53, 211, 153, 0.6);
         }
 
