@@ -12,13 +12,13 @@ const About = () => {
       </p>
       <h5>EDUCATION</h5>
       <div className="educationInformation">
-        <div className="diplomaEdu">
-          <h6>Diploma in Computer Technology</h6>
-          <p>Government Polytechnic, Nashik</p>
-        </div>
         <div className="degreeEdu">
           <h6>B.E. in Computer Engineering</h6>
           <p>METIOE, Nashik</p>
+        </div>
+        <div className="diplomaEdu">
+          <h6>Diploma in Computer Technology</h6>
+          <p>Government Polytechnic, Nashik</p>
         </div>
       </div>
     </div>

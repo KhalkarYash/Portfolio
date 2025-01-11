@@ -33,7 +33,7 @@ const Home = () => {
         <p>
           Hey, I'm <span className="name">Yash Khalkar</span>. Here, you can
           check out what I've worked on. I try my best to create everything with{" "}
-          <span id="heart">❤</span>
+          <span id="heart">❤️</span>
         </p>
         <p>
           - I'm interested in <span id="typedText" ref={el}></span>

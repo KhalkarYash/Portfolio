@@ -9,16 +9,13 @@ const Header = () => {
             <img src={logoImg} alt="logo" />
           </div>
           <div className="navList">
-            <ul id="ulCont">
+            <ul className="ulCont">
               <li>
                 <a href="#">Home</a>
               </li>
-              <pre>   </pre>
               <li>
                 <a href="#projects">Projects</a>
               </li>
-              <pre>   </pre>
-
               <li>
                 <a href="#aboutUs">About</a>
               </li>
@@ -27,7 +24,7 @@ const Header = () => {
         </div>
         <div className="connectButton">
           <button className="connectBtn">
-            <a href="#foot">Connect</a>
+            <a href="#connectContID">Connect</a>
           </button>
         </div>
       </div>

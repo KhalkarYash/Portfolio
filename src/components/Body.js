@@ -1,6 +1,7 @@
 import Home from "./Home";
 import Project from "./Project";
 import About from "./About";
+import Connect from "./Connect";
 
 const Body = () => {
   return (
@@ -8,6 +9,7 @@ const Body = () => {
       <Home />
       <Project />
       <About />
+      <Connect />
     </div>
   );
 };
