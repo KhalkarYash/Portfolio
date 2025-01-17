@@ -1,3 +1,5 @@
+import TechStack from "./TechStack";
+
 const About = () => {
   return (
     <div className="about" id="aboutUs">
@@ -21,6 +23,7 @@ const About = () => {
           <p>Government Polytechnic, Nashik</p>
         </div>
       </div>
+      <TechStack />
     </div>
   );
 };
