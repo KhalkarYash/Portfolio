@@ -73,8 +73,9 @@
         button {
             border-radius: .5rem;
             background-color: white;
-            border: .2rem solid var(--primary);
-            padding: 5px;
+            border: .1rem solid var(--primary);
+            padding: 3px;
+            margin: 2px;
             font-size: inherit;
 
             a {
@@ -149,6 +150,7 @@ a::after {
         border-radius: 50%;
         overflow: hidden;
         margin: 1rem;
+        transition: all 500ms;
 
         img {
             height: 100%;
@@ -158,6 +160,7 @@ a::after {
     .imgContainer:hover {
         border-color: var(--tertiary-color);
         transition: all 500ms;
+        box-shadow: 0 0 50px var(--tertiary-color);
     }
 
     .homeData {
@@ -302,7 +305,7 @@ a::after {
 
             p {
                 font-size: .4rem;
-                font-weight: 100;
+                font-weight: bold;
             }
 
             a {
@@ -1092,13 +1095,13 @@ a::after {
 
                 h2 {
                     margin: .2rem;
-                    font-size: .8rem;
+                    font-size: .9rem;
                 }
 
                 p {
                     margin: .2rem;
-                    font-size: .4rem;
-                    font-weight: 100;
+                    font-size: .6rem;
+                    font-weight: bold;
                 }
 
                 a {
