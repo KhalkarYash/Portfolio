@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 :root {
     font-size: 2rem;
     background-color: var(--sec);
@@ -421,10 +425,6 @@ a::after {
         scroll-behavior: smooth;
     }
 
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
     :root {
         font-size: 1.3rem;
         background-color: var(--sec);
@@ -820,10 +820,6 @@ a::after {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-weight: bolder;
         scroll-behavior: smooth;
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
     }
 
     :root {

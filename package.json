@@ -2,13 +2,12 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Portfolio Website",
-  "description": "Portfolio Website",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "test": "jest",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url ./"
   },
   "repository": {
     "type": "git",
