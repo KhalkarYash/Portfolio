@@ -28,7 +28,8 @@
     height: fit-content;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(249, 250, 251, 0.950);
+    background-color: rgba(249, 250, 251, 0.7);
+    backdrop-filter: blur(10px);
     z-index: 10;
 
     .nav-items {
