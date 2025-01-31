@@ -20,8 +20,9 @@
 }
 
 .header {
+  backdrop-filter: blur(10px);
   z-index: 10;
-  background-color: #f9fafbf2;
+  background-color: #f9fafbb3;
   justify-content: space-around;
   align-items: center;
   width: 100%;
