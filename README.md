@@ -10,7 +10,6 @@ A comprehensive project designed to showcase a variety of web development skills
 - **Customizable Components:** Reusable and maintainable components for faster development.
 - **Interactive Features:** Includes an alarm clock, movie recommendations, and academic tracking functionality.
 - **Optimized Performance:** Lightweight assets and efficient code to ensure high performance.
-- **Thematic Design:** Elegant use of colors and themes for a professional look.
 
 ---
 
