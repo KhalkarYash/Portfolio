@@ -19,7 +19,7 @@ A comprehensive project designed to showcase a variety of web development skills
 - **Frontend:**
   - React.js
   - HTML5
-  - Tailwind
+  - CSS3
   - JavaScript (ES6+)
 - **Other Tools:**
   - Git
