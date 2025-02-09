@@ -1101,22 +1101,25 @@ a:before, a:after {
     }
 
     & .ctaCont {
-      justify-content: center;
+      justify-content: space-evenly;
       margin: .6rem;
       padding: .5rem;
       display: flex;
 
       & .ctaBtns {
-        justify-content: space-evenly;
-        width: 60vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         padding: 20px;
         display: flex;
 
         & .hireMeBtn, & .collabBtn {
           background-color: var(--tertiary-color);
           color: #fff;
-          border-radius: 10px;
-          width: 20vw;
+          border-radius: 50px;
+          width: 70vw;
+          margin-bottom: .5rem;
           padding: 10px;
           font-size: .5rem;
 
