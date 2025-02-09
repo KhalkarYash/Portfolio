@@ -1156,22 +1156,25 @@ a::after {
             margin: .6rem;
             padding: .5rem;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
 
             .ctaBtns {
-                width: 60vw;
+                width: 100%;
                 display: flex;
-                justify-content: space-evenly;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 padding: 20px;
 
                 .hireMeBtn,
                 .collabBtn {
-                    width: 20vw;
+                    margin-bottom: 0.5rem;
+                    width: 70vw;
                     padding: 10px;
                     background-color: var(--tertiary-color);
                     color: white;
                     font-size: .5rem;
-                    border-radius: 10px;
+                    border-radius: 50px;
 
                     a {
                         color: inherit;
