@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -309,18 +309,24 @@ a::after {
                 font-weight: bold;
             }
 
-            a {
-                button {
-                    padding: 5px;
-                    background-color: var(--sec);
-                    border-radius: 5px;
-                    border: 1px solid var(--primary);
-                }
+            .projBtnCont {
+                display: flex;
+                justify-content: space-evenly;
 
-                button:hover {
-                    color: var(--sec);
-                    background-color: var(--primary);
-                    transition: all 200ms;
+                a {
+                    button {
+                        margin: 0 0.3rem;
+                        padding: 5px;
+                        background-color: var(--sec);
+                        border-radius: 5px;
+                        border: 1px solid var(--primary);
+                    }
+
+                    button:hover {
+                        color: var(--sec);
+                        background-color: var(--primary);
+                        transition: all 200ms;
+                    }
                 }
             }
 
