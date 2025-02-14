@@ -30635,16 +30635,23 @@ var _namasteFoodJpg = require("../../public/namasteFood.jpg");
 var _namasteFoodJpgDefault = parcelHelpers.interopDefault(_namasteFoodJpg);
 var _todoProjectJpg = require("../../public/todoProject.jpg");
 var _todoProjectJpgDefault = parcelHelpers.interopDefault(_todoProjectJpg);
+var _bingeBrainJpg = require("../../public/bingeBrain.jpg");
+var _bingeBrainJpgDefault = parcelHelpers.interopDefault(_bingeBrainJpg);
 const projects = [
     {
-        image: (0, _namasteFoodJpgDefault.default),
-        name: "Namaste Food",
-        description: "Online Food Ordering Site.",
-        githubLink: "https://github.com/KhalkarYash/NamasteReact",
+        image: (0, _bingeBrainJpgDefault.default),
+        name: "BingeBrain",
+        description: "Netflix and chill, but with a twist of AI.",
+        githubLink: "https://github.com/KhalkarYash/netflix-gpt-react",
         techStack: [
             "ReactJS",
-            "JavaScript"
-        ]
+            "Firebase",
+            "React Redux",
+            "Redux Toolkit",
+            "GeminiAI",
+            "TailwindCSS"
+        ],
+        liveLink: "https://bingebrain.onrender.com/"
     },
     {
         image: (0, _collegeMarkTrackerJpgDefault.default),
@@ -30654,40 +30661,22 @@ const projects = [
         techStack: [
             "Django",
             "BootStrap"
-        ]
+        ],
+        liveLink: "https://college-mark-tracker.onrender.com/"
     },
     {
-        image: (0, _todoProjectJpgDefault.default),
-        name: "todo List",
-        description: "A comprehensive web development project demonstrating proficiency in HTML, CSS, and JavaScript.",
-        githubLink: "https://github.com/KhalkarYash/Final-Project-Web-Dev",
+        image: (0, _namasteFoodJpgDefault.default),
+        name: "Namaste Food",
+        description: "Online Food Ordering Site.",
+        githubLink: "https://github.com/KhalkarYash/Namaste-Food-React",
         techStack: [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ]
-    },
-    {
-        image: (0, _alarmClockJpgDefault.default),
-        name: "Alarm Clock",
-        description: "A functional alarm clock application built using JavaScript to set and manage alarms.",
-        githubLink: "https://github.com/KhalkarYash/AlarmClock",
-        techStack: [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ]
-    },
-    {
-        image: (0, _blogProjectJpgDefault.default),
-        name: "Blog Project",
-        description: "A blogging platform developed as part of web development training, allowing users to create and manage blog posts.",
-        githubLink: "https://github.com/KhalkarYash/Blog-Project-Web-Training",
-        techStack: [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ]
+            "ReactJS",
+            "React Redux",
+            "Redux Toolkit",
+            "TailwindCSS",
+            "Jest"
+        ],
+        liveLink: "https://khalkaryash.github.io/Namaste-Food-React/"
     },
     {
         image: (0, _movieRecommendationProjectJpgDefault.default),
@@ -30699,11 +30688,48 @@ const projects = [
             "CSS",
             "JavaScript",
             "TMDb API"
-        ]
+        ],
+        liveLink: "https://khalkaryash.github.io/Movie-Recommendation-System/"
+    },
+    {
+        image: (0, _blogProjectJpgDefault.default),
+        name: "Blog Project",
+        description: "A blogging platform developed as part of web development training, allowing users to create and manage blog posts.",
+        githubLink: "https://github.com/KhalkarYash/Blog-Project-Web-Training",
+        techStack: [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        liveLink: "https://khalkaryash.github.io/Blog-Project-Web-Training/"
+    },
+    {
+        image: (0, _alarmClockJpgDefault.default),
+        name: "Alarm Clock",
+        description: "A functional alarm clock application built using JavaScript to set and manage alarms.",
+        githubLink: "https://github.com/KhalkarYash/AlarmClock",
+        techStack: [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        liveLink: "https://khalkaryash.github.io/AlarmClock/"
+    },
+    {
+        image: (0, _todoProjectJpgDefault.default),
+        name: "todo List",
+        description: "A comprehensive web development project demonstrating proficiency in HTML, CSS, and JavaScript.",
+        githubLink: "https://github.com/KhalkarYash/Final-Project-Web-Dev",
+        techStack: [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        liveLink: "https://khalkaryash.github.io/Final-Project-Web-Dev/"
     }
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../../public/namasteFood.jpg":"1BOyQ","../../public/alarmClock.jpg":"lnoVE","../../public/blogProject.jpg":"1PQba","../../public/collegeMarkTracker.jpg":"6JuYG","../../public/movieRecommendationProject.jpg":"9kyKk","../../public/todoProject.jpg":"7xf94"}],"1BOyQ":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../../public/namasteFood.jpg":"1BOyQ","../../public/alarmClock.jpg":"lnoVE","../../public/blogProject.jpg":"1PQba","../../public/collegeMarkTracker.jpg":"6JuYG","../../public/movieRecommendationProject.jpg":"9kyKk","../../public/todoProject.jpg":"7xf94","../../public/bingeBrain.jpg":"ktYM5"}],"1BOyQ":[function(require,module,exports,__globalThis) {
 module.exports = require("11a013136ea43240").getBundleURL('aXMci') + "namasteFood.7c60b656.jpg" + "?" + Date.now();
 
 },{"11a013136ea43240":"lgJ39"}],"lnoVE":[function(require,module,exports,__globalThis) {
@@ -30721,7 +30747,10 @@ module.exports = require("c6e9f8f9551f8b55").getBundleURL('aXMci') + "movieRecom
 },{"c6e9f8f9551f8b55":"lgJ39"}],"7xf94":[function(require,module,exports,__globalThis) {
 module.exports = require("47c9b5c79d6c58c7").getBundleURL('aXMci') + "todoProject.449a23af.jpg" + "?" + Date.now();
 
-},{"47c9b5c79d6c58c7":"lgJ39"}],"hPo2v":[function(require,module,exports,__globalThis) {
+},{"47c9b5c79d6c58c7":"lgJ39"}],"ktYM5":[function(require,module,exports,__globalThis) {
+module.exports = require("41d42ac62cd7b03b").getBundleURL('aXMci') + "bingeBrain.83041858.jpg" + "?" + Date.now();
+
+},{"41d42ac62cd7b03b":"lgJ39"}],"hPo2v":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$b90d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -30732,7 +30761,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const ProjectCard = ({ prData })=>{
-    const { image, name, description, githubLink, techStack } = prData;
+    const { image, name, description, githubLink, techStack, liveLink } = prData;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "project-card",
         children: [
@@ -30758,16 +30787,41 @@ const ProjectCard = ({ prData })=>{
                 lineNumber: 7,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: githubLink,
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    children: "GitHub Link"
-                }, void 0, false, {
-                    fileName: "src/components/ProjectCard.js",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "projBtnCont",
+                children: [
+                    liveLink && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: liveLink,
+                        target: "_blank",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            children: "Live Link"
+                        }, void 0, false, {
+                            fileName: "src/components/ProjectCard.js",
+                            lineNumber: 11,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/ProjectCard.js",
+                        lineNumber: 10,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: githubLink,
+                        target: "_blank",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            children: "GitHub Link"
+                        }, void 0, false, {
+                            fileName: "src/components/ProjectCard.js",
+                            lineNumber: 15,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/ProjectCard.js",
+                        lineNumber: 14,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/ProjectCard.js",
                 lineNumber: 8,
                 columnNumber: 7
@@ -30779,18 +30833,18 @@ const ProjectCard = ({ prData })=>{
                         children: tech
                     }, index, false, {
                         fileName: "src/components/ProjectCard.js",
-                        lineNumber: 14,
+                        lineNumber: 21,
                         columnNumber: 13
                     }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                     children: "No Tech Stack Provided"
                 }, void 0, false, {
                     fileName: "src/components/ProjectCard.js",
-                    lineNumber: 19,
+                    lineNumber: 26,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/ProjectCard.js",
-                lineNumber: 11,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined)
         ]
