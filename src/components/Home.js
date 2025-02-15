@@ -40,7 +40,7 @@ const Home = () => {
         </p>
       </div>
       <div className="resumeBtnCont">
-        <a href="https://drive.google.com/file/d/1XStazw9u1LUu84X8NHOX2Yml4fglkuwm/">
+        <a href="https://drive.google.com/file/d/1rxAU-xfiuYrlE3tNy1FGgHwnWVHC6QUU/view?usp=sharing">
           <button className="resumeBtn">Resume</button>
         </a>
       </div>

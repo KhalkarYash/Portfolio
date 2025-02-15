@@ -31,7 +31,7 @@ export const projects = [
       "GeminiAI",
       "TailwindCSS",
     ],
-    liveLink:"https://bingebrain.onrender.com/"
+    liveLink:"https://khalkaryash.github.io/BingeBrain-React/"
   },
   {
     image: collegeMarkTracker,
