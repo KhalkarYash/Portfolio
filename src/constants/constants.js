@@ -5,6 +5,7 @@ import movieRecommendationProject from "../../public/movieRecommendationProject.
 import namasteFood from "../../public/namasteFood.jpg";
 import todoProject from "../../public/todoProject.jpg";
 import bingeBrain from "../../public/bingeBrain.jpg";
+import passwordGenerator from "../../public/passwordGenerator.jpg";
 
 // Example of project object
 
@@ -19,6 +20,15 @@ import bingeBrain from "../../public/bingeBrain.jpg";
 
 export const projects = [
   {
+    image: collegeMarkTracker,
+    name: "College Mark Tracker",
+    description:
+      "A web application designed to help students track their academic performance and manage their grades effectively.",
+    githubLink: "https://github.com/KhalkarYash/college-mark-tracker",
+    techStack: ["Django", "BootStrap"],
+    liveLink: "https://college-mark-tracker.onrender.com/",
+  },
+  {
     image: bingeBrain,
     name: "BingeBrain",
     description: "Netflix and chill, but with a twist of AI.",
@@ -31,16 +41,7 @@ export const projects = [
       "GeminiAI",
       "TailwindCSS",
     ],
-    liveLink:"https://khalkaryash.github.io/BingeBrain-React/"
-  },
-  {
-    image: collegeMarkTracker,
-    name: "College Mark Tracker",
-    description:
-      "A web application designed to help students track their academic performance and manage their grades effectively.",
-    githubLink: "https://github.com/KhalkarYash/college-mark-tracker",
-    techStack: ["Django", "BootStrap"],
-    liveLink: "https://college-mark-tracker.onrender.com/",
+    liveLink: "https://khalkaryash.github.io/BingeBrain-React/",
   },
   {
     image: namasteFood,
@@ -55,6 +56,21 @@ export const projects = [
       "Jest",
     ],
     liveLink: "https://khalkaryash.github.io/Namaste-Food-React/",
+  },
+  {
+    image: passwordGenerator,
+    name: "Password Generator",
+    description: "Random Password Generator.",
+    githubLink:
+      "https://github.com/KhalkarYash/Random-Password-Generator-React",
+    techStack: [
+      "ReactJS",
+      "React Redux",
+      "Redux Toolkit",
+      "TailwindCSS",
+      "Jest",
+    ],
+    liveLink: "https://khalkaryash.github.io/Random-Password-Generator-React/",
   },
   {
     image: movieRecommendationProject,

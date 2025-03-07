@@ -723,9 +723,6 @@ a::after {
                     button {
                         padding: 5px;
                         border-radius: 5px;
-                        border: 1px solid var(--primary);
-                        color: var(--sec);
-                        background-color: var(--primary);
                     }
                 }
 
@@ -1117,9 +1114,6 @@ a::after {
                     button {
                         padding: 5px;
                         border-radius: 5px;
-                        border: 1px solid var(--primary);
-                        color: var(--sec);
-                        background-color: var(--primary);
                     }
                 }
 
