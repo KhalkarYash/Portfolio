@@ -16,7 +16,7 @@
     padding: 10px;
   }
 
-  & svg {
+  & svg, & img {
     width: 5vw;
   }
 }

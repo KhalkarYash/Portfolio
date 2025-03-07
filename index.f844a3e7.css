@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -23,73 +24,37 @@
   backdrop-filter: blur(10px);
   z-index: 10;
   background-color: #f9fafbb3;
-  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: fit-content;
-  display: flex;
+  padding: 10px 0;
   position: fixed;
   top: 0;
   box-shadow: 0 1px 1px #0000001a;
 
-  & .nav-items {
-    justify-content: space-between;
-    width: 50vw;
+  & .navList {
+    justify-content: center;
+    margin: auto;
+    list-style: outside;
     display: flex;
 
-    & .navList {
-      margin: auto;
-      list-style: outside;
+    & .ulCont {
+      gap: 30px;
+      display: flex;
+    }
+
+    & ul > li {
+      justify-content: space-evenly;
       display: flex;
 
-      & .ulCont {
-        justify-content: space-between;
-        width: 25vw;
-        display: flex;
-      }
-
-      & ul > li {
-        justify-content: space-evenly;
-        display: flex;
-
-        & a {
-          color: inherit;
-
-          & li {
-            margin: 10px;
-            padding: 10px;
-          }
-        }
-      }
-
-      & li:hover {
-        color: var(--tertiary-color);
-        transition: all .2s;
-      }
-    }
-  }
-
-  & .connectButton {
-    & button {
-      border: .1rem solid var(--primary);
-      font-size: inherit;
-      background-color: #fff;
-      border-radius: .5rem;
-      margin: 2px;
-      padding: 3px;
-
       & a {
-        color: var(--primary);
+        color: inherit;
       }
     }
-  }
 
-  & .connectBtn:hover {
-    background-color: var(--primary);
-    transition: all .3s;
-
-    & a {
-      color: var(--sec);
+    & li:hover {
+      color: var(--tertiary-color);
+      transition: all .2s;
     }
   }
 }
@@ -435,73 +400,6 @@ a:before, a:after {
     position: fixed;
     top: 0;
     box-shadow: 0 1px 1px #0000001a;
-
-    & .nav-items {
-      justify-content: space-between;
-      width: 50vw;
-      display: flex;
-
-      & img {
-        border-radius: 50%;
-        width: 6vw;
-        height: 10vh;
-        display: none;
-      }
-
-      & .navList {
-        margin: auto;
-        list-style: outside;
-        display: flex;
-
-        & .ulCont {
-          justify-content: space-between;
-          width: 35vw;
-          display: flex;
-        }
-
-        & ul > li {
-          justify-content: space-evenly;
-          display: flex;
-
-          & a {
-            color: inherit;
-
-            & li {
-              margin: 10px;
-              padding: 10px;
-            }
-          }
-        }
-
-        & li:hover {
-          color: var(--tertiary-color);
-          transition: all .2s;
-        }
-      }
-    }
-
-    & .connectButton {
-      & button {
-        border: .2rem solid var(--primary);
-        font-size: inherit;
-        background-color: #fff;
-        border-radius: .5rem;
-        padding: 5px;
-
-        & a {
-          color: var(--primary);
-        }
-      }
-    }
-
-    & .connectBtn:hover {
-      background-color: var(--primary);
-      transition: all .3s;
-
-      & a {
-        color: var(--sec);
-      }
-    }
   }
 
   a {
@@ -808,73 +706,6 @@ a:before, a:after {
     position: fixed;
     top: 0;
     box-shadow: 0 1px 1px #0000001a;
-
-    & .nav-items {
-      justify-content: space-between;
-      width: 50vw;
-      display: flex;
-
-      & img {
-        border-radius: 50%;
-        width: 6vw;
-        height: 10vh;
-        display: none;
-      }
-
-      & .navList {
-        margin: auto;
-        list-style: outside;
-        display: flex;
-
-        & .ulCont {
-          justify-content: space-between;
-          width: 50vw;
-          display: flex;
-        }
-
-        & ul > li {
-          justify-content: space-evenly;
-          display: flex;
-
-          & a {
-            color: inherit;
-
-            & li {
-              margin: 10px;
-              padding: 10px;
-            }
-          }
-        }
-
-        & li:hover {
-          color: var(--tertiary-color);
-          transition: all .2s;
-        }
-      }
-    }
-
-    & .connectButton {
-      & button {
-        border: .2rem solid var(--primary);
-        font-size: inherit;
-        background-color: #fff;
-        border-radius: .5rem;
-        padding: 5px;
-
-        & a {
-          color: var(--primary);
-        }
-      }
-    }
-
-    & .connectBtn:hover {
-      background-color: var(--primary);
-      transition: all .3s;
-
-      & a {
-        color: var(--sec);
-      }
-    }
   }
 
   a {
@@ -895,8 +726,8 @@ a:before, a:after {
     & .imgContainer {
       border: .4rem solid var(--primary);
       border-radius: 50%;
-      width: fit-content;
-      height: 40vh;
+      width: 100vw;
+      height: 100vw;
       margin: 1rem;
       overflow: hidden;
 

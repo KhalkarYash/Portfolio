@@ -18612,8 +18612,6 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _framerMotion = require("framer-motion");
-var _logoJpg = require("../../public/logo.jpg");
-var _logoJpgDefault = parcelHelpers.interopDefault(_logoJpg);
 var _s = $RefreshSig$();
 const Header = ()=>{
     _s();
@@ -18645,110 +18643,87 @@ const Header = ()=>{
             zIndex: 1000
         },
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+            className: "header",
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "header",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "nav-items",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "navList",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                className: "ulCont",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "#",
-                                            children: "Home"
-                                        }, void 0, false, {
-                                            fileName: "src/components/Header.js",
-                                            lineNumber: 34,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 33,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "#projects",
-                                            children: "Projects"
-                                        }, void 0, false, {
-                                            fileName: "src/components/Header.js",
-                                            lineNumber: 37,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 36,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "#aboutUs",
-                                            children: "About"
-                                        }, void 0, false, {
-                                            fileName: "src/components/Header.js",
-                                            lineNumber: 40,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 39,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
+                className: "navList",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "ulCont",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#",
+                                children: "Home"
+                            }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 32,
+                                lineNumber: 31,
                                 columnNumber: 15
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 31,
+                            lineNumber: 30,
                             columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/Header.js",
-                        lineNumber: 30,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "connectButton",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "connectBtn",
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#projects",
+                                children: "Projects"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 34,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 33,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#aboutUs",
+                                children: "About"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 37,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 36,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                 href: "#connectContID",
                                 children: "Connect"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 47,
+                                lineNumber: 40,
                                 columnNumber: 15
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 46,
+                            lineNumber: 39,
                             columnNumber: 13
                         }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/Header.js",
-                        lineNumber: 45,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Header.js",
+                    lineNumber: 29,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 29,
+                lineNumber: 28,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/Header.js",
-            lineNumber: 28,
+            lineNumber: 27,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Header.js",
-        lineNumber: 16,
+        lineNumber: 15,
         columnNumber: 5
     }, undefined);
 };
@@ -18763,7 +18738,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","framer-motion":"5bZBB","../../public/logo.jpg":"cbSg0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5bZBB":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","framer-motion":"5bZBB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5bZBB":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AnimatePresence", ()=>(0, _indexMjs.AnimatePresence));
@@ -29968,45 +29943,7 @@ class SVGVisualElement extends (0, _domvisualElementMjs.DOMVisualElement) {
     }
 }
 
-},{"../../projection/geometry/models.mjs":"8tocy","../dom/DOMVisualElement.mjs":"lT6ej","../dom/utils/camel-to-dash.mjs":"eUOx7","../dom/value-types/defaults.mjs":"1Ajoh","../html/utils/keys-transform.mjs":"9QHFS","./utils/build-attrs.mjs":"lDaMj","./utils/camel-case-attrs.mjs":"aH7Xw","./utils/is-svg-tag.mjs":"iLrl0","./utils/render.mjs":"iuDSF","./utils/scrape-motion-values.mjs":"bGUYu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cbSg0":[function(require,module,exports,__globalThis) {
-module.exports = require("2ad2f03f80d9d8a6").getBundleURL('aXMci') + "logo.deb2803d.jpg" + "?" + Date.now();
-
-},{"2ad2f03f80d9d8a6":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return '/';
-}
-function getBaseURL(url) {
-    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error('Origin not found');
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"km3Ru":[function(require,module,exports,__globalThis) {
+},{"../../projection/geometry/models.mjs":"8tocy","../dom/DOMVisualElement.mjs":"lT6ej","../dom/utils/camel-to-dash.mjs":"eUOx7","../dom/value-types/defaults.mjs":"1Ajoh","../html/utils/keys-transform.mjs":"9QHFS","./utils/build-attrs.mjs":"lDaMj","./utils/camel-case-attrs.mjs":"aH7Xw","./utils/is-svg-tag.mjs":"iLrl0","./utils/render.mjs":"iuDSF","./utils/scrape-motion-values.mjs":"bGUYu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"km3Ru":[function(require,module,exports,__globalThis) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 var { version } = require("630b62916b1ae0e7");
@@ -30561,7 +30498,42 @@ var s = {
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jp5UT":[function(require,module,exports,__globalThis) {
 module.exports = require("c47196c3af98cf5f").getBundleURL('aXMci') + "yash.9af567ed.jpg" + "?" + Date.now();
 
-},{"c47196c3af98cf5f":"lgJ39"}],"acDzw":[function(require,module,exports,__globalThis) {
+},{"c47196c3af98cf5f":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"acDzw":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$c226 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -31012,6 +30984,8 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _techStackCss = require("../assets/styles/techStack.css");
 var _techStackCssDefault = parcelHelpers.interopDefault(_techStackCss);
+var _mongooseJsPng = require("../../public/images/Mongoose.js.png");
+var _mongooseJsPngDefault = parcelHelpers.interopDefault(_mongooseJsPng);
 const TechStack = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
@@ -31019,7 +30993,7 @@ const TechStack = ()=>{
                 children: "Tech Stack"
             }, void 0, false, {
                 fileName: "src/components/TechStack.js",
-                lineNumber: 6,
+                lineNumber: 7,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31036,7 +31010,7 @@ const TechStack = ()=>{
                                     d: "M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 10,
+                                    lineNumber: 11,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31044,7 +31018,7 @@ const TechStack = ()=>{
                                     d: "M64 116.8l36.378-10.086 8.559-95.878H64z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 14,
+                                    lineNumber: 15,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31052,7 +31026,7 @@ const TechStack = ()=>{
                                     d: "M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 15,
+                                    lineNumber: 16,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31060,18 +31034,18 @@ const TechStack = ()=>{
                                     d: "M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 19,
+                                    lineNumber: 20,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 9,
+                            lineNumber: 10,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 8,
+                        lineNumber: 9,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31085,7 +31059,7 @@ const TechStack = ()=>{
                                     d: "M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 28,
+                                    lineNumber: 29,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31093,7 +31067,7 @@ const TechStack = ()=>{
                                     d: "M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 32,
+                                    lineNumber: 33,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31101,7 +31075,7 @@ const TechStack = ()=>{
                                     d: "M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 36,
+                                    lineNumber: 37,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31109,7 +31083,7 @@ const TechStack = ()=>{
                                     d: "M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 40,
+                                    lineNumber: 41,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31117,7 +31091,7 @@ const TechStack = ()=>{
                                     d: "M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 44,
+                                    lineNumber: 45,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31125,18 +31099,18 @@ const TechStack = ()=>{
                                     d: "M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 48,
+                                    lineNumber: 49,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 27,
+                            lineNumber: 28,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 26,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31150,7 +31124,7 @@ const TechStack = ()=>{
                                     d: "M1.408 1.408h125.184v125.185H1.408z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 57,
+                                    lineNumber: 58,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31158,18 +31132,18 @@ const TechStack = ()=>{
                                     d: "M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 58,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 56,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 55,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31194,7 +31168,7 @@ const TechStack = ()=>{
                                                     "stop-color": "#9013fe"
                                                 }, void 0, false, {
                                                     fileName: "src/components/TechStack.js",
-                                                    lineNumber: 77,
+                                                    lineNumber: 78,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
@@ -31202,13 +31176,13 @@ const TechStack = ()=>{
                                                     "stop-color": "#6610f2"
                                                 }, void 0, false, {
                                                     fileName: "src/components/TechStack.js",
-                                                    lineNumber: 78,
+                                                    lineNumber: 79,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/TechStack.js",
-                                            lineNumber: 68,
+                                            lineNumber: 69,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("linearGradient", {
@@ -31225,7 +31199,7 @@ const TechStack = ()=>{
                                                     "stop-color": "#fff"
                                                 }, void 0, false, {
                                                     fileName: "src/components/TechStack.js",
-                                                    lineNumber: 89,
+                                                    lineNumber: 90,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
@@ -31233,13 +31207,13 @@ const TechStack = ()=>{
                                                     "stop-color": "#f1e5fc"
                                                 }, void 0, false, {
                                                     fileName: "src/components/TechStack.js",
-                                                    lineNumber: 90,
+                                                    lineNumber: 91,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/TechStack.js",
-                                            lineNumber: 80,
+                                            lineNumber: 81,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("filter", {
@@ -31256,7 +31230,7 @@ const TechStack = ()=>{
                                                     result: "BackgroundImageFix"
                                                 }, void 0, false, {
                                                     fileName: "src/components/TechStack.js",
-                                                    lineNumber: 101,
+                                                    lineNumber: 102,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("feColorMatrix", {
@@ -31264,28 +31238,28 @@ const TechStack = ()=>{
                                                     values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                                                 }, void 0, false, {
                                                     fileName: "src/components/TechStack.js",
-                                                    lineNumber: 102,
+                                                    lineNumber: 103,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("feOffset", {
                                                     dy: "4"
                                                 }, void 0, false, {
                                                     fileName: "src/components/TechStack.js",
-                                                    lineNumber: 106,
+                                                    lineNumber: 107,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("feGaussianBlur", {
                                                     stdDeviation: "8"
                                                 }, void 0, false, {
                                                     fileName: "src/components/TechStack.js",
-                                                    lineNumber: 107,
+                                                    lineNumber: 108,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("feColorMatrix", {
                                                     values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
                                                 }, void 0, false, {
                                                     fileName: "src/components/TechStack.js",
-                                                    lineNumber: 108,
+                                                    lineNumber: 109,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("feBlend", {
@@ -31293,7 +31267,7 @@ const TechStack = ()=>{
                                                     result: "effect1_dropShadow"
                                                 }, void 0, false, {
                                                     fileName: "src/components/TechStack.js",
-                                                    lineNumber: 109,
+                                                    lineNumber: 110,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("feBlend", {
@@ -31302,19 +31276,19 @@ const TechStack = ()=>{
                                                     result: "shape"
                                                 }, void 0, false, {
                                                     fileName: "src/components/TechStack.js",
-                                                    lineNumber: 110,
+                                                    lineNumber: 111,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/TechStack.js",
-                                            lineNumber: 92,
+                                            lineNumber: 93,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 67,
+                                    lineNumber: 68,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31322,7 +31296,7 @@ const TechStack = ()=>{
                                     d: "M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249 13.099-.228 6.546.068 15.026 2.202 21.94 2.141 6.936 5.751 11.319 11.664 11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883-2.134 6.914-2.43 15.394-2.202 21.94.237 6.815-5.072 13.098-12.249 13.098h-73.54c-7.177 0-12.486-6.284-12.249-13.098.228-6.546-.068-15.026-2.203-21.94-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563 9.533-4.947 11.673-11.883 2.135-6.914 2.43-15.394 2.203-21.94z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 117,
+                                    lineNumber: 118,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31332,18 +31306,18 @@ const TechStack = ()=>{
                                     transform: "translate(1.494 2.203) scale(.24566)"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 121,
+                                    lineNumber: 122,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 66,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 65,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31356,17 +31330,17 @@ const TechStack = ()=>{
                                 fill: "#38bdf8"
                             }, void 0, false, {
                                 fileName: "src/components/TechStack.js",
-                                lineNumber: 132,
+                                lineNumber: 133,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 131,
+                            lineNumber: 132,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 130,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31383,30 +31357,75 @@ const TechStack = ()=>{
                                         r: "11.4"
                                     }, void 0, false, {
                                         fileName: "src/components/TechStack.js",
-                                        lineNumber: 142,
+                                        lineNumber: 143,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                         d: "M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"
                                     }, void 0, false, {
                                         fileName: "src/components/TechStack.js",
-                                        lineNumber: 143,
+                                        lineNumber: 144,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/TechStack.js",
-                                lineNumber: 141,
+                                lineNumber: 142,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 140,
+                            lineNumber: 141,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 139,
+                        lineNumber: 140,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        title: "Node.js",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            viewBox: "0 0 128 128",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                fill: "#83CD29",
+                                d: "M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623C42.594 41 41 42.061 41 42.773v50.49c0 3.896-3.524 7.773-10.11 4.48L18.723 90.73c-.424-.23-.723-.693-.723-1.181V38.407c0-.482.555-.966.982-1.213l44.424-25.561c.415-.235 1.025-.235 1.439 0l43.882 25.555c.42.253.272.722.272 1.219v51.142c0 .488.183.963-.232 1.198l-44.086 25.576c-.378.227-.847.227-1.261 0l-11.307-6.749c-.341-.198-.746-.269-1.073-.086-3.146 1.783-3.726 2.02-6.677 3.043-.726.253-1.797.692.41 1.929l14.798 8.754a9.294 9.294 0 004.647 1.246c1.642 0 3.25-.426 4.667-1.246l43.885-25.582c2.87-1.672 4.23-4.764 4.23-8.083V38.407c0-3.319-1.36-6.414-4.229-8.073zM77.91 81.445c-11.726 0-14.309-3.235-15.17-9.066-.1-.628-.633-1.379-1.272-1.379h-5.731c-.709 0-1.279.86-1.279 1.566 0 7.466 4.059 16.512 23.453 16.512 14.039 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.105 0 12.461 1.954 13.842 8.091.118.577.645.991 1.24.991h5.754c.354 0 .692-.143.94-.396.24-.272.367-.613.335-.979-.891-10.568-7.912-15.493-22.112-15.493-12.631 0-20.166 5.334-20.166 14.275 0 9.698 7.497 12.378 19.622 13.577 14.505 1.422 15.633 3.542 15.633 6.395 0 4.955-3.978 7.066-13.309 7.066z"
+                            }, void 0, false, {
+                                fileName: "src/components/TechStack.js",
+                                lineNumber: 151,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/TechStack.js",
+                            lineNumber: 150,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/TechStack.js",
+                        lineNumber: 149,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        title: "Express.js",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            viewBox: "0 0 128 128",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                d: "M126.67 98.44c-4.56 1.16-7.38.05-9.91-3.75-5.68-8.51-11.95-16.63-18-24.9-.78-1.07-1.59-2.12-2.6-3.45C89 76 81.85 85.2 75.14 94.77c-2.4 3.42-4.92 4.91-9.4 3.7l26.92-36.13L67.6 29.71c4.31-.84 7.29-.41 9.93 3.45 5.83 8.52 12.26 16.63 18.67 25.21 6.45-8.55 12.8-16.67 18.8-25.11 2.41-3.42 5-4.72 9.33-3.46-3.28 4.35-6.49 8.63-9.72 12.88-4.36 5.73-8.64 11.53-13.16 17.14-1.61 2-1.35 3.3.09 5.19C109.9 76 118.16 87.1 126.67 98.44zM1.33 61.74c.72-3.61 1.2-7.29 2.2-10.83 6-21.43 30.6-30.34 47.5-17.06C60.93 41.64 63.39 52.62 62.9 65H7.1c-.84 22.21 15.15 35.62 35.53 28.78 7.15-2.4 11.36-8 13.47-15 1.07-3.51 2.84-4.06 6.14-3.06-1.69 8.76-5.52 16.08-13.52 20.66-12 6.86-29.13 4.64-38.14-4.89C5.26 85.89 3 78.92 2 71.39c-.15-1.2-.46-2.38-.7-3.57q.03-3.04.03-6.08zm5.87-1.49h50.43c-.33-16.06-10.33-27.47-24-27.57-15-.12-25.78 11.02-26.43 27.57z"
+                            }, void 0, false, {
+                                fileName: "src/components/TechStack.js",
+                                lineNumber: 160,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/TechStack.js",
+                            lineNumber: 159,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/TechStack.js",
+                        lineNumber: 158,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31420,7 +31439,7 @@ const TechStack = ()=>{
                                     d: "M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 171,
+                                    lineNumber: 172,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31428,7 +31447,7 @@ const TechStack = ()=>{
                                     d: "M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 175,
+                                    lineNumber: 176,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31436,18 +31455,18 @@ const TechStack = ()=>{
                                     d: "M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 179,
+                                    lineNumber: 180,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 170,
+                            lineNumber: 171,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 169,
+                        lineNumber: 170,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31461,7 +31480,7 @@ const TechStack = ()=>{
                                     d: "M118.766 95.82c.89-1.543 1.441-3.28 1.441-4.843V36.78c0-1.558-.55-3.297-1.441-4.84l-55.32 31.94Zm0 0"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 188,
+                                    lineNumber: 189,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31469,7 +31488,7 @@ const TechStack = ()=>{
                                     d: "m68.36 126.586 46.933-27.094c1.352-.781 2.582-2.129 3.473-3.672l-55.32-31.94L8.12 95.82c.89 1.543 2.121 2.89 3.473 3.672l46.933 27.094c2.703 1.562 7.13 1.562 9.832 0Zm0 0"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 192,
+                                    lineNumber: 193,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31477,7 +31496,7 @@ const TechStack = ()=>{
                                     d: "M118.766 31.941c-.891-1.546-2.121-2.894-3.473-3.671L68.359 1.172c-2.703-1.563-7.129-1.563-9.832 0L11.594 28.27C8.89 29.828 6.68 33.66 6.68 36.78v54.196c0 1.562.55 3.3 1.441 4.843L63.445 63.88Zm0 0"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 196,
+                                    lineNumber: 197,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31485,18 +31504,18 @@ const TechStack = ()=>{
                                     d: "M63.445 26.035c-20.867 0-37.843 16.977-37.843 37.844s16.976 37.844 37.843 37.844c13.465 0 26.024-7.247 32.77-18.91L79.84 73.335c-3.38 5.84-9.66 9.465-16.395 9.465-10.433 0-18.922-8.488-18.922-18.922 0-10.434 8.49-18.922 18.922-18.922 6.73 0 13.017 3.629 16.39 9.465l16.38-9.477c-6.75-11.664-19.305-18.91-32.77-18.91zM92.88 57.57v4.207h-4.207v4.203h4.207v4.207h4.203V65.98h4.203v-4.203h-4.203V57.57H92.88zm15.766 0v4.207h-4.204v4.203h4.204v4.207h4.207V65.98h4.203v-4.203h-4.203V57.57h-4.207z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 200,
+                                    lineNumber: 201,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 187,
+                            lineNumber: 188,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 186,
+                        lineNumber: 187,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31510,7 +31529,7 @@ const TechStack = ()=>{
                                     d: "M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 209,
+                                    lineNumber: 210,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31518,7 +31537,7 @@ const TechStack = ()=>{
                                     d: "M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 213,
+                                    lineNumber: 214,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31526,7 +31545,7 @@ const TechStack = ()=>{
                                     d: "M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zm40.697 22.747c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 217,
+                                    lineNumber: 218,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31534,7 +31553,7 @@ const TechStack = ()=>{
                                     d: "M76.491 1.587S89.459 14.563 64.188 34.51c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.42 81.722 22.195 76.491 1.587z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 221,
+                                    lineNumber: 222,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31542,18 +31561,18 @@ const TechStack = ()=>{
                                     d: "M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 225,
+                                    lineNumber: 226,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 208,
+                            lineNumber: 209,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 207,
+                        lineNumber: 208,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31576,7 +31595,7 @@ const TechStack = ()=>{
                                             "stop-color": "#5A9FD4"
                                         }, void 0, false, {
                                             fileName: "src/components/TechStack.js",
-                                            lineNumber: 243,
+                                            lineNumber: 244,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
@@ -31584,13 +31603,13 @@ const TechStack = ()=>{
                                             "stop-color": "#306998"
                                         }, void 0, false, {
                                             fileName: "src/components/TechStack.js",
-                                            lineNumber: 244,
+                                            lineNumber: 245,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 234,
+                                    lineNumber: 235,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("linearGradient", {
@@ -31607,7 +31626,7 @@ const TechStack = ()=>{
                                             "stop-color": "#FFD43B"
                                         }, void 0, false, {
                                             fileName: "src/components/TechStack.js",
-                                            lineNumber: 255,
+                                            lineNumber: 256,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
@@ -31615,13 +31634,13 @@ const TechStack = ()=>{
                                             "stop-color": "#FFE873"
                                         }, void 0, false, {
                                             fileName: "src/components/TechStack.js",
-                                            lineNumber: 256,
+                                            lineNumber: 257,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 246,
+                                    lineNumber: 247,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31630,7 +31649,7 @@ const TechStack = ()=>{
                                     transform: "translate(0 10.26)"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 258,
+                                    lineNumber: 259,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31639,7 +31658,7 @@ const TechStack = ()=>{
                                     transform: "translate(0 10.26)"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 263,
+                                    lineNumber: 264,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("radialGradient", {
@@ -31656,7 +31675,7 @@ const TechStack = ()=>{
                                             "stop-opacity": ".498"
                                         }, void 0, false, {
                                             fileName: "src/components/TechStack.js",
-                                            lineNumber: 276,
+                                            lineNumber: 277,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
@@ -31665,13 +31684,13 @@ const TechStack = ()=>{
                                             "stop-opacity": "0"
                                         }, void 0, false, {
                                             fileName: "src/components/TechStack.js",
-                                            lineNumber: 277,
+                                            lineNumber: 278,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 268,
+                                    lineNumber: 269,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31680,18 +31699,18 @@ const TechStack = ()=>{
                                     d: "M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 279,
+                                    lineNumber: 280,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 233,
+                            lineNumber: 234,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 232,
+                        lineNumber: 233,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31704,17 +31723,17 @@ const TechStack = ()=>{
                                 d: "M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"
                             }, void 0, false, {
                                 fileName: "src/components/TechStack.js",
-                                lineNumber: 289,
+                                lineNumber: 290,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 288,
+                            lineNumber: 289,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 287,
+                        lineNumber: 288,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31731,30 +31750,30 @@ const TechStack = ()=>{
                                         d: "M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
                                     }, void 0, false, {
                                         fileName: "src/components/TechStack.js",
-                                        lineNumber: 299,
+                                        lineNumber: 300,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                         d: "M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"
                                     }, void 0, false, {
                                         fileName: "src/components/TechStack.js",
-                                        lineNumber: 304,
+                                        lineNumber: 305,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/TechStack.js",
-                                lineNumber: 298,
+                                lineNumber: 299,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 297,
+                            lineNumber: 298,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 296,
+                        lineNumber: 297,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31778,7 +31797,7 @@ const TechStack = ()=>{
                                                 offset: "0"
                                             }, void 0, false, {
                                                 fileName: "src/components/TechStack.js",
-                                                lineNumber: 321,
+                                                lineNumber: 322,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
@@ -31786,7 +31805,7 @@ const TechStack = ()=>{
                                                 offset: ".92"
                                             }, void 0, false, {
                                                 fileName: "src/components/TechStack.js",
-                                                lineNumber: 322,
+                                                lineNumber: 323,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
@@ -31794,18 +31813,18 @@ const TechStack = ()=>{
                                                 offset: "1"
                                             }, void 0, false, {
                                                 fileName: "src/components/TechStack.js",
-                                                lineNumber: 323,
+                                                lineNumber: 324,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/TechStack.js",
-                                        lineNumber: 312,
+                                        lineNumber: 313,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 311,
+                                    lineNumber: 312,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31813,7 +31832,7 @@ const TechStack = ()=>{
                                     fill: "#0b7fcc"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 326,
+                                    lineNumber: 327,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31821,7 +31840,7 @@ const TechStack = ()=>{
                                     fill: "url(#sqlite-original-a)"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 330,
+                                    lineNumber: 331,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31829,18 +31848,18 @@ const TechStack = ()=>{
                                     fill: "#003956"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 334,
+                                    lineNumber: 335,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 310,
+                            lineNumber: 311,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 309,
+                        lineNumber: 310,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31853,17 +31872,17 @@ const TechStack = ()=>{
                                 d: "M116.948 97.807c-6.863-.187-12.104.452-16.585 2.341-1.273.537-3.305.552-3.513 2.147.7.733.809 1.829 1.365 2.731 1.07 1.73 2.876 4.052 4.488 5.268 1.762 1.33 3.577 2.751 5.465 3.902 3.358 2.047 7.107 3.217 10.34 5.268 1.906 1.21 3.799 2.733 5.658 4.097.92.675 1.537 1.724 2.732 2.147v-.194c-.628-.8-.79-1.898-1.366-2.733l-2.537-2.537c-2.48-3.292-5.629-6.184-8.976-8.585-2.669-1.916-8.642-4.504-9.755-7.609l-.195-.195c1.892-.214 4.107-.898 5.854-1.367 2.934-.786 5.556-.583 8.585-1.365l4.097-1.171v-.78c-1.531-1.571-2.623-3.651-4.292-5.073-4.37-3.72-9.138-7.437-14.048-10.537-2.724-1.718-6.089-2.835-8.976-4.292-.971-.491-2.677-.746-3.318-1.562-1.517-1.932-2.342-4.382-3.511-6.633-2.449-4.717-4.854-9.868-7.024-14.831-1.48-3.384-2.447-6.72-4.293-9.756-8.86-14.567-18.396-23.358-33.169-32-3.144-1.838-6.929-2.563-10.929-3.513-2.145-.129-4.292-.26-6.438-.391-1.311-.546-2.673-2.149-3.902-2.927C17.811 4.565 5.257-2.16 1.633 6.682c-2.289 5.581 3.421 11.025 5.462 13.854 1.434 1.982 3.269 4.207 4.293 6.438.674 1.467.79 2.938 1.367 4.489 1.417 3.822 2.652 7.98 4.487 11.511.927 1.788 1.949 3.67 3.122 5.268.718.981 1.951 1.413 2.145 2.927-1.204 1.686-1.273 4.304-1.95 6.44-3.05 9.615-1.899 21.567 2.537 28.683 1.36 2.186 4.567 6.871 8.975 5.073 3.856-1.57 2.995-6.438 4.098-10.732.249-.973.096-1.689.585-2.341v.195l3.513 7.024c2.6 4.187 7.212 8.562 11.122 11.514 2.027 1.531 3.623 4.177 6.244 5.073v-.196h-.195c-.508-.791-1.303-1.119-1.951-1.755-1.527-1.497-3.225-3.358-4.487-5.073-3.556-4.827-6.698-10.11-9.561-15.609-1.368-2.627-2.557-5.523-3.709-8.196-.444-1.03-.438-2.589-1.364-3.122-1.263 1.958-3.122 3.542-4.098 5.854-1.561 3.696-1.762 8.204-2.341 12.878-.342.122-.19.038-.391.194-2.718-.655-3.672-3.452-4.683-5.853-2.554-6.07-3.029-15.842-.781-22.829.582-1.809 3.21-7.501 2.146-9.172-.508-1.666-2.184-2.63-3.121-3.903-1.161-1.574-2.319-3.646-3.124-5.464-2.09-4.731-3.066-10.044-5.267-14.828-1.053-2.287-2.832-4.602-4.293-6.634-1.617-2.253-3.429-3.912-4.683-6.635-.446-.968-1.051-2.518-.391-3.513.21-.671.508-.951 1.171-1.17 1.132-.873 4.284.29 5.462.779 3.129 1.3 5.741 2.538 8.392 4.294 1.271.844 2.559 2.475 4.097 2.927h1.756c2.747.631 5.824.195 8.391.975 4.536 1.378 8.601 3.523 12.292 5.854 11.246 7.102 20.442 17.21 26.732 29.269 1.012 1.942 1.45 3.794 2.341 5.854 1.798 4.153 4.063 8.426 5.852 12.488 1.786 4.052 3.526 8.141 6.05 11.513 1.327 1.772 6.451 2.723 8.781 3.708 1.632.689 4.307 1.409 5.854 2.34 2.953 1.782 5.815 3.903 8.586 5.855 1.383.975 5.64 3.116 5.852 4.879zM29.729 23.466c-1.431-.027-2.443.156-3.513.389v.195h.195c.683 1.402 1.888 2.306 2.731 3.513.65 1.367 1.301 2.732 1.952 4.097l.194-.193c1.209-.853 1.762-2.214 1.755-4.294-.484-.509-.555-1.147-.975-1.755-.556-.811-1.635-1.272-2.339-1.952z"
                             }, void 0, false, {
                                 fileName: "src/components/TechStack.js",
-                                lineNumber: 343,
+                                lineNumber: 344,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 342,
+                            lineNumber: 343,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 341,
+                        lineNumber: 342,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31879,7 +31898,7 @@ const TechStack = ()=>{
                                     d: "M88.038 42.812c1.605 4.643 2.761 9.383 3.141 14.296.472 6.095.256 12.147-1.029 18.142-.035.165-.109.32-.164.48-.403.001-.814-.049-1.208.012-3.329.523-6.655 1.065-9.981 1.604-3.438.557-6.881 1.092-10.313 1.687-1.216.21-2.721-.041-3.212 1.641-.014.046-.154.054-.235.08l.166-10.051-.169-24.252 1.602-.275c2.62-.429 5.24-.864 7.862-1.281 3.129-.497 6.261-.98 9.392-1.465 1.381-.215 2.764-.412 4.148-.618z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 352,
+                                    lineNumber: 353,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31889,7 +31908,7 @@ const TechStack = ()=>{
                                     d: "M61.729 110.054c-1.69-1.453-3.439-2.842-5.059-4.37-8.717-8.222-15.093-17.899-18.233-29.566-.865-3.211-1.442-6.474-1.627-9.792-.13-2.322-.318-4.665-.154-6.975.437-6.144 1.325-12.229 3.127-18.147l.099-.138c.175.233.427.439.516.702 1.759 5.18 3.505 10.364 5.242 15.551 5.458 16.3 10.909 32.604 16.376 48.9.107.318.384.579.583.866l-.87 2.969z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 358,
+                                    lineNumber: 359,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31899,7 +31918,7 @@ const TechStack = ()=>{
                                     d: "M88.038 42.812c-1.384.206-2.768.403-4.149.616-3.131.485-6.263.968-9.392 1.465-2.622.417-5.242.852-7.862 1.281l-1.602.275-.012-1.045c-.053-.859-.144-1.717-.154-2.576-.069-5.478-.112-10.956-.18-16.434-.042-3.429-.105-6.857-.175-10.285-.043-2.13-.089-4.261-.185-6.388-.052-1.143-.236-2.28-.311-3.423-.042-.657.016-1.319.029-1.979.817 1.583 1.616 3.178 2.456 4.749 1.327 2.484 3.441 4.314 5.344 6.311 7.523 7.892 12.864 17.068 16.193 27.433z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 364,
+                                    lineNumber: 365,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31909,7 +31928,7 @@ const TechStack = ()=>{
                                     d: "M65.036 80.753c.081-.026.222-.034.235-.08.491-1.682 1.996-1.431 3.212-1.641 3.432-.594 6.875-1.13 10.313-1.687 3.326-.539 6.652-1.081 9.981-1.604.394-.062.805-.011 1.208-.012-.622 2.22-1.112 4.488-1.901 6.647-.896 2.449-1.98 4.839-3.131 7.182a49.142 49.142 0 01-6.353 9.763c-1.919 2.308-4.058 4.441-6.202 6.548-1.185 1.165-2.582 2.114-3.882 3.161l-.337-.23-1.214-1.038-1.256-2.753a41.402 41.402 0 01-1.394-9.838l.023-.561.171-2.426c.057-.828.133-1.655.168-2.485.129-2.982.241-5.964.359-8.946z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 370,
+                                    lineNumber: 371,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31919,7 +31938,7 @@ const TechStack = ()=>{
                                     d: "M65.036 80.753c-.118 2.982-.23 5.964-.357 8.947-.035.83-.111 1.657-.168 2.485l-.765.289c-1.699-5.002-3.399-9.951-5.062-14.913-2.75-8.209-5.467-16.431-8.213-24.642a4498.887 4498.887 0 00-6.7-19.867c-.105-.31-.407-.552-.617-.826l4.896-9.002c.168.292.39.565.496.879a6167.476 6167.476 0 016.768 20.118c2.916 8.73 5.814 17.467 8.728 26.198.116.349.308.671.491 1.062l.67-.78-.167 10.052z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 376,
+                                    lineNumber: 377,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31929,7 +31948,7 @@ const TechStack = ()=>{
                                     d: "M43.155 32.227c.21.274.511.516.617.826a4498.887 4498.887 0 016.7 19.867c2.746 8.211 5.463 16.433 8.213 24.642 1.662 4.961 3.362 9.911 5.062 14.913l.765-.289-.171 2.426-.155.559c-.266 2.656-.49 5.318-.814 7.968-.163 1.328-.509 2.632-.772 3.947-.198-.287-.476-.548-.583-.866-5.467-16.297-10.918-32.6-16.376-48.9a3888.972 3888.972 0 00-5.242-15.551c-.089-.263-.34-.469-.516-.702l3.272-8.84z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 382,
+                                    lineNumber: 383,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31939,7 +31958,7 @@ const TechStack = ()=>{
                                     d: "M65.202 70.702l-.67.78c-.183-.391-.375-.714-.491-1.062-2.913-8.731-5.812-17.468-8.728-26.198a6167.476 6167.476 0 00-6.768-20.118c-.105-.314-.327-.588-.496-.879l6.055-7.965c.191.255.463.482.562.769 1.681 4.921 3.347 9.848 5.003 14.778 1.547 4.604 3.071 9.215 4.636 13.813.105.308.47.526.714.786l.012 1.045c.058 8.082.115 16.167.171 24.251z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 388,
+                                    lineNumber: 389,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31949,7 +31968,7 @@ const TechStack = ()=>{
                                     d: "M65.021 45.404c-.244-.26-.609-.478-.714-.786-1.565-4.598-3.089-9.209-4.636-13.813-1.656-4.93-3.322-9.856-5.003-14.778-.099-.287-.371-.514-.562-.769 1.969-1.928 3.877-3.925 5.925-5.764 1.821-1.634 3.285-3.386 3.352-5.968.003-.107.059-.214.145-.514l.519 1.306c-.013.661-.072 1.322-.029 1.979.075 1.143.259 2.28.311 3.423.096 2.127.142 4.258.185 6.388.069 3.428.132 6.856.175 10.285.067 5.478.111 10.956.18 16.434.008.861.098 1.718.152 2.577z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 394,
+                                    lineNumber: 395,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31959,7 +31978,7 @@ const TechStack = ()=>{
                                     d: "M62.598 107.085c.263-1.315.609-2.62.772-3.947.325-2.649.548-5.312.814-7.968l.066-.01.066.011a41.402 41.402 0 001.394 9.838c-.176.232-.425.439-.518.701-.727 2.05-1.412 4.116-2.143 6.166-.1.28-.378.498-.574.744l-.747-2.566.87-2.969z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 400,
+                                    lineNumber: 401,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31969,7 +31988,7 @@ const TechStack = ()=>{
                                     d: "M62.476 112.621c.196-.246.475-.464.574-.744.731-2.05 1.417-4.115 2.143-6.166.093-.262.341-.469.518-.701l1.255 2.754c-.248.352-.59.669-.728 1.061l-2.404 7.059c-.099.283-.437.483-.663.722l-.695-3.985z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 406,
+                                    lineNumber: 407,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31979,7 +31998,7 @@ const TechStack = ()=>{
                                     d: "M63.171 116.605c.227-.238.564-.439.663-.722l2.404-7.059c.137-.391.48-.709.728-1.061l1.215 1.037c-.587.58-.913 1.25-.717 2.097l-.369 1.208c-.168.207-.411.387-.494.624-.839 2.403-1.64 4.819-2.485 7.222-.107.305-.404.544-.614.812-.109-1.387-.22-2.771-.331-4.158z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 412,
+                                    lineNumber: 413,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31989,7 +32008,7 @@ const TechStack = ()=>{
                                     d: "M63.503 120.763c.209-.269.506-.508.614-.812.845-2.402 1.646-4.818 2.485-7.222.083-.236.325-.417.494-.624l-.509 5.545c-.136.157-.333.294-.398.477-.575 1.614-1.117 3.24-1.694 4.854-.119.333-.347.627-.525.938-.158-.207-.441-.407-.454-.623-.051-.841-.016-1.688-.013-2.533z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 418,
+                                    lineNumber: 419,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -31999,7 +32018,7 @@ const TechStack = ()=>{
                                     d: "M63.969 123.919c.178-.312.406-.606.525-.938.578-1.613 1.119-3.239 1.694-4.854.065-.183.263-.319.398-.477l.012 3.64-1.218 3.124-1.411-.495z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 424,
+                                    lineNumber: 425,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -32009,7 +32028,7 @@ const TechStack = ()=>{
                                     d: "M65.38 124.415l1.218-3.124.251 3.696-1.469-.572z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 430,
+                                    lineNumber: 431,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -32019,7 +32038,7 @@ const TechStack = ()=>{
                                     d: "M67.464 110.898c-.196-.847.129-1.518.717-2.097l.337.23-1.054 1.867z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 436,
+                                    lineNumber: 437,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -32029,18 +32048,32 @@ const TechStack = ()=>{
                                     d: "M64.316 95.172l-.066-.011-.066.01.155-.559-.023.56z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 442,
+                                    lineNumber: 443,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 351,
+                            lineNumber: 352,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 350,
+                        lineNumber: 351,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        title: "Mongoose",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _mongooseJsPngDefault.default)
+                        }, void 0, false, {
+                            fileName: "src/components/TechStack.js",
+                            lineNumber: 453,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/TechStack.js",
+                        lineNumber: 452,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -32054,7 +32087,7 @@ const TechStack = ()=>{
                                     d: "M0 64c0 18.593 28.654 33.667 64 33.667 35.346 0 64-15.074 64-33.667 0-18.593-28.655-33.667-64-33.667C28.654 30.333 0 45.407 0 64Z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 473,
+                                    lineNumber: 458,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -32062,14 +32095,14 @@ const TechStack = ()=>{
                                     d: "M64 95.167c33.965 0 61.5-13.955 61.5-31.167 0-17.214-27.535-31.167-61.5-31.167S2.5 46.786 2.5 64c0 17.212 27.535 31.167 61.5 31.167Z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 477,
+                                    lineNumber: 462,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                     d: "M34.772 67.864c2.793 0 4.877-.515 6.196-1.53 1.306-1.006 2.207-2.747 2.68-5.175.44-2.27.272-3.854-.5-4.71-.788-.874-2.493-1.317-5.067-1.317h-4.464l-2.473 12.732zM20.173 83.547a.694.694 0 0 1-.68-.828l6.557-33.738a.695.695 0 0 1 .68-.561h14.134c4.442 0 7.748 1.206 9.827 3.585 2.088 2.39 2.734 5.734 1.917 9.935-.333 1.711-.905 3.3-1.7 4.724a15.818 15.818 0 0 1-3.128 3.92c-1.531 1.432-3.264 2.472-5.147 3.083-1.852.604-4.232.91-7.07.91h-5.724l-1.634 8.408a.695.695 0 0 1-.682.562z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 481,
+                                    lineNumber: 466,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -32077,14 +32110,14 @@ const TechStack = ()=>{
                                     d: "M34.19 55.826h3.891c3.107 0 4.186.682 4.553 1.089.607.674.723 2.097.331 4.112-.439 2.257-1.253 3.858-2.42 4.756-1.194.92-3.138 1.386-5.773 1.386h-2.786l2.205-11.342zm6.674-8.1H26.731a1.39 1.39 0 0 0-1.364 1.123L18.81 82.588a1.39 1.39 0 0 0 1.363 1.653h7.35a1.39 1.39 0 0 0 1.363-1.124l1.525-7.846h5.151c2.912 0 5.364-.318 7.287-.944 1.977-.642 3.796-1.731 5.406-3.237a16.522 16.522 0 0 0 3.259-4.087c.831-1.487 1.429-3.147 1.775-4.931.86-4.423.161-7.964-2.076-10.524-2.216-2.537-5.698-3.823-10.349-3.823zM30.301 68.557h4.471c2.963 0 5.17-.557 6.62-1.675 1.451-1.116 2.428-2.98 2.938-5.591.485-2.508.264-4.277-.665-5.308-.931-1.03-2.791-1.546-5.584-1.546h-5.036l-2.743 14.12m10.563-19.445c4.252 0 7.353 1.117 9.303 3.348 1.95 2.232 2.536 5.347 1.76 9.346-.322 1.648-.863 3.154-1.625 4.518-.764 1.366-1.76 2.614-2.991 3.747-1.468 1.373-3.097 2.352-4.892 2.935-1.794.584-4.08.875-6.857.875h-6.296l-1.743 8.97h-7.35l6.558-33.739h14.133"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 482,
+                                    lineNumber: 467,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                     d: "M69.459 74.577a.694.694 0 0 1-.682-.827l2.9-14.928c.277-1.42.209-2.438-.19-2.87-.245-.263-.979-.704-3.15-.704h-5.256l-3.646 18.768a.695.695 0 0 1-.683.56h-7.29a.695.695 0 0 1-.683-.826l6.558-33.739a.695.695 0 0 1 .682-.561h7.29a.695.695 0 0 1 .683.826L64.41 48.42h5.653c4.307 0 7.227.758 8.928 2.321 1.733 1.593 2.275 4.14 1.608 7.573l-3.051 15.702a.695.695 0 0 1-.682.56h-7.407z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 486,
+                                    lineNumber: 471,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -32092,14 +32125,14 @@ const TechStack = ()=>{
                                     d: "M65.31 38.755h-7.291a1.39 1.39 0 0 0-1.364 1.124l-6.557 33.738a1.39 1.39 0 0 0 1.363 1.654h7.291a1.39 1.39 0 0 0 1.364-1.124l3.537-18.205h4.682c2.168 0 2.624.463 2.641.484.132.14.305.795.019 2.264l-2.9 14.927a1.39 1.39 0 0 0 1.364 1.654h7.408a1.39 1.39 0 0 0 1.363-1.124l3.051-15.7c.715-3.686.103-6.45-1.82-8.217-1.836-1.686-4.91-2.505-9.398-2.505h-4.81l1.421-7.315a1.39 1.39 0 0 0-1.364-1.655zm0 1.39-1.743 8.968h6.496c4.087 0 6.907.714 8.457 2.14 1.553 1.426 2.017 3.735 1.398 6.93l-3.052 15.699h-7.407l2.901-14.928c.33-1.698.208-2.856-.365-3.474-.573-.617-1.793-.926-3.658-.926h-5.829l-3.756 19.327H51.46l6.558-33.739h7.292z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 487,
+                                    lineNumber: 472,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                     d: "M92.136 67.864c2.793 0 4.878-.515 6.198-1.53 1.304-1.006 2.206-2.747 2.679-5.175.44-2.27.273-3.854-.5-4.71-.788-.874-2.493-1.317-5.067-1.317h-4.463l-2.475 12.732zM77.54 83.547a.694.694 0 0 1-.682-.828l6.557-33.738a.695.695 0 0 1 .682-.561H98.23c4.442 0 7.748 1.206 9.826 3.585 2.089 2.39 2.734 5.734 1.917 9.935a15.878 15.878 0 0 1-1.699 4.724 15.838 15.838 0 0 1-3.128 3.92c-1.53 1.432-3.265 2.472-5.147 3.083-1.852.604-4.232.91-7.071.91h-5.723l-1.633 8.408a.695.695 0 0 1-.683.562z"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 491,
+                                    lineNumber: 476,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -32107,7 +32140,7 @@ const TechStack = ()=>{
                                     d: "M91.555 55.826h3.891c3.107 0 4.186.682 4.552 1.089.61.674.724 2.097.333 4.112-.44 2.257-1.254 3.858-2.421 4.756-1.195.92-3.139 1.386-5.773 1.386h-2.786l2.204-11.342zm6.674-8.1H84.096a1.39 1.39 0 0 0-1.363 1.123l-6.558 33.739a1.39 1.39 0 0 0 1.364 1.653h7.35a1.39 1.39 0 0 0 1.363-1.124l1.525-7.846h5.15c2.911 0 5.364-.318 7.286-.944 1.978-.642 3.797-1.731 5.408-3.238a16.52 16.52 0 0 0 3.258-4.086c.832-1.487 1.428-3.147 1.775-4.931.86-4.423.162-7.964-2.076-10.524-2.216-2.537-5.697-3.823-10.35-3.823zM87.666 68.557h4.47c2.964 0 5.17-.557 6.622-1.675 1.45-1.116 2.428-2.98 2.936-5.591.487-2.508.266-4.277-.665-5.308-.93-1.03-2.791-1.546-5.583-1.546h-5.035Zm10.563-19.445c4.251 0 7.354 1.117 9.303 3.348 1.95 2.232 2.537 5.347 1.759 9.346-.32 1.648-.862 3.154-1.624 4.518-.763 1.366-1.76 2.614-2.992 3.747-1.467 1.373-3.097 2.352-4.892 2.935-1.793.584-4.078.875-6.856.875h-6.295l-1.745 8.97h-7.35l6.558-33.739h14.133"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 492,
+                                    lineNumber: 477,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("defs", {
@@ -32123,7 +32156,7 @@ const TechStack = ()=>{
                                                 "stop-color": "#AEB2D5"
                                             }, void 0, false, {
                                                 fileName: "src/components/TechStack.js",
-                                                lineNumber: 505,
+                                                lineNumber: 490,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
@@ -32131,7 +32164,7 @@ const TechStack = ()=>{
                                                 "stop-color": "#AEB2D5"
                                             }, void 0, false, {
                                                 fileName: "src/components/TechStack.js",
-                                                lineNumber: 506,
+                                                lineNumber: 491,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
@@ -32139,7 +32172,7 @@ const TechStack = ()=>{
                                                 "stop-color": "#484C89"
                                             }, void 0, false, {
                                                 fileName: "src/components/TechStack.js",
-                                                lineNumber: 507,
+                                                lineNumber: 492,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
@@ -32147,29 +32180,29 @@ const TechStack = ()=>{
                                                 "stop-color": "#484C89"
                                             }, void 0, false, {
                                                 fileName: "src/components/TechStack.js",
-                                                lineNumber: 508,
+                                                lineNumber: 493,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/TechStack.js",
-                                        lineNumber: 497,
+                                        lineNumber: 482,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 496,
+                                    lineNumber: 481,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 472,
+                            lineNumber: 457,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 471,
+                        lineNumber: 456,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -32184,30 +32217,30 @@ const TechStack = ()=>{
                                         d: "M59.39.152c-.484.051-1.995.23-3.328.387-5.374.613-11.468 2.227-16.816 4.48C19.891 13.106 5.324 30.849 1.305 51.2.359 56.04.129 58.418.129 64c0 7.195.715 12.16 2.61 18.434 6.195 20.53 22.323 36.632 42.906 42.851 6.195 1.871 11.187 2.586 18.355 2.586 7.195 0 12.16-.715 18.434-2.61 20.53-6.195 36.632-22.323 42.851-42.906 1.871-6.195 2.586-11.187 2.586-18.355 0-3.047-.152-6.527-.332-7.809-2.074-14.796-8.168-27.238-18.328-37.402C99.07 8.703 86.68 2.586 72.19.512c-1.996-.282-11.238-.54-12.8-.36zm-20.863 40.32c1.36.41 1.996.794 2.918 1.715 1.793 1.82 2.203 2.817 2.203 5.555 0 2.051-.078 2.434-.691 3.508-1.18 1.996-3.918 3.84-5.812 3.89-1.333.028-1.278-.562.18-2.097 1.945-2.023 2.226-2.79 2.226-5.813-.024-2.917-.383-3.914-1.739-4.734-1.128-.691-2.355-.64-4.148.203-4.66 2.23-9.703 9.653-11.672 17.258-2.613 10.137 2.02 18.25 9.649 16.867 2.226-.41 6.425-2.558 8.246-4.25 1.508-1.379 1.508-1.406 1.66-3.12.336-3.587 2.867-7.169 6.25-8.833 1.558-.77 1.945-.844 4.043-.844 1.996 0 2.457.102 3.43.637 3.097 1.77 2.457 5.89-.895 5.89-1.945 0-2.945-1-1.535-1.534 1.383-.512.867-2.434-.742-2.868-1.895-.488-4.047.793-5.403 3.25-1.64 2.97-1.715 6.504-.156 8.114 1.512 1.613 3.406.336 4.867-3.329.766-1.867 1.867-2.867 3.149-2.867 1.125 0 1.332.692.843 2.793-.718 3.25-.23 4.094 1.793 3.098.664-.309 1.766-1.023 2.43-1.535l1.254-1 .848-4.43c.922-4.965 1.277-5.633 3.172-5.988 1.82-.336 2.23.562 1.562 3.402l-.36 1.59 1.333-1.36c3.148-3.226 7.015-4.812 8.347-3.48.715.715.637 1.613-.386 4.785-.485 1.512-1.153 3.895-1.457 5.25-.461 2.047-.489 2.535-.23 2.868.82.972 3.327-.028 5.554-2.204l1.305-1.277.156-2.844c.152-3.277.457-4.453 1.328-5.504.82-.972 2.305-1.687 3.098-1.484.793.207.793.973.078 3.227-1 3.097-.895 10.238.129 10.238.41 0 2.507-2.2 3.84-4.043l.996-1.36-.793-.816c-1.383-1.46-1.715-2.406-1.715-4.789 0-1.738.129-2.379.562-3.227.719-1.328 1.844-2.3 3.176-2.687 1.406-.434 3.148.281 3.863 1.562.719 1.305.54 4.223-.383 6.223l-.664 1.457h.895c1.23 0 1.715-.305 3.918-2.379 1.152-1.101 2.484-2.05 3.48-2.511 3.918-1.84 8.528-.895 9.293 1.921.64 2.254-.765 3.84-3.226 3.66-1.766-.128-2.098-.59-1.074-1.456 1.843-1.54 0-3.508-2.637-2.793-1.434.386-3.047 1.996-3.89 3.867-1.692 3.738-.794 8.14 1.636 8.14.973 0 2.691-1.921 3.355-3.789.793-2.152 2.457-3.507 3.711-3.02.692.255.743.946.309 3.122-.488 2.383-.563 4.61-.18 5.633.153.382.614 1.101 1.051 1.586.816.921.844 1.254.152 1.691-.332.23-.77.129-1.843-.46-1.485-.77-2.766-2.153-3.227-3.458l-.281-.766-1.024.766c-.59.41-1.511.871-2.047 1.023-2.125.563-4.738-.894-5.964-3.351-.489-.95-.641-3.738-.282-4.813.204-.59.204-.59-.617-.18-.433.231-1.355.485-2.07.563-1.18.13-1.36.258-2.535 1.742-1.664 2.07-4.61 4.864-5.813 5.454-2.558 1.277-3.402.918-4.07-1.72l-.461-1.765-1.102.973c-1.406 1.23-4.222 2.715-5.836 3.074-1.535.332-3.175-.156-3.84-1.18-.995-1.535-.663-4.785.922-9.164 1.176-3.25.333-3.3-2.636-.203-2.203 2.328-3.149 3.992-3.762 6.578-.64 2.688-1.41 3.66-3.148 4.07-1.051.231-1.54-.41-1.332-1.816l.152-1.129-.973.668c-1.383.946-3.125 1.817-4.328 2.149-1.203.332-2.789-.024-3.172-.692-.691-1.175-.691-1.175-1.765-.332-2.332 1.895-5.66 1.356-7.348-1.152l-.54-.793-1.687 1.562c-4.867 4.454-10.957 6.45-15.464 5.067-5.735-1.738-8.907-6.656-8.856-13.746.024-7.117 3.172-14.617 8.473-20.172 2.996-3.125 5.812-4.969 8.68-5.66 2.07-.512 3.328-.485 5.296.129zm0 0"
                                     }, void 0, false, {
                                         fileName: "src/components/TechStack.js",
-                                        lineNumber: 517,
+                                        lineNumber: 502,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                         d: "M90.418 58.676c-.563.562-.356 2.816.36 4.25.359.742.742 1.332.87 1.332.102 0 .332-.59.512-1.309.64-2.66-.512-5.504-1.742-4.273zm0 0"
                                     }, void 0, false, {
                                         fileName: "src/components/TechStack.js",
-                                        lineNumber: 518,
+                                        lineNumber: 503,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/TechStack.js",
-                                lineNumber: 516,
+                                lineNumber: 501,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 515,
+                            lineNumber: 500,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 514,
+                        lineNumber: 499,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -32221,7 +32254,7 @@ const TechStack = ()=>{
                                     d: "M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 525,
+                                    lineNumber: 510,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -32229,7 +32262,7 @@ const TechStack = ()=>{
                                     d: "M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 529,
+                                    lineNumber: 514,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -32237,7 +32270,7 @@ const TechStack = ()=>{
                                     d: "M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 533,
+                                    lineNumber: 518,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -32245,7 +32278,7 @@ const TechStack = ()=>{
                                     d: "M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 537,
+                                    lineNumber: 522,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -32253,30 +32286,30 @@ const TechStack = ()=>{
                                     d: "M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0"
                                 }, void 0, false, {
                                     fileName: "src/components/TechStack.js",
-                                    lineNumber: 541,
+                                    lineNumber: 526,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TechStack.js",
-                            lineNumber: 524,
+                            lineNumber: 509,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TechStack.js",
-                        lineNumber: 523,
+                        lineNumber: 508,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/TechStack.js",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/TechStack.js",
-        lineNumber: 5,
+        lineNumber: 6,
         columnNumber: 5
     }, undefined);
 };
@@ -32290,7 +32323,10 @@ $RefreshReg$(_c, "TechStack");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../assets/styles/techStack.css":"iJmWb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iJmWb":[function() {},{}],"dC7Rw":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","../assets/styles/techStack.css":"iJmWb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../public/images/Mongoose.js.png":"2jlPa"}],"iJmWb":[function() {},{}],"2jlPa":[function(require,module,exports,__globalThis) {
+module.exports = require("51a511d806250a0c").getBundleURL('aXMci') + "Mongoose.js.3ce88b3b.png" + "?" + Date.now();
+
+},{"51a511d806250a0c":"lgJ39"}],"dC7Rw":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$335a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
