@@ -1,6 +1,7 @@
 import React from "react";
 import Typed from "typed.js";
 import myImgPath from "../../public/images/yash.jpg";
+import { resumeDriveLink } from "../constants/constants";
 
 const Home = () => {
   const el = React.useRef(null);
@@ -40,7 +41,7 @@ const Home = () => {
         </p>
       </div>
       <div className="resumeBtnCont">
-        <a href="https://drive.google.com/file/d/1rxAU-xfiuYrlE3tNy1FGgHwnWVHC6QUU/view?usp=sharing">
+        <a href={resumeDriveLink}>
           <button className="resumeBtn">Resume</button>
         </a>
       </div>

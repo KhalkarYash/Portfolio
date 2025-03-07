@@ -7,6 +7,9 @@ import todoProject from "../../public/todoProject.jpg";
 import bingeBrain from "../../public/bingeBrain.jpg";
 import passwordGenerator from "../../public/passwordGenerator.jpg";
 
+export const resumeDriveLink =
+  "https://drive.google.com/file/d/1Kw8qEzhK7yDdlvbOOj7rmwxQYkr8KbG1/view?usp=sharing";
+
 // Example of project object
 
 // {

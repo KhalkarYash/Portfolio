@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import logoImg from "../../public/logo.jpg";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,28 +24,22 @@ const Header = () => {
         zIndex: 1000,
       }}
     >
-      <header>
-        <div className="header">
-          <div className="nav-items">
-            <div className="navList">
-              <ul className="ulCont">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#projects">Projects</a>
-                </li>
-                <li>
-                  <a href="#aboutUs">About</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="connectButton">
-            <button className="connectBtn">
+      <header className="header">
+        <div className="navList">
+          <ul className="ulCont">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#aboutUs">About</a>
+            </li>
+            <li>
               <a href="#connectContID">Connect</a>
-            </button>
-          </div>
+            </li>
+          </ul>
         </div>
       </header>
     </motion.header>

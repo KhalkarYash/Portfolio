@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 .techStack {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    div{
+
+    div {
         margin: 5px;
         width: fit-content;
         height: fit-content;
@@ -14,7 +16,9 @@
         /* box-shadow: 0 0 10px var(--tertiary-color); */
         border-radius: 20px;
     }
-    svg{
+
+    svg,
+    img {
         width: 5vw;
     }
 }
@@ -22,11 +26,12 @@
 @media screen and (min-width:541px) and (max-width: 900px) {}
 
 @media screen and (max-width: 540px) {
-    .techStack{
-        div{
+    .techStack {
+        div {
             padding: 0;
         }
-        svg{
+
+        svg {
             width: 10vw;
             padding: 0;
         }
