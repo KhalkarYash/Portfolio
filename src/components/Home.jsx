@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "typed.js";
-import myImgPath from "../../public/images/yash.jpg";
+// import myImgPath from "../assets/yash.jpg";
 import { resumeDriveLink } from "../constants/constants";
 
 const Home = () => {
@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="imgContainer">
-        <img src={myImgPath} alt="Yash Khalkar" />
+        <img src="/images/yash.jpg" alt="Yash Khalkar" />
       </div>
       <div className="homeData">
         <p>

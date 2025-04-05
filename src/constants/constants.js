@@ -1,14 +1,15 @@
-import alarmClock from "../../public/alarmClock.jpg";
-import blogProject from "../../public/blogProject.jpg";
-import collegeMarkTracker from "../../public/collegeMarkTracker.jpg";
-import movieRecommendationProject from "../../public/movieRecommendationProject.jpg";
-import namasteFood from "../../public/namasteFood.jpg";
-import todoProject from "../../public/todoProject.jpg";
-import bingeBrain from "../../public/bingeBrain.jpg";
-import passwordGenerator from "../../public/passwordGenerator.jpg";
+import alarmClock from "../assets/alarmClock.jpg";
+import blogProject from "../assets/blogProject.jpg";
+import collegeMarkTracker from "../assets/collegeMarkTracker.jpg";
+import movieRecommendationProject from "../assets/movieRecommendationProject.jpg";
+import namasteFood from "../assets/namasteFood.jpg";
+import todoProject from "../assets/todoProject.jpg";
+import bingeBrain from "../assets/bingeBrain.jpg";
+import passwordGenerator from "../assets/passwordGenerator.jpg";
+import devLinkUp from "../assets/devLinkUp.jpg";
 
 export const resumeDriveLink =
-  "https://drive.google.com/file/d/1Kw8qEzhK7yDdlvbOOj7rmwxQYkr8KbG1/view?usp=sharing";
+  "https://1drv.ms/f/c/c4ef5729b36ead51/Eso0Nur2bClDs1i99koJ_lcBocyPOGCuRdH-W-Lb-rrlRQ";
 
 // Example of project object
 
@@ -22,6 +23,15 @@ export const resumeDriveLink =
 // }
 
 export const projects = [
+  {
+    image: devLinkUp,
+    name: "DevLinkUp",
+    description:
+      "A developer matchmaking platform, that helps devs connect, collaborate, and build projects together.",
+    githubLink: "https://github.com/KhalkarYash/dev-link-up-frontend",
+    techStack: ["MERN", "TailwindCSS", "Socket.io"],
+    liveLink: "https://devlinkup.vercel.app",
+  },
   {
     image: collegeMarkTracker,
     name: "College Mark Tracker",
