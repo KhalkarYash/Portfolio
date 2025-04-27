@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Typed from "typed.js";
 // import myImgPath from "../assets/yash.jpg";
 import { resumeDriveLink } from "../constants/constants";
 
 const Home = () => {
   const el = React.useRef(null);
+  const [imageLoading, setImageLoading] = useState(true);
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
@@ -27,8 +28,16 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="imgContainer">
-        <img src="/images/yash.jpg" alt="Yash Khalkar" />
+      {imageLoading && <div className="spinner"></div>}
+      <div
+        className="imgContainer"
+        style={{ display: imageLoading ? "none" : "block" }}
+      >
+        <img
+          src="/images/yash.jpg"
+          onLoad={() => setImageLoading(false)}
+          alt="Yash Khalkar"
+        />
       </div>
       <div className="homeData">
         <p>
