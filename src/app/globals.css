@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --background: #030014;
+  --foreground: #171717;
+  --text-primary: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Only show focus rings when using keyboard navigation */
+body:not(.keyboard-navigation) *:focus {
+  outline: none;
+}
+
+body.keyboard-navigation *:focus {
+  outline: 2px solid #4834d4;
+  outline-offset: 4px;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #ff3366, #ff6b6b, #4834d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 5s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-glow {
+  box-shadow: 0 0 100px 20px rgba(72, 52, 212, 0.15);
+}
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Keyboard navigation styles */
+[data-keyboard-nav] {
+  transition: outline-offset 0.2s ease;
+}
+
+[data-keyboard-nav]:focus {
+  outline-offset: 8px;
+}
