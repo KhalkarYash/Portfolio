@@ -38,12 +38,7 @@ const projects = [
     description: "Netflix and chill, but with a twist of AI.",
     image: "/bcd.jpg",
     tech: [
-      "ReactJS",
-      "Firebase",
-      "React Redux",
-      "Redux Toolkit",
-      "GeminiAI",
-      "TailwindCSS",
+"Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Streamlit"
     ],
     link: "https://bcd-project.streamlit.app",
     github: "https://github.com/KhalkarYash/bcd",
