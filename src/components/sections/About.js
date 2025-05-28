@@ -16,7 +16,7 @@ export default function About() {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: ["React", "Bootstrap", "Tailwind CSS", "DaisyUI"],
+      skills: ["React", "Bootstrap", "Tailwind CSS", "DaisyUI", "NextJS", "Redux Toolkit", "Zustand"],
     },
     {
       title: "Backend",
@@ -28,11 +28,14 @@ export default function About() {
         "RESTful APIs",
         "MySQL",
         "SQLite",
+        "Typegoose",
+        "Prisma",
+        "JWT",
       ],
     },
     {
       title: "Languages",
-      skills: ["C", "C++", "Java", "Python", "PHP"],
+      skills: ["C", "C++", "Java", "Python", "PHP", "TypeScript"],
     },
     {
       title: "Miscellaneous",
