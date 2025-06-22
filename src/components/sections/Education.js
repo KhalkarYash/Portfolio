@@ -1,62 +1,128 @@
-'use client'
-import { motion } from 'framer-motion'
-
-const educationData = [
-  {
-    period: "2023 - 2026",
-    degree: "Bachelor of Engineering in Computer Science",
-    institution: "Savitribai Phule Pune University",
-    // description: "Core focus on Computer Science fundamentals, Data Structures, Algorithms, and Software Engineering"
-  },
-  {
-    period: "2020 - 2023",
-    degree: "Diploma in Computer Technology",
-    institution: "Government Polytechnic, Nashik",
-    // description: "Specialized in Science with Computer Science"
-  }
-]
+"use client";
+import { motion } from "framer-motion";
+import React from "react";
+import { Timeline } from "@/components/ui/timeline";
 
 export default function Education() {
-  return (
-    <section id="education" className="min-h-screen flex items-center justify-center py-20 relative">
-      <div className="container mx-auto px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent"
-        >
-          Education
-        </motion.h2>
-        
-        <div className="max-w-3xl mx-auto">
-          {educationData.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="relative pl-8 pb-12 last:pb-0"
-            >
-              {/* Timeline line */}
-              <div className="absolute left-0 top-0 h-full w-0.5 bg-gradient-to-b from-purple-500 to-blue-500"></div>
-              
-              {/* Timeline dot */}
-              <div className="absolute left-[-4px] top-2 w-3 h-3 rounded-full bg-gradient-to-r from-purple-500 to-blue-500"></div>
-              
-              {/* Content */}
-              <div className="bg-dark-secondary/30 backdrop-blur-sm rounded-lg p-6 hover:bg-dark-secondary/40 transition-all duration-300">
-                <span className="text-sm text-purple-400">{item.period}</span>
-                <h3 className="text-xl font-bold mt-2 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
-                  {item.degree}
-                </h3>
-                <p className="text-lg text-gray-300 mt-1">{item.institution}</p>
-                {/* <p className="text-gray-400 mt-2">{item.description}</p> */}
-              </div>
-            </motion.div>
-          ))}
+  const data = [
+    {
+      title: "2023",
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            <div className="flex gap-4 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-graduation-cap-icon lucide-graduation-cap"
+              >
+                <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+                <path d="M22 10v6" />
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+              </svg>
+              Diploma in Computer Technology
+            </div>
+          </p>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            <div className="flex gap-4 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-university-icon lucide-university"
+              >
+                <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+                <path d="M18 12h.01" />
+                <path d="M18 16h.01" />
+                <path d="M22 7a1 1 0 0 0-1-1h-2a2 2 0 0 1-1.143-.359L13.143 2.36a2 2 0 0 0-2.286-.001L6.143 5.64A2 2 0 0 1 5 6H3a1 1 0 0 0-1 1v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2z" />
+                <path d="M6 12h.01" />
+                <path d="M6 16h.01" />
+                <circle cx="12" cy="10" r="2" />
+              </svg>
+              Government Polytechnic, Nashik
+            </div>
+          </p>
         </div>
-      </div>
-    </section>
-  )
+      ),
+    },
+    {
+      title: "2026",
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            <div className="flex gap-4 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-graduation-cap-icon lucide-graduation-cap"
+              >
+                <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+                <path d="M22 10v6" />
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+              </svg>
+              Bachelor of Engineering in Computer Science
+            </div>
+          </p>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            <div className="flex gap-4 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                class="lucide lucide-university-icon lucide-university"
+              >
+                <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+                <path d="M18 12h.01" />
+                <path d="M18 16h.01" />
+                <path d="M22 7a1 1 0 0 0-1-1h-2a2 2 0 0 1-1.143-.359L13.143 2.36a2 2 0 0 0-2.286-.001L6.143 5.64A2 2 0 0 1 5 6H3a1 1 0 0 0-1 1v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2z" />
+                <path d="M6 12h.01" />
+                <path d="M6 16h.01" />
+                <circle cx="12" cy="10" r="2" />
+              </svg>
+              Savitribai Phule Pune University
+            </div>
+          </p>
+        </div>
+      ),
+    },
+  ];
+  return (
+    <div className="relative w-full overflow-clip">
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent"
+      >
+        Education
+      </motion.h2>
+      <Timeline data={data} />
+    </div>
+  );
 }

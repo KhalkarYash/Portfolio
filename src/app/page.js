@@ -27,6 +27,7 @@ const ParticleBackground = dynamic(
 
 const About = dynamic(() => import("@/components/sections/About"));
 const Education = dynamic(() => import("@/components/sections/Education"));
+const Experience = dynamic(() => import("@/components/sections/Experience"));
 const Projects = dynamic(() => import("@/components/sections/Projects"));
 const Contact = dynamic(() => import("@/components/sections/Contact"));
 
@@ -34,7 +35,14 @@ export default function Home() {
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
   const scrollTo = useScrollTo();
-  const sections = ["home", "about", "projects", "contact"];
+  const sections = [
+    "home",
+    "about",
+    "education",
+    "experience",
+    "projects",
+    "contact",
+  ];
 
   return (
     <main className="relative">
@@ -134,10 +142,21 @@ export default function Home() {
             </motion.div>
           </section>
 
-          <About />
-          <Education />
-          <Projects />
-          <Contact />
+          <section id="about">
+            <About />
+          </section>
+          <section id="education">
+            <Education />
+          </section>
+          <section id="experience">
+            <Experience />
+          </section>
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
         </PageTransition>
       </BlurOnLoad>
       <NavigationDots sections={sections} />

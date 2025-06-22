@@ -17,7 +17,7 @@ export { metadata }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth dark">
       <body className="bg-dark text-white font-['Inter'] antialiased overflow-x-hidden">
         <ClientLayout>
           <div className="relative z-0">
