@@ -1,0 +1,82 @@
+export const projects = [
+  {
+    title: "DevLinkUp",
+    description:
+      "A developer matchmaking platform, that helps devs connect, collaborate, and build projects together.",
+    image: "/devLinkUp.jpg",
+    tech: ["MERN", "AWS", "Razorpay", "Socket.IO", "Tailwind CSS", "DaisyUI"],
+    link: "https://devlinkup.vercel.app",
+    github: "https://github.com/KhalkarYash/dev-link-up-frontend",
+  },
+  {
+    title: "Medium - (Hono)",
+    description: "Minimalistic medium clone with Hono Backend.",
+    image: "/mediumHono.jpg",
+    tech: [
+      "ReactJS",
+      "Hono",
+      "Cloudflare Workers",
+      "TailwindCSS",
+    ],
+    link: "https://medium-hono-lilac.vercel.com",
+    github: "https://github.com/KhalkarYash/Medium-Hono",
+  },
+  {
+    title: "Paysa",
+    description: "Expense Tracker Mobile App.",
+    image: "/paysaRNHono.jpg",
+    tech: [
+      "React Native",
+      "Hono",
+      "Cloudflare Workers",
+      "Expo",
+      "Redis",
+      "MySQL",
+    ],
+    // link: "",
+    github: "https://github.com/KhalkarYash/expense-tracker-rn-hono",
+  },
+  {
+    title: "BingeBrain",
+    description: "Netflix and chill, but with a twist of AI.",
+    image: "/bingeBrain.jpg",
+    tech: [
+      "ReactJS",
+      "Firebase",
+      "React Redux",
+      "Redux Toolkit",
+      "GeminiAI",
+      "TailwindCSS",
+    ],
+    link: "https://khalkaryash.github.io/BingeBrain-React",
+    github: "https://github.com/KhalkarYash/BingeBrain-React",
+  },
+  // https://github.com/KhalkarYash/skillzy-frontend-mern
+  {
+    title: "Breast Cancer Detection",
+    description: "Netflix and chill, but with a twist of AI.",
+    image: "/bcd.jpg",
+    tech: [
+"Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Streamlit"
+    ],
+    link: "https://bcd-project.streamlit.app",
+    github: "https://github.com/KhalkarYash/bcd",
+  },
+  {
+    title: "College Mark Tracker",
+    description:
+      "A web application designed to help students track their academic performance and manage their grades effectively.",
+    image: "/collegeMarkTracker.jpg",
+    tech: ["Django", "Bootstrap", "MySQL"],
+    link: "https://college-mark-tracker.onrender.com",
+    github: "https://github.com/KhalkarYash/college-mark-tracker",
+  },
+  {
+    title: "Skillzy",
+    description: "A basic MERN course website with admin and user access.",
+    image: "/skillzy.jpg",
+    tech: ["MERN", "JWT", "Redux", "Redux Persist", "TailwindCSS"],
+    link: "https://skillzy-frontend-mern.vercel.app",
+    github: "https://github.com/KhalkarYash/skillzy-frontend-mern",
+  },
+];
