@@ -9,17 +9,12 @@ export const projects = [
     github: "https://github.com/KhalkarYash/dev-link-up-frontend",
   },
   {
-    title: "Medium - (Hono)",
-    description: "Minimalistic medium clone with Hono Backend.",
-    image: "/mediumHono.jpg",
-    tech: [
-      "ReactJS",
-      "Hono",
-      "Cloudflare Workers",
-      "TailwindCSS",
-    ],
-    link: "https://medium-hono-lilac.vercel.com",
-    github: "https://github.com/KhalkarYash/Medium-Hono",
+    title: "Personal Blog Application",
+    description: "A personal blogging platform using NextJS for frontend and Headless Wordpress for backend.",
+    image: "/blogsApp.png",
+    tech: ["NextJS", "GraphQL", "Docker", "Wordpress", "MySQL", "TailwindCSS"],
+    link: "https://blogs-yashkhalkar.vercel.app",
+    github: "https://github.com/KhalkarYash/wp-blog-next",
   },
   {
     title: "Paysa",
@@ -35,6 +30,14 @@ export const projects = [
     ],
     // link: "",
     github: "https://github.com/KhalkarYash/expense-tracker-rn-hono",
+  },
+  {
+    title: "Medium - (Hono)",
+    description: "Minimalistic medium clone with Hono Backend.",
+    image: "/mediumHono.jpg",
+    tech: ["ReactJS", "Hono", "Cloudflare Workers", "TailwindCSS"],
+    link: "https://medium-hono-lilac.vercel.com",
+    github: "https://github.com/KhalkarYash/Medium-Hono",
   },
   {
     title: "BingeBrain",
@@ -57,7 +60,13 @@ export const projects = [
     description: "Netflix and chill, but with a twist of AI.",
     image: "/bcd.jpg",
     tech: [
-"Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Streamlit"
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Streamlit",
     ],
     link: "https://bcd-project.streamlit.app",
     github: "https://github.com/KhalkarYash/bcd",

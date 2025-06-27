@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useScrollTo } from "@/hooks/useScrollTo";
 import NavigationDots from "@/components/ui/NavigationDots";
 import PageTransition from "@/components/ui/PageTransition";
-import LoadingScreen from "@/components/ui/LoadingScreen";
+// import LoadingScreen from "@/components/ui/LoadingScreen";
 import BlurOnLoad from "@/components/BlurOnPage";
 
 // Dynamically import heavy components
@@ -46,10 +46,9 @@ export default function Home() {
 
   return (
     <main className="relative">
-      <LoadingScreen />
-      <ParticleBackground />
-
+      {/* <LoadingScreen /> */}
       <BlurOnLoad>
+        <ParticleBackground />
         <PageTransition>
           <section
             id="home"

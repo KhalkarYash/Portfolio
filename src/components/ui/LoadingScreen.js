@@ -7,7 +7,7 @@ export default function LoadingScreen() {
 
   useEffect(() => {
     // Ensure minimum loading time of 2 seconds for smooth transition
-    const timer = setTimeout(() => setLoading(false), 2000)
+    const timer = setTimeout(() => setLoading(false), 1000)
     return () => clearTimeout(timer)
   }, [])
 
