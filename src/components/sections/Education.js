@@ -9,7 +9,7 @@ export default function Education() {
       title: "2023",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          <div className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
             <div className="flex gap-4 items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -18,10 +18,10 @@ export default function Education() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-graduation-cap-icon lucide-graduation-cap"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-graduation-cap-icon lucide-graduation-cap"
               >
                 <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
                 <path d="M22 10v6" />
@@ -29,8 +29,8 @@ export default function Education() {
               </svg>
               Diploma in Computer Technology
             </div>
-          </p>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          </div>
+          <div className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
             <div className="flex gap-4 items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,10 +39,10 @@ export default function Education() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-university-icon lucide-university"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-university-icon lucide-university"
               >
                 <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
                 <path d="M18 12h.01" />
@@ -54,7 +54,7 @@ export default function Education() {
               </svg>
               Government Polytechnic, Nashik
             </div>
-          </p>
+          </div>
         </div>
       ),
     },
@@ -62,7 +62,7 @@ export default function Education() {
       title: "2026",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          <div className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
             <div className="flex gap-4 items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,8 +82,8 @@ export default function Education() {
               </svg>
               Bachelor of Engineering in Computer Science
             </div>
-          </p>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          </div>
+          <div className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
             <div className="flex gap-4 items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ export default function Education() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                class="lucide lucide-university-icon lucide-university"
+                className="lucide lucide-university-icon lucide-university"
               >
                 <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
                 <path d="M18 12h.01" />
@@ -107,7 +107,7 @@ export default function Education() {
               </svg>
               Savitribai Phule Pune University
             </div>
-          </p>
+          </div>
         </div>
       ),
     },

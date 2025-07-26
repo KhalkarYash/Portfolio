@@ -1,15 +1,15 @@
-'use client'
-import { motion } from 'framer-motion'
-import { useState, useEffect } from 'react'
+"use client";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export default function LoadingScreen() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Ensure minimum loading time of 2 seconds for smooth transition
-    const timer = setTimeout(() => setLoading(false), 1000)
-    return () => clearTimeout(timer)
-  }, [])
+    const timer = setTimeout(() => setLoading(false), 200);
+    return () => clearTimeout(timer);
+  }, []);
 
   const containerVariants = {
     initial: { opacity: 1 },
@@ -17,28 +17,28 @@ export default function LoadingScreen() {
       opacity: 0,
       transition: {
         when: "afterChildren",
-      }
-    }
-  }
+      },
+    },
+  };
 
   const iconVariants = {
     initial: {
       scale: 0,
-      opacity: 0
+      opacity: 0,
     },
     animate: {
       scale: [0, 1.2, 1],
       opacity: 1,
       transition: {
         duration: 1,
-        ease: "easeOut"
-      }
+        ease: "easeOut",
+      },
     },
     exit: {
       scale: 0,
-      opacity: 0
-    }
-  }
+      opacity: 0,
+    },
+  };
 
   const progressVariants = {
     initial: { width: "0%" },
@@ -46,12 +46,12 @@ export default function LoadingScreen() {
       width: "100%",
       transition: {
         duration: 1.5,
-        ease: "easeInOut"
-      }
-    }
-  }
+        ease: "easeInOut",
+      },
+    },
+  };
 
-  if (!loading) return null
+  if (!loading) return null;
 
   return (
     <motion.div
@@ -75,12 +75,12 @@ export default function LoadingScreen() {
         </div>
         <motion.div
           animate={{
-            rotate: 360
+            rotate: 360,
           }}
           transition={{
             duration: 2,
             ease: "linear",
-            repeat: Infinity
+            repeat: Infinity,
           }}
           className="absolute inset-0 flex items-center justify-center"
         >
@@ -104,5 +104,5 @@ export default function LoadingScreen() {
         />
       </motion.div>
     </motion.div>
-  )
+  );
 }

@@ -16,13 +16,26 @@ export default function About() {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: ["React", "Bootstrap", "Tailwind CSS", "DaisyUI", "NextJS", "Redux Toolkit", "Zustand"],
+      skills: [
+        "React",
+        "Bootstrap",
+        "Tailwind CSS",
+        "DaisyUI",
+        "Next.js",
+        "Redux Toolkit",
+        "Redux Saga",
+        "Ant Design",
+        "Zustand",
+        "Shadcn UI",
+        "Aceternity UI",
+      ],
     },
     {
       title: "Backend",
       skills: [
         "Node.js",
         "Express",
+        "Hono",
         "MongoDB",
         "Mongoose",
         "RESTful APIs",
@@ -35,11 +48,20 @@ export default function About() {
     },
     {
       title: "Languages",
-      skills: ["C", "C++", "Java", "Python", "PHP", "TypeScript"],
+      skills: ["C", "C++", "Java", "Python", "PHP", "JavaScript", "TypeScript"],
     },
     {
       title: "Miscellaneous",
-      skills: ["Git", "Github", "Firebase"],
+      skills: [
+        "Git",
+        "GitHub",
+        "Firebase",
+        "AWS",
+        "Vercel",
+        "Render",
+        "Clerk",
+        "Supabase",
+      ],
     },
   ];
 

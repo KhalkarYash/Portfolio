@@ -51,6 +51,8 @@ export default function Projects() {
                   <Image
                     src={project.image}
                     alt={project.title}
+                    width={100}
+                    height={100}
                     layout="responsive"
                     className="object-cover transform transition-transform duration-300 hover:scale-110"
                   />
