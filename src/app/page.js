@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useScrollTo } from "@/hooks/useScrollTo";
-import NavigationDots from "@/components/ui/NavigationDots";
+// import NavigationDots from "@/components/ui/NavigationDots";
 import PageTransition from "@/components/ui/PageTransition";
 
 // Dynamically import heavy components
@@ -33,14 +33,14 @@ export default function Home() {
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
   const scrollTo = useScrollTo();
-  const sections = [
-    "home",
-    "about",
-    "education",
-    "experience",
-    "projects",
-    "contact",
-  ];
+  // const sections = [
+  //   "home",
+  //   "about",
+  //   "education",
+  //   "experience",
+  //   "projects",
+  //   "contact",
+  // ];
 
   return (
     <main className="relative">
@@ -155,7 +155,7 @@ export default function Home() {
           <Contact />
         </section>
       </PageTransition>
-      <NavigationDots sections={sections} />
+      {/* <NavigationDots sections={sections} /> */}
     </main>
   );
 }
