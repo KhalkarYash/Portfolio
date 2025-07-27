@@ -3,7 +3,7 @@ export const projects = [
     title: "DevLinkUp",
     description:
       "A developer matchmaking platform, that helps devs connect, collaborate, and build projects together.",
-    image: "/devLinkUp.jpg",
+    image: "/devLinkUp.png",
     tech: ["MERN", "AWS", "Razorpay", "Socket.IO", "Tailwind CSS", "DaisyUI"],
     link: "https://devlinkup.vercel.app",
     github: "https://github.com/KhalkarYash/dev-link-up-frontend",
