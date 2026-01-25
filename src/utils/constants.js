@@ -75,6 +75,13 @@ export const projects = [
 ];
 
 export const workProjects = [
+  // {
+  //   title: "Pheraas",
+  //   description: "Contributing to the development of Pheraas backend.",
+  //   image: "/Pheraas Postman.png",
+  //   tech: ["Express JS", "Postman", "Bruno", "AWS S3", "Salesforce Sync"],
+  //   link: "https://pheraas.com",
+  // },
   {
     title: "Zenzop Landing Page",
     description:

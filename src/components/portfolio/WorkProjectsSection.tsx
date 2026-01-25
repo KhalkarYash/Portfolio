@@ -5,7 +5,7 @@ import { workProjects } from "../../utils/constants";
 export function WorkProjectsSection() {
   return (
     <section id="projects" className="py-12">
-      <SectionHeader number="03" title="Work Projects" />
+      <SectionHeader number="03.1" title="Work Projects" />
 
       <div className="grid grid-cols-1 gap-6">
         {workProjects.map((project, index) => (
