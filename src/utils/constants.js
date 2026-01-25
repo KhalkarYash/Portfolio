@@ -10,7 +10,8 @@ export const projects = [
   },
   {
     title: "Personal Blog Application",
-    description: "A personal blogging platform using NextJS for frontend and Headless Wordpress for backend.",
+    description:
+      "A personal blogging platform using NextJS for frontend and Headless Wordpress for backend.",
     image: "/blogsApp.png",
     tech: ["NextJS", "GraphQL", "Docker", "Wordpress", "MySQL", "TailwindCSS"],
     link: "https://blogs-yashkhalkar.vercel.app",
@@ -31,14 +32,14 @@ export const projects = [
     // link: "",
     github: "https://github.com/KhalkarYash/expense-tracker-rn-hono",
   },
-  {
-    title: "Medium - (Hono)",
-    description: "Minimalistic medium clone with Hono Backend.",
-    image: "/mediumHono.jpg",
-    tech: ["ReactJS", "Hono", "Cloudflare Workers", "TailwindCSS"],
-    link: "https://medium-hono-lilac.vercel.com",
-    github: "https://github.com/KhalkarYash/Medium-Hono",
-  },
+  // {
+  //   title: "Medium - (Hono)",
+  //   description: "Minimalistic medium clone with Hono Backend.",
+  //   image: "/mediumHono.jpg",
+  //   tech: ["ReactJS", "Hono", "Cloudflare Workers", "TailwindCSS"],
+  //   link: "https://medium-hono-lilac.vercel.com",
+  //   github: "https://github.com/KhalkarYash/Medium-Hono",
+  // },
   {
     title: "BingeBrain",
     description: "Netflix and chill, but with a twist of AI.",
@@ -57,7 +58,8 @@ export const projects = [
   // https://github.com/KhalkarYash/skillzy-frontend-mern
   {
     title: "Breast Cancer Detection",
-    description: "Netflix and chill, but with a twist of AI.",
+    description:
+      "Breast Cancer Detection using ML and AI. Internship Project at Infosys Springboard.",
     image: "/bcd.jpg",
     tech: [
       "Python",
@@ -80,12 +82,12 @@ export const projects = [
     link: "https://college-mark-tracker.onrender.com",
     github: "https://github.com/KhalkarYash/college-mark-tracker",
   },
-  {
-    title: "Skillzy",
-    description: "A basic MERN course website with admin and user access.",
-    image: "/skillzy.jpg",
-    tech: ["MERN", "JWT", "Redux", "Redux Persist", "TailwindCSS"],
-    link: "https://skillzy-frontend-mern.vercel.app",
-    github: "https://github.com/KhalkarYash/skillzy-frontend-mern",
-  },
+  // {
+  //   title: "Skillzy",
+  //   description: "A basic MERN course website with admin and user access.",
+  //   image: "/skillzy.jpg",
+  //   tech: ["MERN", "JWT", "Redux", "Redux Persist", "TailwindCSS"],
+  //   link: "https://skillzy-frontend-mern.vercel.app",
+  //   github: "https://github.com/KhalkarYash/skillzy-frontend-mern",
+  // },
 ];
