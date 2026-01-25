@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
@@ -51,12 +51,23 @@
     --glass-border: 220 15% 85%;
     --glass-blur: 20px;
 
-    --gradient-primary: linear-gradient(135deg, hsl(174 72% 46%), hsl(190 80% 50%));
-    --gradient-glow: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), hsl(174 72% 46% / 0.1), transparent 40%);
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(174 72% 46%),
+      hsl(190 80% 50%)
+    );
+    --gradient-glow: radial-gradient(
+      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      hsl(174 72% 46% / 0.1),
+      transparent 40%
+    );
 
-    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
-    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
-    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-sm:
+      0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md:
+      0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg:
+      0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
     --shadow-glow: 0 0 40px hsl(174 72% 46% / 0.2);
     --chart-1: 27 95% 60%;
     --chart-2: 43 96% 56%;
@@ -71,13 +82,21 @@
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 0 0% 83%;
     --sidebar-ring: 20 90% 48%;
-    --font-sans: 'Roboto', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-    --font-serif: 'Libre Caslon Text', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
-    --font-mono: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --font-sans:
+      "Roboto", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    --font-serif:
+      "Libre Caslon Text", ui-serif, Georgia, Cambria, "Times New Roman", Times,
+      serif;
+    --font-mono:
+      "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
-    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
-    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
+    --shadow:
+      0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-xl:
+      0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
     --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
     --tracking-normal: 0em;
     --spacing: 0.25rem;
@@ -119,12 +138,23 @@
     --glass-border: 220 15% 20%;
     --glass-blur: 20px;
 
-    --gradient-primary: linear-gradient(135deg, hsl(174 72% 50%), hsl(190 80% 55%));
-    --gradient-glow: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), hsl(174 72% 50% / 0.15), transparent 40%);
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(174 72% 50%),
+      hsl(190 80% 55%)
+    );
+    --gradient-glow: radial-gradient(
+      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      hsl(174 72% 50% / 0.15),
+      transparent 40%
+    );
 
-    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
-    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
-    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-sm:
+      0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md:
+      0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg:
+      0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
     --shadow-glow: 0 0 60px hsl(174 72% 50% / 0.3);
     --chart-1: 30 97% 72%;
     --chart-2: 45 96% 64%;
@@ -142,8 +172,10 @@
     --radius: 0rem;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
-    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
-    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
+    --shadow:
+      0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-xl:
+      0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
     --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
   }
 }
@@ -159,7 +191,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
   }
 
   ::selection {
@@ -189,14 +221,14 @@
     backdrop-filter: blur(24px) saturate(180%);
     -webkit-backdrop-filter: blur(24px) saturate(180%);
     border: 1px solid hsl(var(--foreground) / 0.08);
-    box-shadow: 
+    box-shadow:
       inset 0 1px 1px hsl(var(--foreground) / 0.05),
       inset 0 -1px 1px hsl(var(--background) / 0.1),
       0 8px 32px hsl(var(--background) / 0.3);
   }
 
   .liquid-glass::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     border-radius: inherit;
@@ -208,11 +240,11 @@
       transparent 60%,
       hsl(var(--foreground) / 0.08) 100%
     );
-    -webkit-mask: 
-      linear-gradient(#fff 0 0) content-box, 
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
-    mask: 
-      linear-gradient(#fff 0 0) content-box, 
+    mask:
+      linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -230,7 +262,7 @@
     backdrop-filter: blur(32px) saturate(200%);
     -webkit-backdrop-filter: blur(32px) saturate(200%);
     border-bottom: 1px solid hsl(var(--foreground) / 0.06);
-    box-shadow: 
+    box-shadow:
       inset 0 -1px 0 hsl(var(--foreground) / 0.03),
       0 4px 24px hsl(var(--background) / 0.4);
   }
@@ -247,7 +279,7 @@
     backdrop-filter: blur(40px) saturate(200%);
     -webkit-backdrop-filter: blur(40px) saturate(200%);
     border: 1px solid hsl(var(--foreground) / 0.1);
-    box-shadow: 
+    box-shadow:
       inset 0 1px 2px hsl(var(--foreground) / 0.08),
       inset 0 -1px 1px hsl(var(--background) / 0.2),
       0 8px 40px hsl(0 0% 0% / 0.25),
@@ -255,7 +287,7 @@
   }
 
   .liquid-glass-dock::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     border-radius: inherit;
@@ -268,11 +300,11 @@
       hsl(var(--foreground) / 0.05) 70%,
       hsl(var(--foreground) / 0.15) 100%
     );
-    -webkit-mask: 
-      linear-gradient(#fff 0 0) content-box, 
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
-    mask: 
-      linear-gradient(#fff 0 0) content-box, 
+    mask:
+      linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -289,7 +321,7 @@
   }
 
   .font-mono {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
   }
 
   .text-balance {
@@ -313,6 +345,24 @@
     }
   }
 
+  /* Page load blur-to-focus effect */
+  .page-load {
+    animation: blur-focus 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes blur-focus {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+      transform: scale(0.98);
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
   .hover-lift {
     @apply transition-all duration-300;
   }
@@ -327,7 +377,7 @@
   }
 
   .link-underline::after {
-    content: '';
+    content: "";
     @apply absolute bottom-0 left-0 w-full h-px bg-primary scale-x-0 origin-right transition-transform duration-300;
   }
 
