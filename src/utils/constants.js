@@ -55,24 +55,6 @@ export const projects = [
     link: "https://khalkaryash.github.io/BingeBrain-React",
     github: "https://github.com/KhalkarYash/BingeBrain-React",
   },
-  // https://github.com/KhalkarYash/skillzy-frontend-mern
-  {
-    title: "Breast Cancer Detection",
-    description:
-      "Breast Cancer Detection using ML and AI. Internship Project at Infosys Springboard.",
-    image: "/bcd.jpg",
-    tech: [
-      "Python",
-      "Scikit-learn",
-      "Pandas",
-      "NumPy",
-      "Matplotlib",
-      "Seaborn",
-      "Streamlit",
-    ],
-    link: "https://bcd-project.streamlit.app",
-    github: "https://github.com/KhalkarYash/bcd",
-  },
   {
     title: "College Mark Tracker",
     description:
@@ -90,4 +72,48 @@ export const projects = [
   //   link: "https://skillzy-frontend-mern.vercel.app",
   //   github: "https://github.com/KhalkarYash/skillzy-frontend-mern",
   // },
+];
+
+export const workProjects = [
+  {
+    title: "Zenzop Landing Page",
+    description:
+      "A landing page for Zenzop, a startup that aims to revolutionize the quick-commerce industry. Internship Project at Zenzop.",
+    image: "/zenzop-landing.png",
+    tech: ["ReactJS", "NextJS", "TailwindCSS", "Redux Toolkit", "Redux Thunks"],
+    link: "https://zenzop.com",
+  },
+  {
+    title: "Zenzop Admin Panel",
+    description:
+      "An admin panel for Zenzop, a startup that aims to revolutionize the quick-commerce industry. Internship Project at Zenzop.",
+    image: "/zenzop-admin-panel.png",
+    tech: [
+      "ReactJS",
+      "NextJS",
+      "TypeScript",
+      "TailwindCSS",
+      "Redux Toolkit",
+      "Redux Saga",
+      "Ant Design",
+    ],
+    link: "https://zenzop.com",
+  },
+  {
+    title: "Breast Cancer Detection",
+    description:
+      "Breast Cancer Detection using ML and AI. Internship Project at Infosys Springboard.",
+    image: "/bcd.jpg",
+    tech: [
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Streamlit",
+    ],
+    link: "https://bcd-project.streamlit.app",
+    github: "https://github.com/KhalkarYash/bcd",
+  },
 ];
