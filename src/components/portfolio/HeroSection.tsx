@@ -33,12 +33,8 @@ export function HeroSection() {
       <div className="md:flex md:items-center md:justify-between">
         <motion.div
           variants={itemVariants}
-          className="mt-8 w-full md:mt-0 flex items-center flex-col gap-4 flex-wrap"
+          className="mt-8 w-full md:mt-0 flex items-end flex-row gap-4 justify-between flex-wrap"
         >
-          <Avatar className="h-36 w-36">
-            <img className="glow" src="/yash-cropped.png" alt="Yash Khalkar" />
-            <AvatarFallback>YK</AvatarFallback>
-          </Avatar>
           <div className="mt-4 text-center">
             <motion.h1
               variants={itemVariants}
@@ -47,6 +43,10 @@ export function HeroSection() {
               Yash Khalkar
             </motion.h1>
           </div>
+          <Avatar className="h-56 w-56">
+            <img className="glow" src="/yash-cropped.png" alt="Yash Khalkar" />
+            <AvatarFallback>YK</AvatarFallback>
+          </Avatar>
         </motion.div>
       </div>
 
