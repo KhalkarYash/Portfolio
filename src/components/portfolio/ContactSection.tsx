@@ -1,32 +1,29 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send } from "lucide-react";
+import { Mail, Linkedin, Github } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 
+const contactLinks = [
+  {
+    icon: Mail,
+    href: "mailto:yashmk2004@gmail.com",
+    label: "Email",
+    description: "Best for direct opportunities and collaboration.",
+  },
+  {
+    icon: Linkedin,
+    href: "https://in.linkedin.com/in/yashkhalkar",
+    label: "LinkedIn",
+    description: "Best for professional networking and role discussions.",
+  },
+  {
+    icon: Github,
+    href: "https://github.com/khalkaryash",
+    label: "GitHub",
+    description: "Browse projects, code, and open-source work.",
+  },
+];
+
 export function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    // Add your form submission logic here
-    console.log("Form submitted:", formData);
-    setTimeout(() => setIsSubmitting(false), 1000);
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
 
   return (
     <section id="contact" className="py-12">
@@ -39,73 +36,39 @@ export function ContactSection() {
         transition={{ duration: 0.6 }}
         className="liquid-glass p-6 md:p-8 rounded-2xl"
       >
-        <form onSubmit={handleSubmit} className="space-y-5">
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2">
-              Name
-            </label>
-            <input
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              className="w-full bg-background/50 border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all px-4 py-3 outline-none"
-              placeholder="Enter your name"
-              type="text"
-            />
-          </div>
+        <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+          Best way to reach me is via LinkedIn or email. I usually respond
+          within 24 hours.
+        </p>
 
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2">
-              Email
-            </label>
-            <input
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="w-full bg-background/50 border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all px-4 py-3 outline-none"
-              placeholder="hello@company.com"
-              type="email"
-            />
-          </div>
-
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2">
-              Message
-            </label>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              className="w-full bg-background/50 border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all px-4 py-3 outline-none resize-none"
-              placeholder="How can I help you?"
-              rows={4}
-            />
-          </div>
-
-          <motion.button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full bg-primary text-primary-foreground font-bold py-4 rounded-xl hover-lift glow flex items-center justify-center gap-2 disabled:opacity-70"
-            whileHover={{ scale: 1.01 }}
-            whileTap={{ scale: 0.99 }}
-          >
-            {isSubmitting ? (
-              <motion.div
-                className="w-5 h-5 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-              />
-            ) : (
-              <>
-                Send Message
-                <Send className="w-4 h-4" />
-              </>
-            )}
-          </motion.button>
-        </form>
+        <div className="grid gap-3 sm:grid-cols-3">
+          {contactLinks.map((link, index) => (
+            <motion.a
+              key={link.label}
+              href={link.href}
+              target={link.href.startsWith("mailto") ? undefined : "_blank"}
+              rel={
+                link.href.startsWith("mailto")
+                  ? undefined
+                  : "noopener noreferrer"
+              }
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.35, delay: index * 0.08 }}
+              whileHover={{ y: -2 }}
+              className="rounded-xl border border-border bg-background/40 p-4 hover:bg-primary/5 transition-colors"
+            >
+              <div className="flex items-center gap-2 text-foreground font-semibold">
+                <link.icon className="w-4 h-4 text-primary" />
+                {link.label}
+              </div>
+              <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
+                {link.description}
+              </p>
+            </motion.a>
+          ))}
+        </div>
       </motion.div>
     </section>
   );

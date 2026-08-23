@@ -1,6 +1,7 @@
 import { motion, Variants } from "framer-motion";
 import { ArrowDown, FileText } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { resumeLink } from "@/utils/constants";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -79,7 +80,7 @@ export function HeroSection() {
           <ArrowDown className="w-4 h-4" />
         </motion.a>
         <motion.a
-          href="https://1drv.ms/f/c/c4ef5729b36ead51/Eso0Nur2bClDs1i99koJ_lcBocyPOGCuRdH-W-Lb-rrlRQ"
+          href={resumeLink}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 glass font-semibold py-3 px-6 rounded-xl hover:bg-primary/10 transition-colors"
