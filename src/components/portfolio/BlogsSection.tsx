@@ -1,61 +1,48 @@
 import { SectionHeader } from "./SectionHeader";
 import { BlogCard } from "./BlogCard";
-
-const blogs = [
-  {
-    title: "Watching a System Instead of Fixing It",
-    description:
-      "Debugging used to feel like fixing. Something breaks, you find the line, you change the code, you move on. That...",
-    image:
-      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*816a8z1LqEQe3__ACoRaSg.png",
-    link: "https://medium.com/@yashmk2004/watching-a-system-instead-of-fixing-it-c77c872cada0",
-    date: "Jan 25, 2026",
-    readTime: "2 min read",
-  },
-  {
-    title: "What a 130-Page Requirements Document Revealed About Engineering",
-    description:
-      "I used to think engineering work began when the editor opened. That once the prob...",
-    image:
-      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*urzUEKMbdEL8K0CdvBLtpg.png",
-    link: "https://medium.com/@yashmk2004/what-a-130-page-requirements-document-revealed-about-engineering-e839c5590716",
-    date: "Jan 19 ,2026",
-    readTime: "2 min read",
-  },
-  {
-    title: "Building systems vs understanding them",
-    description:
-      "I used to think I understood backend systems because I could build them. I could set up an API, conn...",
-    image:
-      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*07HNzgOY00B-NcgS8J2OCw.png",
-    link: "https://medium.com/@yashmk2004/building-systems-vs-understanding-them-5dafe17868ce",
-    date: "Jan 7, 2026",
-    readTime: "2 min read",
-  },
-];
+import { type Blog } from "@/utils/types";
+import { fetchBlogs } from "../../utils/api";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 export function BlogsSection() {
+  const [blogs, setBlogs] = useState<Blog[]>([]);
+
+  useEffect(() => {
+    fetchBlogs()
+      .then(setBlogs)
+      .catch((error) => console.error("Error fetching blogs:", error));
+  }, []);
+
   return (
     <section id="blogs" className="py-12">
       <SectionHeader number="04" title="Latest Blogs" />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        {blogs.map((blog, index) => (
+        {blogs.slice(0, 2).map((blog, index) => (
           <BlogCard key={blog.title} blog={blog} index={index} />
         ))}
       </div>
 
-      <div className="mt-8 text-center">
-        <a
-          href="https://medium.com/@yashmk2004"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+      {blogs.length > 2 && (
+        <motion.div
+          className="flex justify-center mt-8"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.3 }}
         >
-          View all articles on Medium
-          <span className="text-primary">→</span>
-        </a>
-      </div>
+          <Link
+            to="/blogs"
+            className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl liquid-glass text-sm font-semibold text-primary hover:bg-primary/10 transition-colors"
+          >
+            View All Blogs
+            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+        </motion.div>
+      )}
     </section>
   );
 }

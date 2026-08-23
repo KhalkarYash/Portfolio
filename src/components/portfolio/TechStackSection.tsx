@@ -1,5 +1,5 @@
-import { motion, Variants } from 'framer-motion';
-import { SectionHeader } from './SectionHeader';
+import { motion, Variants } from "framer-motion";
+import { SectionHeader } from "./SectionHeader";
 
 const techStack = [
   { category: "Frontend", items: "React, Next.js, React Native" },
@@ -34,7 +34,7 @@ export function TechStackSection() {
   return (
     <section className="py-12 border-t border-border">
       <SectionHeader number="05" title="Tech Stack" />
-      
+
       <motion.div
         variants={containerVariants}
         initial="hidden"

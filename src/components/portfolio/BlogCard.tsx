@@ -1,21 +1,9 @@
-import { motion } from 'framer-motion';
-import { ExternalLink, Calendar } from 'lucide-react';
+import { motion } from "framer-motion";
+import { ExternalLink, Calendar } from "lucide-react";
+import { type BlogCardProps } from "@/utils/types";
 
-interface Blog {
-  title: string;
-  description: string;
-  image?: string;
-  link: string;
-  date: string;
-  readTime?: string;
-}
-
-interface BlogCardProps {
-  blog: Blog;
-  index: number;
-}
-
-const defaultBlogImage = "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=340&fit=crop";
+const defaultBlogImage =
+  "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=340&fit=crop";
 
 export function BlogCard({ blog, index }: BlogCardProps) {
   return (
@@ -26,8 +14,8 @@ export function BlogCard({ blog, index }: BlogCardProps) {
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
-      transition={{ 
-        duration: 0.5, 
+      transition={{
+        duration: 0.5,
         delay: index * 0.1,
       }}
       className="group block liquid-glass rounded-2xl overflow-hidden hover-lift cursor-pointer"
@@ -45,7 +33,7 @@ export function BlogCard({ blog, index }: BlogCardProps) {
           transition={{ duration: 0.4 }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
-        
+
         {/* External link indicator */}
         <div className="absolute top-3 right-3 p-2 rounded-lg liquid-glass opacity-0 group-hover:opacity-100 transition-opacity">
           <ExternalLink className="w-4 h-4 text-primary" />
@@ -66,15 +54,15 @@ export function BlogCard({ blog, index }: BlogCardProps) {
             </>
           )}
         </div>
-        
+
         <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 mb-2">
           {blog.title}
         </h3>
-        
+
         <p className="text-sm text-muted-foreground line-clamp-2 leading-relaxed">
           {blog.description}
         </p>
-        
+
         <div className="mt-4 flex items-center gap-2 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
           Read on Medium
           <ExternalLink className="w-3.5 h-3.5" />

@@ -1,19 +1,6 @@
-import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
-
-interface Project {
-  title: string;
-  description: string;
-  image: string;
-  tech: string[];
-  link: string;
-  github: string;
-}
-
-interface ProjectCardProps {
-  project: Project;
-  index: number;
-}
+import { motion } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
+import { type ProjectCardProps } from "@/utils/types";
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
   return (
@@ -21,8 +8,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
-      transition={{ 
-        duration: 0.6, 
+      transition={{
+        duration: 0.6,
         delay: index * 0.1,
       }}
       className="group relative liquid-glass rounded-2xl overflow-hidden hover-lift"
@@ -58,17 +45,19 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                 <ExternalLink className="w-5 h-5" />
               </motion.a>
             )}
-            <motion.a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg hover:bg-primary/10 text-muted-foreground hover:text-primary transition-colors"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="View source code"
-            >
-              <Github className="w-5 h-5" />
-            </motion.a>
+            {project.github && (
+              <motion.a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg hover:bg-primary/10 text-muted-foreground hover:text-primary transition-colors"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label="View source code"
+              >
+                <Github className="w-5 h-5" />
+              </motion.a>
+            )}
           </div>
         </div>
 
