@@ -4,7 +4,7 @@ import { experiences } from "@/utils/constants";
 
 export function ExperienceSection() {
   return (
-    <section className="py-12">
+    <section id="experience" className="py-12">
       <SectionHeader number="02" title="Experience" />
 
       <div className="relative pl-8 border-l-2 border-border space-y-12">

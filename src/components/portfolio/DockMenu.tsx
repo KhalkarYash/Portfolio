@@ -1,21 +1,22 @@
-import { useEffect, useState, useCallback, useRef } from "react";
+import { useEffect, useState, useCallback, useRef, ComponentType } from "react";
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
-import { FileText, Grid3X3, Home, MessageSquare, BookOpen } from "lucide-react";
+import { Briefcase, Grid3X3, Home, MessageSquare, BookOpen } from "lucide-react";
 import { createPortal } from "react-dom";
 import { Glass } from "@samasante/liquid-glass";
-import { resumeLink } from "@/utils/constants";
 
-const menuItems = [
+interface MenuItem {
+  icon: ComponentType<any>;
+  href: string;
+  label: string;
+  id: string;
+  external?: boolean;
+}
+
+const menuItems: MenuItem[] = [
   { icon: Home, href: "#", label: "Home", id: "home" },
-  { icon: Grid3X3, href: "#projects", label: "Projects", id: "projects" },
+  { icon: Briefcase, href: "#experience", label: "Experience", id: "experience" },
+  { icon: Grid3X3, href: "#work-projects", label: "Projects", id: "projects" },
   { icon: BookOpen, href: "#blogs", label: "Blogs", id: "blogs" },
-  {
-    icon: FileText,
-    href: resumeLink,
-    label: "Resume",
-    external: true,
-    id: "resume",
-  },
   { icon: MessageSquare, href: "#contact", label: "Contact", id: "contact" },
 ];
 
@@ -85,18 +86,24 @@ export function DockMenu() {
   // Track which section is currently in view
   useEffect(() => {
     if (!mounted) return;
-    const sectionIds = ["", "projects", "blogs", "", "contact"];
+    
+    const sectionToTabMap = [
+      { sectionId: "contact", tabIndex: 4 },
+      { sectionId: "blogs", tabIndex: 3 },
+      { sectionId: "projects", tabIndex: 2 },
+      { sectionId: "work-projects", tabIndex: 2 },
+      { sectionId: "experience", tabIndex: 1 },
+    ];
 
     const handleScroll = () => {
       // Skip scroll-based updates while a click is animating the page
       if (scrollLockRef.current) return;
 
       const scrollY = window.scrollY + window.innerHeight / 2;
-      for (let i = sectionIds.length - 1; i >= 0; i--) {
-        if (!sectionIds[i]) continue;
-        const el = document.getElementById(sectionIds[i]);
+      for (const mapping of sectionToTabMap) {
+        const el = document.getElementById(mapping.sectionId);
         if (el && scrollY >= el.offsetTop) {
-          setActiveIndex(i);
+          setActiveIndex(mapping.tabIndex);
           return;
         }
       }
