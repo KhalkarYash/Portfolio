@@ -1,0 +1,173 @@
+# Yash Khalkar — Software Engineer & Backend-Focused Full-Stack Developer
+
+> Official website and software engineering portfolio of Yash Khalkar.
+> URL: https://yashkhalkar.vercel.app/
+
+---
+
+## About
+
+Yash Khalkar is a software engineer and backend-focused full-stack developer based in Nashik, India. He specializes in backend engineering, full-stack web development, mobile application development, APIs, databases, system design, cloud technologies, and modern software systems.
+
+He is a full-stack JavaScript developer focused on building practical web applications from user-facing interfaces to backend flows and deployment. His work spans products, admin panels, onboarding flows, and machine-learning applications.
+
+As a former Tech Community Leader (GDG On Campus Lead at MET), he has led 12+ events and co-organized Hacktoberfest Nashik '24, drawing 600+ registrations and 300+ active contributors.
+
+---
+
+## Experience
+
+### SWE (Backend Engineer) — Skillminds LLP
+- **Period**: 2026 – Present
+- **Location**: Nashik, India
+- **Product**: Pheraas
+- **Responsibilities**: Owning backend architecture, REST APIs, data modeling, authentication, and core product workflows. Working closely on feature delivery, implementation details, and production-ready behavior across the main backend surface area.
+
+### Frontend Intern — Zenzop
+- **Period**: 2025
+- **Location**: Remote
+- **Responsibilities**: Built and launched the Admin Panel and company Landing Page with Onboarding flow. Developed key back-end routes to enable seamless product functionality. Contributed as a founding developer, collaborating closely with the core team.
+
+### AI Intern — Infosys Springboard Internship 5.0
+- **Period**: 2024
+- **Location**: Remote
+- **Responsibilities**: Completed a structured internship focused on practical machine learning applications in healthcare. Worked in a project-based learning environment replicating industry-level workflows and collaboration.
+
+---
+
+## Education
+
+### B.Tech in Computer Engineering
+- **University**: Savitribai Phule Pune University
+- **Location**: Nashik, India
+- **Period**: 2023 – 2026
+
+### Diploma in Computer Technology
+- **Institution**: Government Polytechnic, Nashik
+- **Location**: Nashik, India
+- **Period**: 2020 – 2023
+
+---
+
+## Tech Stack
+
+### Frontend
+- React
+- Next.js
+- React Native
+
+### Backend
+- Node.js
+- Express.js
+- Hono
+
+### Databases
+- MongoDB
+- PostgreSQL
+- MySQL
+- Redis
+
+### Cloud & DevOps
+- AWS
+- Vercel
+- Cloudflare
+- Docker
+
+### Languages
+- JavaScript
+- TypeScript
+- Python
+- Java
+
+### ORM & Tools
+- Prisma
+- Git
+- GitHub
+- Postman
+
+---
+
+## Skills & Expertise
+
+- Software Engineering
+- Software Development
+- Backend Engineering
+- Backend Development
+- Full-Stack Development
+- Web Development
+- Web Application Development
+- Mobile Application Development
+- API Development
+- REST APIs
+- System Design
+- Distributed Systems
+- Database Design
+- Cloud Computing
+- Cloud Infrastructure
+- Artificial Intelligence
+- AI Engineering
+
+---
+
+## Pages
+
+### Home
+- **URL**: https://yashkhalkar.vercel.app/
+- **Description**: Main landing page with hero section, about, experience timeline, work projects, personal projects, blogs, tech stack, education, and contact information.
+
+### Projects
+- **URL**: https://yashkhalkar.vercel.app/projects
+- **Description**: Full listing of personal and open-source projects with descriptions, tech stacks, live links, and GitHub repositories.
+
+### Work Projects
+- **URL**: https://yashkhalkar.vercel.app/work-projects
+- **Description**: Professional/work-related projects developed during employment.
+
+### Blogs
+- **URL**: https://yashkhalkar.vercel.app/blogs
+- **Description**: Technical blog posts and articles published on Medium and other platforms.
+
+---
+
+## Community & Leadership
+
+- **GDG On Campus Lead** at MET Institute of Engineering, Nashik
+- Led 12+ community tech events
+- **Co-organized Hacktoberfest Nashik '24** — 600+ registrations, 300+ active contributors
+
+---
+
+## Contact
+
+- **Email**: yashmk2004@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/yashkhalkar/
+- **GitHub**: https://github.com/KhalkarYash
+- **LeetCode**: https://leetcode.com/u/yashkhalkar/
+- **Medium**: https://medium.com/@yashmk2004
+- **X (Twitter)**: https://x.com/yashkhalkar001
+- **Instagram**: https://www.instagram.com/yashkhalkar001
+- **Stack Overflow**: https://stackoverflow.com/users/23572707/yash-khalkar
+- **YouTube**: https://www.youtube.com/@yashkhalkar001
+- **Reddit**: https://www.reddit.com/u/yashmk001
+- **Quora**: https://www.quora.com/profile/Yash-Khalkar
+- **Discord**: https://discordapp.com/users/1021414063772799056
+- **HackerRank**: https://www.hackerrank.com/yashmk2004
+- **HackerEarth**: https://www.hackerearth.com/@yashmk2004
+
+---
+
+## Resume
+
+Available at: https://1drv.ms/f/c/c4ef5729b36ead51/Eso0Nur2bClDs1i99koJ_lcBocyPOGCuRdH-W-Lb-rrlRQ
+
+---
+
+## Technical Details
+
+- **Framework**: React + TypeScript (Vite)
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Routing**: React Router
+- **Data**: External JSON via GitHub Gist
+- **Hosting**: Vercel
+- **Domain**: yashkhalkar.vercel.app

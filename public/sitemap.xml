@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://yashkhalkar.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yashkhalkar.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yashkhalkar.vercel.app/" />
+    <image:image>
+      <image:loc>https://yashkhalkar.vercel.app/yash.jpg</image:loc>
+      <image:title>Yash Khalkar — Software Engineer</image:title>
+    </image:image>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://yashkhalkar.vercel.app/projects</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yashkhalkar.vercel.app/work-projects</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yashkhalkar.vercel.app/blogs</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

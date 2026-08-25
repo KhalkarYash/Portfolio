@@ -1,0 +1,48 @@
+# Yash Khalkar
+
+> Software engineer and backend-focused full-stack developer based in Nashik, India.
+
+- [Full Details](https://yashkhalkar.vercel.app/llms-full.txt): Comprehensive version with expanded experience, skills, and all social profiles.
+
+## About
+
+Yash Khalkar is a software engineer specializing in backend engineering, full-stack web development, mobile application development, APIs, databases, system design, cloud technologies, and modern software systems. He is a full-stack JavaScript developer focused on building practical web applications from user-facing interfaces to backend flows and deployment.
+
+As a former Tech Community Leader (GDG On Campus Lead at MET), he has led 12+ events and co-organized Hacktoberfest Nashik '24, drawing 600+ registrations and 300+ active contributors.
+
+## Experience
+
+- **SWE (Backend Engineer) at Skillminds LLP** (2026–Present, Nashik): Contributing to the development of an in-house product 'Pheraas', owning backend architecture, REST APIs, data modeling, authentication, and core product workflows.
+- **Frontend Intern at Zenzop** (2025, Remote): Built and launched the Admin Panel and company Landing Page with Onboarding flow. Developed key back-end routes to enable seamless product functionality. Contributed as a founding developer.
+- **AI Intern at Infosys Springboard Internship 5.0** (2024, Remote): Completed a structured internship focused on practical machine learning applications in healthcare.
+
+## Education
+
+- **B.Tech in Computer Engineering** — Savitribai Phule Pune University, Nashik (2023–2026)
+- **Diploma in Computer Technology** — Government Polytechnic, Nashik (2020–2023)
+
+## Tech Stack
+
+- **Frontend**: React, Next.js, React Native
+- **Backend**: Node.js, Express, Hono
+- **Databases**: MongoDB, PostgreSQL, MySQL
+- **Cloud**: AWS, Vercel, Cloudflare
+- **Languages**: TypeScript, Python, Java
+- **Tools**: Git, Docker, Postman
+
+## Pages
+
+- [Home](https://yashkhalkar.vercel.app/)
+- [Projects](https://yashkhalkar.vercel.app/projects)
+- [Work Projects](https://yashkhalkar.vercel.app/work-projects)
+- [Blogs](https://yashkhalkar.vercel.app/blogs)
+
+## Contact
+
+- Email: yashmk2004@gmail.com
+- LinkedIn: https://www.linkedin.com/in/yashkhalkar/
+- GitHub: https://github.com/KhalkarYash
+- LeetCode: https://leetcode.com/u/yashkhalkar/
+- Medium: https://medium.com/@yashmk2004
+- X (Twitter): https://x.com/yashkhalkar001
+- Stack Overflow: https://stackoverflow.com/users/23572707/yash-khalkar

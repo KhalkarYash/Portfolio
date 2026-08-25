@@ -1,13 +1,21 @@
 {
-  "name": "Yash Khalkar Portfolio",
-  "short_name": "Yash K.",
-  "description": "Full Stack Developer & Creative Coder",
+  "name": "Yash Khalkar — Software Engineer",
+  "short_name": "Yash Khalkar",
+  "description": "Software engineer and backend-focused full-stack developer specializing in backend engineering, web development, APIs, databases, system design, and cloud technologies.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#030014",
   "theme_color": "#030014",
   "orientation": "portrait-primary",
+  "lang": "en",
+  "categories": ["portfolio", "personal"],
   "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
     {
       "src": "/icons/icon-72x72.png",
       "sizes": "72x72",

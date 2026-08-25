@@ -1,0 +1,23 @@
+/* TEAM */
+
+Developer: Yash Khalkar
+Role: Software Engineer & Backend-Focused Full-Stack Developer
+Location: Nashik, India
+Email: yashmk2004@gmail.com
+LinkedIn: https://www.linkedin.com/in/yashkhalkar/
+GitHub: https://github.com/KhalkarYash
+X (Twitter): https://x.com/yashkhalkar001
+
+/* SITE */
+
+Last Updated: 2026-08-25
+Language: English
+Standards: HTML5, CSS3, ECMAScript 2024
+Framework: React 18 + TypeScript
+Build Tool: Vite
+Styling: Tailwind CSS
+Animations: Framer Motion
+Routing: React Router
+State Management: TanStack React Query
+Hosting: Vercel
+Domain: yashkhalkar.vercel.app
