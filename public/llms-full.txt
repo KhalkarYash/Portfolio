@@ -168,6 +168,6 @@ Available at: https://1drv.ms/f/c/c4ef5729b36ead51/Eso0Nur2bClDs1i99koJ_lcBocyPO
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
 - **Routing**: React Router
-- **Data**: External JSON via GitHub Gist
+- **Data**: Projects from a versioned GitHub Gist; blogs synced from the Medium RSS feed through rss2json
 - **Hosting**: Vercel
 - **Domain**: yashkhalkar.vercel.app

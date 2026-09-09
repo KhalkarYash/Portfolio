@@ -3,3 +3,7 @@ Allow: /
 Disallow: /404
 
 Sitemap: https://yashkhalkar.vercel.app/sitemap.xml
+
+# Machine-readable resources
+# https://yashkhalkar.vercel.app/llms.txt
+# https://yashkhalkar.vercel.app/.well-known/mcp

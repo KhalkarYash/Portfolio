@@ -6,8 +6,8 @@ export const resumeLink: string =
 export const projectsJSON: string =
   "https://gist.githubusercontent.com/KhalkarYash/8f51f549f3e49a75fd14a5e42ecf727c/raw/129ef35ba772f448bfeaa98b2ecf5dabe1ee60fc/projects.json";
 
-export const blogsJSON: string =
-  "https://gist.githubusercontent.com/KhalkarYash/6fa109c2d60f23151ee5ce0b347eff27/raw/55f681407cfeb45a70e235ce92c8d80f184c3892/blogs.json";
+export const mediumRssJSON: string =
+  "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@yashmk2004";
 
 export const experiences: Experience[] = [
   {

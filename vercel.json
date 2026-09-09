@@ -1,0 +1,21 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Vary", "value": "Accept, Accept-Encoding" }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "has": [
+        { "type": "header", "key": "accept", "value": ".*text/markdown.*" }
+      ],
+      "dest": "/llms.txt"
+    },
+    { "handle": "filesystem" },
+    { "src": "/.well-known/mcp", "dest": "/api/mcp" }
+  ]
+}
