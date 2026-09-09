@@ -1,21 +1,20 @@
 {
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "Vary", "value": "Accept, Accept-Encoding" }
-      ]
-    }
-  ],
   "routes": [
+    {
+      "src": "/(.*)",
+      "headers": { "Vary": "Accept, Accept-Encoding" },
+      "continue": true
+    },
     {
       "src": "/(.*)",
       "has": [
         { "type": "header", "key": "accept", "value": ".*text/markdown.*" }
       ],
-      "dest": "/llms.txt"
+      "dest": "/llms.txt",
+      "headers": { "Content-Type": "text/markdown; charset=utf-8" }
     },
     { "handle": "filesystem" },
-    { "src": "/.well-known/mcp", "dest": "/api/mcp" }
+    { "src": "/.well-known/mcp", "dest": "/api/mcp" },
+    { "src": "^/(projects|work-projects|blogs)/?$", "dest": "/index.html" }
   ]
 }
