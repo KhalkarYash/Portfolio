@@ -18,6 +18,7 @@
     },
     { "handle": "filesystem" },
     { "src": "/.well-known/mcp", "dest": "/api/mcp" },
+    { "src": "/api/v1/profile", "dest": "/api/v1/profile" },
     { "src": "^/(projects|work-projects|blogs)/?$", "dest": "/index.html" }
   ]
 }

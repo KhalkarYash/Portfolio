@@ -3,7 +3,7 @@
   "info": {
     "title": "Yash Khalkar Vercel Portfolio API",
     "version": "1.0.0",
-    "description": "Official Vercel-hosted public machine-readable profile resources for Yash Khalkar, a backend-focused full-stack software engineer.",
+    "description": "Official Vercel-hosted public machine-readable profile resources for Yash Khalkar, a backend-focused full-stack software engineer. REST API policy: use /api/v1 paths; additive changes are released within v1, breaking changes use /api/v2. Deprecated operations will publish Deprecation and Sunset headers at least 90 days before removal.",
     "contact": {
       "name": "Yash Khalkar",
       "url": "https://yashkhalkar.vercel.app/contact",
@@ -14,12 +14,46 @@
     { "url": "https://yashkhalkar.vercel.app" }
   ],
   "paths": {
+    "/api/v1/profile": {
+      "get": {
+        "summary": "Get Yash Khalkar profile",
+        "description": "Returns the public profile for Yash Khalkar. This v1 endpoint is stable for additive changes; breaking changes will be published under /api/v2.",
+        "operationId": "getV1Profile",
+        "responses": {
+          "200": {
+            "description": "Public profile",
+            "headers": {
+              "RateLimit-Limit": { "$ref": "#/components/headers/RateLimitLimit" },
+              "RateLimit-Remaining": { "$ref": "#/components/headers/RateLimitRemaining" },
+              "RateLimit-Reset": { "$ref": "#/components/headers/RateLimitReset" },
+              "Deprecation": { "$ref": "#/components/headers/Deprecation" }
+            },
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ProfileResponse" } } }
+          },
+          "405": {
+            "description": "Method not allowed",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } }
+          },
+          "429": {
+            "description": "Rate limit exceeded",
+            "headers": { "Retry-After": { "$ref": "#/components/headers/RetryAfter" } },
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } }
+          },
+          "500": {
+            "description": "Unexpected server error",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } }
+          }
+        }
+      }
+    },
     "/.well-known/mcp": {
       "get": {
         "summary": "MCP endpoint information",
         "operationId": "getMcpInfo",
         "responses": {
-          "200": { "description": "MCP endpoint usage hint", "content": { "text/plain": { "schema": { "type": "string" } } } }
+          "200": { "description": "MCP endpoint usage hint", "content": { "text/plain": { "schema": { "type": "string" } } } },
+          "405": { "description": "Method not allowed", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } },
+          "500": { "description": "Unexpected server error", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } }
         }
       },
       "post": {
@@ -31,9 +65,19 @@
           "content": { "application/json": { "schema": { "$ref": "#/components/schemas/JsonRpcRequest" } } }
         },
         "responses": {
-          "200": { "description": "JSON-RPC response", "content": { "application/json": { "schema": { "type": "object" } } } },
-          "400": { "description": "Invalid JSON" },
-          "405": { "description": "Method not allowed" }
+          "200": { "description": "JSON-RPC response", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/JsonRpcResponse" } } } },
+          "400": {
+            "description": "Invalid JSON request",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } }
+          },
+          "405": {
+            "description": "Method not allowed",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } }
+          },
+          "500": {
+            "description": "Unexpected server error",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } }
+          }
         }
       }
     }
@@ -50,7 +94,73 @@
           "params": { "type": "object" }
         },
         "additionalProperties": true
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "required": ["error"],
+        "properties": {
+          "error": {
+            "type": "object",
+            "required": ["code", "message", "hint"],
+            "properties": {
+              "code": { "type": "string", "examples": ["INVALID_JSON", "METHOD_NOT_ALLOWED"] },
+              "message": { "type": "string" },
+              "hint": { "type": "string" }
+            }
+          }
+        }
+      },
+      "JsonRpcResponse": {
+        "type": "object",
+        "required": ["jsonrpc", "id"],
+        "properties": {
+          "jsonrpc": { "const": "2.0" },
+          "id": { "type": ["string", "number", "null"] },
+          "result": { "type": "object" },
+          "error": { "$ref": "#/components/schemas/JsonRpcError" }
+        },
+        "oneOf": [{ "required": ["result"] }, { "required": ["error"] }]
+      },
+      "JsonRpcError": {
+        "type": "object",
+        "required": ["code", "message"],
+        "properties": {
+          "code": { "type": "integer" },
+          "message": { "type": "string" },
+          "data": { "type": "object" }
+        }
+      },
+      "Profile": {
+        "type": "object",
+        "required": ["name", "role", "location", "summary", "skills", "links"],
+        "properties": {
+          "name": { "type": "string", "example": "Yash Khalkar" },
+          "role": { "type": "string" },
+          "location": { "type": "string" },
+          "summary": { "type": "string" },
+          "skills": { "type": "array", "items": { "type": "string" } },
+          "links": { "type": "object", "additionalProperties": { "type": "string", "format": "uri" } }
+        }
+      },
+      "ProfileResponse": {
+        "type": "object",
+        "required": ["data", "meta"],
+        "properties": {
+          "data": { "$ref": "#/components/schemas/Profile" },
+          "meta": {
+            "type": "object",
+            "required": ["apiVersion", "updated"],
+            "properties": { "apiVersion": { "const": "v1" }, "updated": { "type": "string", "format": "date" } }
+          }
+        }
       }
-    }
+    },
+    "headers": {
+      "RateLimitLimit": { "description": "Maximum requests allowed in the current window.", "schema": { "type": "integer", "example": 60 } },
+      "RateLimitRemaining": { "description": "Requests remaining in the current window.", "schema": { "type": "integer", "example": 59 } },
+      "RateLimitReset": { "description": "Seconds until the current rate-limit window resets.", "schema": { "type": "integer", "example": 60 } },
+      "RetryAfter": { "description": "Seconds to wait before retrying after a 429 response.", "schema": { "type": "integer", "example": 60 } },
+      "Deprecation": { "description": "Indicates whether the endpoint is deprecated. The current v1 endpoint is not deprecated.", "schema": { "type": "string", "example": "false" } }
+      }
   }
 }

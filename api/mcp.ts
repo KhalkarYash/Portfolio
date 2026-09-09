@@ -46,6 +46,11 @@ const withCors = (response: Response) => {
   return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
 };
 
+const jsonError = (status: number, code: string, message: string, hint: string) =>
+  withCors(Response.json({
+    error: { code, message, hint }
+  }, { status }));
+
 const createTransport = async () => {
   const { WebStandardStreamableHTTPServerTransport } = await import("@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js");
   const transport = new WebStandardStreamableHTTPServerTransport({
@@ -66,6 +71,18 @@ export default async function handler(request: Request): Promise<Response> {
       "Yash Khalkar MCP server. Use Streamable HTTP POST requests with the MCP protocol.",
       { status: 200, headers: { "Content-Type": "text/plain; charset=utf-8" } }
     ));
+  }
+
+  if (request.method !== "POST" && request.method !== "GET") {
+    return jsonError(405, "METHOD_NOT_ALLOWED", "The MCP endpoint only accepts GET, POST, and OPTIONS requests.", "Use POST for JSON-RPC MCP messages or GET for endpoint discovery.");
+  }
+
+  if (request.method === "POST") {
+    try {
+      await request.clone().json();
+    } catch {
+      return jsonError(400, "INVALID_JSON", "The request body is not valid JSON.", "Send a JSON-RPC 2.0 object with Content-Type: application/json.");
+    }
   }
 
   const transport = await createTransport();

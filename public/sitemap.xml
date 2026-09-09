@@ -59,6 +59,13 @@
   </url>
 
   <url>
+    <loc>https://yashkhalkar.vercel.app/api/v1/profile</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://yashkhalkar.vercel.app/auth</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>yearly</changefreq>

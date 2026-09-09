@@ -48,6 +48,7 @@ As a former Tech Community Leader (GDG On Campus Lead at MET), he has led 12+ ev
 
 - [Yash Khalkar Vercel Developer Resources](https://yashkhalkar.vercel.app/developers/vercel): Official Vercel-hosted index of API docs, OpenAPI, authentication, and MCP resources.
 - [Yash Khalkar Vercel Developer Portal](https://yashkhalkar.vercel.app/developers): Named index of API docs, OpenAPI, authentication, and MCP resources.
+- [Yash Khalkar v1 Profile API](https://yashkhalkar.vercel.app/api/v1/profile): Typed public REST profile response with version and rate-limit metadata.
 - [Yash Khalkar Vercel OpenAPI specification](https://yashkhalkar.vercel.app/openapi.json): OpenAPI 3.1 document for the public portfolio MCP endpoint.
 - [Yash Khalkar Authentication documentation](https://yashkhalkar.vercel.app/auth): Public access policy and MCP request guidance.
 - [Yash Khalkar MCP endpoint](https://yashkhalkar.vercel.app/.well-known/mcp): JSON-RPC endpoint with a `get_portfolio` tool.

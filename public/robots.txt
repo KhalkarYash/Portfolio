@@ -10,3 +10,4 @@ Sitemap: https://yashkhalkar.vercel.app/sitemap.xml
 # https://yashkhalkar.vercel.app/developers
 # https://yashkhalkar.vercel.app/developers/vercel
 # https://yashkhalkar.vercel.app/openapi.json
+# https://yashkhalkar.vercel.app/api/v1/profile
