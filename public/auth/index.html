@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Authentication documentation for Yash Khalkar developer resources and MCP server.">
+  <title>Yash Khalkar Authentication Documentation</title>
+</head>
+<body>
+  <main>
+    <h1>Yash Khalkar Authentication Documentation</h1>
+    <p>The public Yash Khalkar developer resources do not require authentication. The OpenAPI document, developer portal, llms.txt file, and MCP server are intended for public discovery by developers and AI agents. Do not send passwords, API keys, session tokens, or private user information to these endpoints.</p>
+    <h2>Public Access</h2>
+    <p>Use standard HTTPS requests. The MCP server accepts JSON-RPC POST requests at <a href="/.well-known/mcp">/.well-known/mcp</a>, supports the <code>initialize</code>, <code>tools/list</code>, and <code>tools/call</code> methods, and exposes the <code>get_portfolio</code> tool. GET returns a short endpoint description; OPTIONS reports supported methods.</p>
+    <h2>Canonical Documentation</h2>
+    <p>Start with the <a href="/developers">Yash Khalkar developer portal</a> or inspect the <a href="/openapi.json">Yash Khalkar OpenAPI specification</a>. For agent-specific instructions and use cases, read <a href="/llms.txt">llms.txt</a>. Contact <a href="/contact">Yash Khalkar</a> for collaboration questions.</p>
+    <nav><a href="/">Yash Khalkar home</a> · <a href="/developers">Developer resources</a> · <a href="/privacy">Privacy</a></nav>
+  </main>
+</body>
+</html>

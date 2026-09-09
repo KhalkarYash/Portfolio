@@ -11,7 +11,10 @@
         { "type": "header", "key": "accept", "value": ".*text/markdown.*" }
       ],
       "dest": "/llms.txt",
-      "headers": { "Content-Type": "text/markdown; charset=utf-8" }
+      "headers": {
+        "Content-Type": "text/markdown; charset=utf-8",
+        "Vary": "Accept, Accept-Encoding"
+      }
     },
     { "handle": "filesystem" },
     { "src": "/.well-known/mcp", "dest": "/api/mcp" },

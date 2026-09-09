@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8" />
 
+  <script>document.documentElement.classList.add("js");</script>
+  <style>.js .static-homepage { display: none; }</style>
+
   <!-- Mobile / Rendering -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
 
@@ -191,9 +194,8 @@
 </head>
 
 <body>
-  <div id="root"></div>
-  <noscript>
-    <main>
+  <div id="root">
+    <main class="static-homepage">
       <h1>Yash Khalkar | Software Engineer</h1>
       <p>Yash Khalkar is a backend-focused full-stack software engineer based in Nashik, India. He builds reliable web applications, mobile applications, REST APIs, database-backed systems, and practical software products from interface to deployment.</p>
       <h2>About Yash</h2>
@@ -204,7 +206,7 @@
       <p><a href="/projects">Projects</a> · <a href="/work-projects">Work projects</a> · <a href="/blogs">Technical blogs</a> · <a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a></p>
       <p>For machine-readable details, see <a href="/llms.txt">llms.txt</a>, <a href="/llms-full.txt">llms-full.txt</a>, and the <a href="/sitemap.xml">sitemap</a>. Contact Yash at <a href="mailto:yashmk2004@gmail.com">yashmk2004@gmail.com</a>.</p>
     </main>
-  </noscript>
+  </div>
 
   <script type="module" src="/src/main.tsx"></script>
 </body>

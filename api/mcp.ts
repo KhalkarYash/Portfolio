@@ -1,3 +1,6 @@
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
+
 const portfolio = {
   name: "Yash Khalkar",
   role: "Backend-focused full-stack software engineer",
@@ -10,56 +13,56 @@ const portfolio = {
   }
 };
 
-const jsonRpc = (id: unknown, result: unknown) => ({ jsonrpc: "2.0", id, result });
-const error = (id: unknown, code: number, message: string) => ({ jsonrpc: "2.0", id, error: { code, message } });
+const createServer = () => {
+  const server = new McpServer({
+    name: "yash-khalkar-portfolio",
+    version: "1.0.0"
+  });
+
+  server.registerTool(
+    "get_portfolio",
+    {
+      title: "Get Yash Khalkar Portfolio",
+      description: "Get Yash Khalkar's professional profile, skills, and canonical portfolio links.",
+      inputSchema: {}
+    },
+    async () => ({
+      content: [{ type: "text", text: JSON.stringify(portfolio) }],
+      structuredContent: portfolio
+    })
+  );
+
+  return server;
+};
+
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type, Accept, mcp-session-id, mcp-protocol-version, Last-Event-ID",
+  "Access-Control-Allow-Methods": "GET, POST, DELETE, OPTIONS",
+  "Access-Control-Expose-Headers": "mcp-session-id, mcp-protocol-version"
+};
+
+const withCors = (response: Response) => {
+  const headers = new Headers(response.headers);
+  Object.entries(corsHeaders).forEach(([key, value]) => headers.set(key, value));
+  return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+};
+
+const createTransport = async () => {
+  const transport = new WebStandardStreamableHTTPServerTransport({
+    enableJsonResponse: true,
+  });
+  const server = createServer();
+  await server.connect(transport);
+  return transport;
+};
 
 export default async function handler(request: Request): Promise<Response> {
-  if (request.method === "GET") {
-    return new Response("Yash Khalkar MCP server. Send JSON-RPC requests with POST.", {
-      headers: { "Content-Type": "text/plain; charset=utf-8", Allow: "GET, POST, OPTIONS" }
-    });
-  }
-
   if (request.method === "OPTIONS") {
-    return new Response(null, { status: 204, headers: { Allow: "GET, POST, OPTIONS" } });
+    return withCors(new Response(null, { status: 204 }));
   }
 
-  if (request.method !== "POST") {
-    return new Response("Method Not Allowed", { status: 405, headers: { Allow: "GET, POST, OPTIONS" } });
-  }
-
-  let message: { id?: unknown; method?: string };
-  try {
-    message = await request.json();
-  } catch {
-    return Response.json(error(null, -32700, "Invalid JSON"), { status: 400 });
-  }
-
-  if (message.method === "initialize") {
-    return Response.json(jsonRpc(message.id, {
-      protocolVersion: "2025-06-18",
-      capabilities: { tools: {} },
-      serverInfo: { name: "yash-khalkar-portfolio", version: "1.0.0" }
-    }), { headers: { "MCP-Protocol-Version": "2025-06-18" } });
-  }
-
-  if (message.method === "tools/list") {
-    return Response.json(jsonRpc(message.id, {
-      tools: [{
-        name: "get_portfolio",
-        description: "Get Yash Khalkar's professional profile, skills, and canonical portfolio links.",
-        inputSchema: { type: "object", properties: {}, additionalProperties: false }
-      }]
-    }));
-  }
-
-  if (message.method === "tools/call") {
-    return Response.json(jsonRpc(message.id, {
-      content: [{ type: "text", text: JSON.stringify(portfolio) }],
-      structuredContent: portfolio,
-      isError: false
-    }));
-  }
-
-  return Response.json(error(message.id, -32601, "Method not found"), { status: 404 });
+  const transport = await createTransport();
+  const response = await transport.handleRequest(request);
+  return withCors(response);
 }

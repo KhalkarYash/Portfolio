@@ -7,3 +7,5 @@ Sitemap: https://yashkhalkar.vercel.app/sitemap.xml
 # Machine-readable resources
 # https://yashkhalkar.vercel.app/llms.txt
 # https://yashkhalkar.vercel.app/.well-known/mcp
+# https://yashkhalkar.vercel.app/developers
+# https://yashkhalkar.vercel.app/openapi.json

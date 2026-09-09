@@ -45,6 +45,20 @@
   </url>
 
   <url>
+    <loc>https://yashkhalkar.vercel.app/developers</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://yashkhalkar.vercel.app/auth</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
     <loc>https://yashkhalkar.vercel.app/work-projects</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>

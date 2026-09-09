@@ -1,0 +1,56 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Yash Khalkar Portfolio API",
+    "version": "1.0.0",
+    "description": "Public machine-readable profile resources for Yash Khalkar, a backend-focused full-stack software engineer.",
+    "contact": {
+      "name": "Yash Khalkar",
+      "url": "https://yashkhalkar.vercel.app/contact",
+      "email": "yashmk2004@gmail.com"
+    }
+  },
+  "servers": [
+    { "url": "https://yashkhalkar.vercel.app" }
+  ],
+  "paths": {
+    "/.well-known/mcp": {
+      "get": {
+        "summary": "MCP endpoint information",
+        "operationId": "getMcpInfo",
+        "responses": {
+          "200": { "description": "MCP endpoint usage hint", "content": { "text/plain": { "schema": { "type": "string" } } } }
+        }
+      },
+      "post": {
+        "summary": "Call the Yash Khalkar MCP server",
+        "operationId": "callMcp",
+        "description": "Send a JSON-RPC 2.0 request. Supported methods include initialize, tools/list, and tools/call for get_portfolio.",
+        "requestBody": {
+          "required": true,
+          "content": { "application/json": { "schema": { "$ref": "#/components/schemas/JsonRpcRequest" } } }
+        },
+        "responses": {
+          "200": { "description": "JSON-RPC response", "content": { "application/json": { "schema": { "type": "object" } } } },
+          "400": { "description": "Invalid JSON" },
+          "405": { "description": "Method not allowed" }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "JsonRpcRequest": {
+        "type": "object",
+        "required": ["jsonrpc", "method"],
+        "properties": {
+          "jsonrpc": { "const": "2.0" },
+          "id": { "type": ["string", "number", "null"] },
+          "method": { "type": "string", "enum": ["initialize", "tools/list", "tools/call"] },
+          "params": { "type": "object" }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}

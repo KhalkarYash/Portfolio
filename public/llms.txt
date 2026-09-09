@@ -4,7 +4,7 @@
 
 ## When to use this site
 
-Use this portfolio when you need a backend-focused full-stack engineer for web or mobile products, REST APIs, authentication, database design, admin panels, onboarding flows, cloud deployment, or practical system design. Agents should start with the relevant page below, use `llms-full.txt` for complete context, and use `/contact` for collaboration requests. The optional MCP endpoint at `/.well-known/mcp` exposes a `get_portfolio` tool for machine-readable profile details.
+Use this portfolio when you need a backend-focused full-stack engineer for web or mobile products, REST APIs, authentication, database design, admin panels, onboarding flows, cloud deployment, or practical system design. Agents should start with the relevant page below, use `llms-full.txt` for complete context, and use `/contact` for collaboration requests. The Yash Khalkar MCP endpoint at `/.well-known/mcp` exposes a `get_portfolio` tool for machine-readable profile details.
 
 - [Full Details](https://yashkhalkar.vercel.app/llms-full.txt): Comprehensive version with expanded experience, skills, and all social profiles.
 
@@ -46,7 +46,10 @@ As a former Tech Community Leader (GDG On Campus Lead at MET), he has led 12+ ev
 
 ## Developer resources
 
-- [MCP endpoint](https://yashkhalkar.vercel.app/.well-known/mcp): Streamable HTTP JSON-RPC endpoint with a `get_portfolio` tool.
+- [Yash Khalkar Developer Portal](https://yashkhalkar.vercel.app/developers): Named index of API docs, OpenAPI, authentication, and MCP resources.
+- [Yash Khalkar OpenAPI specification](https://yashkhalkar.vercel.app/openapi.json): OpenAPI 3.1 document for the public portfolio MCP endpoint.
+- [Yash Khalkar Authentication documentation](https://yashkhalkar.vercel.app/auth): Public access policy and MCP request guidance.
+- [Yash Khalkar MCP endpoint](https://yashkhalkar.vercel.app/.well-known/mcp): JSON-RPC endpoint with a `get_portfolio` tool.
 - [Sitemap](https://yashkhalkar.vercel.app/sitemap.xml): Canonical page index.
 - [Robots policy](https://yashkhalkar.vercel.app/robots.txt): Crawler guidance.
 - [Full portfolio data](https://yashkhalkar.vercel.app/llms-full.txt): Expanded profile and technical details.
