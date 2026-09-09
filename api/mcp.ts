@@ -1,6 +1,6 @@
-export const config = {
-  runtime: "edge"
-};
+import { IncomingMessage, ServerResponse } from "node:http";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 
 const portfolio = {
   name: "Yash Khalkar",
@@ -14,8 +14,31 @@ const portfolio = {
   }
 };
 
-const createServer = async () => {
-  const { McpServer } = await import("@modelcontextprotocol/sdk/server/mcp.js");
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type, Accept, mcp-session-id, mcp-protocol-version, Last-Event-ID",
+  "Access-Control-Allow-Methods": "GET, POST, DELETE, OPTIONS",
+  "Access-Control-Expose-Headers": "mcp-session-id, mcp-protocol-version"
+};
+
+const setCorsHeaders = (response: ServerResponse) => {
+  Object.entries(corsHeaders).forEach(([key, value]) => response.setHeader(key, value));
+};
+
+const jsonError = (response: ServerResponse, status: number, code: string, message: string, hint: string) => {
+  setCorsHeaders(response);
+  response.statusCode = status;
+  response.setHeader("Content-Type", "application/json; charset=utf-8");
+  response.end(JSON.stringify({ error: { code, message, hint } }));
+};
+
+const readJsonBody = async (request: IncomingMessage): Promise<unknown> => {
+  const chunks: Buffer[] = [];
+  for await (const chunk of request) chunks.push(Buffer.from(chunk));
+  return JSON.parse(Buffer.concat(chunks).toString("utf8"));
+};
+
+const createServer = () => {
   const server = new McpServer({
     name: "yash-khalkar-portfolio",
     version: "1.0.0"
@@ -37,61 +60,48 @@ const createServer = async () => {
   return server;
 };
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "Content-Type, Accept, mcp-session-id, mcp-protocol-version, Last-Event-ID",
-  "Access-Control-Allow-Methods": "GET, POST, DELETE, OPTIONS",
-  "Access-Control-Expose-Headers": "mcp-session-id, mcp-protocol-version"
+const discovery = (response: ServerResponse) => {
+  setCorsHeaders(response);
+  response.statusCode = 200;
+  response.setHeader("Content-Type", "application/json; charset=utf-8");
+  response.end(JSON.stringify({
+    name: "Yash Khalkar MCP server",
+    transport: "Streamable HTTP",
+    endpoint: "https://yashkhalkar.vercel.app/.well-known/mcp",
+    instruction: "Use POST requests with MCP JSON-RPC messages."
+  }));
 };
 
-const withCors = (response: Response) => {
-  const headers = new Headers(response.headers);
-  Object.entries(corsHeaders).forEach(([key, value]) => headers.set(key, value));
-  return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
-};
+export default async function handler(request: IncomingMessage, response: ServerResponse): Promise<void> {
+  setCorsHeaders(response);
 
-const jsonError = (status: number, code: string, message: string, hint: string) =>
-  withCors(Response.json({
-    error: { code, message, hint }
-  }, { status }));
-
-const createTransport = async () => {
-  const { WebStandardStreamableHTTPServerTransport } = await import("@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js");
-  const transport = new WebStandardStreamableHTTPServerTransport({
-    enableJsonResponse: true,
-  });
-  const server = await createServer();
-  await server.connect(transport);
-  return transport;
-};
-
-export default async function handler(request: Request): Promise<Response> {
   if (request.method === "OPTIONS") {
-    return withCors(new Response(null, { status: 204 }));
+    response.statusCode = 204;
+    response.end();
+    return;
   }
 
-  if (request.method === "GET" && !request.headers.get("mcp-session-id")) {
-    return withCors(Response.json({
-      name: "Yash Khalkar MCP server",
-      transport: "Streamable HTTP",
-      endpoint: "https://yashkhalkar.vercel.app/.well-known/mcp",
-      instruction: "Use POST requests with MCP JSON-RPC messages."
-    }));
+  if (request.method === "GET" && !request.headers["mcp-session-id"]) {
+    discovery(response);
+    return;
   }
 
   if (request.method !== "POST" && request.method !== "GET") {
-    return jsonError(405, "METHOD_NOT_ALLOWED", "The MCP endpoint only accepts GET, POST, and OPTIONS requests.", "Use POST for JSON-RPC MCP messages or GET for endpoint discovery.");
+    jsonError(response, 405, "METHOD_NOT_ALLOWED", "The MCP endpoint only accepts GET, POST, and OPTIONS requests.", "Use POST for JSON-RPC MCP messages or GET for endpoint discovery.");
+    return;
   }
 
+  let parsedBody: unknown;
   if (request.method === "POST") {
     try {
-      await request.clone().json();
+      parsedBody = await readJsonBody(request);
     } catch {
-      return jsonError(400, "INVALID_JSON", "The request body is not valid JSON.", "Send a JSON-RPC 2.0 object with Content-Type: application/json.");
+      jsonError(response, 400, "INVALID_JSON", "The request body is not valid JSON.", "Send a JSON-RPC 2.0 object with Content-Type: application/json.");
+      return;
     }
   }
 
-  const transport = await createTransport();
-  const response = await transport.handleRequest(request);
-  return withCors(response);
+  const transport = new StreamableHTTPServerTransport({ enableJsonResponse: true });
+  await createServer().connect(transport);
+  await transport.handleRequest(request, response, parsedBody);
 }
