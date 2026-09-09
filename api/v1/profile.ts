@@ -1,3 +1,7 @@
+export const config = {
+  runtime: "edge"
+};
+
 const profile = {
   name: "Yash Khalkar",
   role: "Backend-focused full-stack software engineer",

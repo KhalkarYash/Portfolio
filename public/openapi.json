@@ -51,7 +51,7 @@
         "summary": "MCP endpoint information",
         "operationId": "getMcpInfo",
         "responses": {
-          "200": { "description": "MCP endpoint usage hint", "content": { "text/plain": { "schema": { "type": "string" } } } },
+          "200": { "description": "MCP endpoint usage hint", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/McpDiscoveryResponse" } } } },
           "405": { "description": "Method not allowed", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } },
           "500": { "description": "Unexpected server error", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } }
         }
@@ -128,6 +128,16 @@
           "code": { "type": "integer" },
           "message": { "type": "string" },
           "data": { "type": "object" }
+        }
+      },
+      "McpDiscoveryResponse": {
+        "type": "object",
+        "required": ["name", "transport", "endpoint", "instruction"],
+        "properties": {
+          "name": { "type": "string", "example": "Yash Khalkar MCP server" },
+          "transport": { "type": "string", "const": "Streamable HTTP" },
+          "endpoint": { "type": "string", "format": "uri" },
+          "instruction": { "type": "string" }
         }
       },
       "Profile": {

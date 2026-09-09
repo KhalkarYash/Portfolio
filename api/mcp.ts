@@ -1,3 +1,7 @@
+export const config = {
+  runtime: "edge"
+};
+
 const portfolio = {
   name: "Yash Khalkar",
   role: "Backend-focused full-stack software engineer",
@@ -67,10 +71,12 @@ export default async function handler(request: Request): Promise<Response> {
   }
 
   if (request.method === "GET" && !request.headers.get("mcp-session-id")) {
-    return withCors(new Response(
-      "Yash Khalkar MCP server. Use Streamable HTTP POST requests with the MCP protocol.",
-      { status: 200, headers: { "Content-Type": "text/plain; charset=utf-8" } }
-    ));
+    return withCors(Response.json({
+      name: "Yash Khalkar MCP server",
+      transport: "Streamable HTTP",
+      endpoint: "https://yashkhalkar.vercel.app/.well-known/mcp",
+      instruction: "Use POST requests with MCP JSON-RPC messages."
+    }));
   }
 
   if (request.method !== "POST" && request.method !== "GET") {
