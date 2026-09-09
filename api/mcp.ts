@@ -1,6 +1,3 @@
-import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
-
 const portfolio = {
   name: "Yash Khalkar",
   role: "Backend-focused full-stack software engineer",
@@ -13,7 +10,8 @@ const portfolio = {
   }
 };
 
-const createServer = () => {
+const createServer = async () => {
+  const { McpServer } = await import("@modelcontextprotocol/sdk/server/mcp.js");
   const server = new McpServer({
     name: "yash-khalkar-portfolio",
     version: "1.0.0"
@@ -49,10 +47,11 @@ const withCors = (response: Response) => {
 };
 
 const createTransport = async () => {
+  const { WebStandardStreamableHTTPServerTransport } = await import("@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js");
   const transport = new WebStandardStreamableHTTPServerTransport({
     enableJsonResponse: true,
   });
-  const server = createServer();
+  const server = await createServer();
   await server.connect(transport);
   return transport;
 };
@@ -60,6 +59,13 @@ const createTransport = async () => {
 export default async function handler(request: Request): Promise<Response> {
   if (request.method === "OPTIONS") {
     return withCors(new Response(null, { status: 204 }));
+  }
+
+  if (request.method === "GET" && !request.headers.get("mcp-session-id")) {
+    return withCors(new Response(
+      "Yash Khalkar MCP server. Use Streamable HTTP POST requests with the MCP protocol.",
+      { status: 200, headers: { "Content-Type": "text/plain; charset=utf-8" } }
+    ));
   }
 
   const transport = await createTransport();

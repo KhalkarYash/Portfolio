@@ -1,9 +1,9 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Yash Khalkar Portfolio API",
+    "title": "Yash Khalkar Vercel Portfolio API",
     "version": "1.0.0",
-    "description": "Public machine-readable profile resources for Yash Khalkar, a backend-focused full-stack software engineer.",
+    "description": "Official Vercel-hosted public machine-readable profile resources for Yash Khalkar, a backend-focused full-stack software engineer.",
     "contact": {
       "name": "Yash Khalkar",
       "url": "https://yashkhalkar.vercel.app/contact",
