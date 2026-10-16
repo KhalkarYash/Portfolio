@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionHeader } from "./SectionHeader";
-import { experiences } from "@/utils/constants";
+import { experiences } from "@/features/portfolio/content";
 
 export function ExperienceSection() {
   return (

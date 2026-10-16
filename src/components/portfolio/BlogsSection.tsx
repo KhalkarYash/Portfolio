@@ -1,6 +1,6 @@
 import { SectionHeader } from "./SectionHeader";
 import { BlogCard } from "./BlogCard";
-import { useBlogsQuery } from "@/hooks/usePortfolioQueries";
+import { useBlogsQuery } from "@/features/portfolio/queries";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";

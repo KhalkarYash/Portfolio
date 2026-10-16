@@ -1,4 +1,4 @@
-import { useProjectsQuery } from "@/hooks/usePortfolioQueries";
+import { useProjectsQuery } from "@/features/portfolio/queries";
 import { HorizontalProjectSection } from "./HorizontalProjectSection";
 
 export function ProjectsSection() {

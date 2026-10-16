@@ -1,13 +1,4 @@
-import { type Experience } from "@/utils/types";
-
-export const resumeLink: string =
-  "https://1drv.ms/f/c/c4ef5729b36ead51/Eso0Nur2bClDs1i99koJ_lcBocyPOGCuRdH-W-Lb-rrlRQ";
-
-export const projectsJSON: string =
-  "https://gist.githubusercontent.com/KhalkarYash/8f51f549f3e49a75fd14a5e42ecf727c/raw/129ef35ba772f448bfeaa98b2ecf5dabe1ee60fc/projects.json";
-
-export const mediumRssJSON: string =
-  "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@yashmk2004";
+import { type Experience } from "./types";
 
 export const experiences: Experience[] = [
   {

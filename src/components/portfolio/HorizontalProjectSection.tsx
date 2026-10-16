@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SectionHeader } from "./SectionHeader";
 import { ProjectCard } from "./ProjectCard";
-import { type Project } from "@/utils/types";
+import { type Project } from "@/features/portfolio/types";
 
 gsap.registerPlugin(ScrollTrigger);
 

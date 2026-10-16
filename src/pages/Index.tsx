@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Navbar } from "@/components/portfolio/Navbar";
 import { HeroSection } from "@/components/portfolio/HeroSection";
 import { AboutSection } from "@/components/portfolio/AboutSection";
@@ -13,15 +12,6 @@ import { Footer } from "@/components/portfolio/Footer";
 import { EducationSection } from "@/components/portfolio/EducationSection";
 
 const Index = () => {
-  // Set dark mode by default on first load
-  useEffect(() => {
-    const stored = localStorage.getItem("theme");
-    const theme = stored === "light" ? "light" : "dark";
-    document.documentElement.classList.remove("light", "dark");
-    document.documentElement.classList.add(theme);
-    if (!stored) localStorage.setItem("theme", theme);
-  }, []);
-
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />

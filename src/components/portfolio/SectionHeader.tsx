@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { type SectionHeaderProps } from "@/utils/types";
+import { type SectionHeaderProps } from "@/features/portfolio/types";
 
 export function SectionHeader({ number, title }: SectionHeaderProps) {
   return (

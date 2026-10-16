@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { type BlogCardProps } from "@/utils/types";
+import { type BlogCardProps } from "@/features/portfolio/types";
 
 const defaultBlogImage = "/mediumHono.jpg";
 

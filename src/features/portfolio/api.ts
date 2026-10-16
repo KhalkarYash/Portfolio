@@ -1,5 +1,5 @@
-import { type Project, type Blog } from "@/utils/types";
-import { mediumRssJSON, projectsJSON } from "./constants";
+import { type Project, type Blog } from "./types";
+import { portfolioEndpoints } from "./config";
 
 interface MediumFeedItem {
   title: string;
@@ -15,27 +15,33 @@ interface MediumFeedResponse {
   items: MediumFeedItem[];
 }
 
-export async function fetchProjects(): Promise<Project[]> {
-  const response = await fetch(projectsJSON);
-  if (!response.ok) throw new Error(`Response status: ${response.status}`);
-
-  const data = await response.json();
-  return data.projects.filter((project: Project) => project.enabled);
+interface ProjectsResponse {
+  projects: Project[];
+  workProjects: Project[];
 }
 
-export async function fetchWorkProjects(): Promise<Project[]> {
-  const response = await fetch(projectsJSON);
+async function fetchJson<T>(url: string, signal?: AbortSignal): Promise<T> {
+  const response = await fetch(url, { signal });
   if (!response.ok) throw new Error(`Response status: ${response.status}`);
-
-  const data = await response.json();
-  return data.workProjects.filter((project: Project) => project.enabled);
+  return response.json() as Promise<T>;
 }
 
-export async function fetchBlogs(): Promise<Blog[]> {
-  const response = await fetch(mediumRssJSON);
-  if (!response.ok) throw new Error(`Response status: ${response.status}`);
+async function fetchProjectCollection(
+  collection: keyof ProjectsResponse,
+  signal?: AbortSignal,
+): Promise<Project[]> {
+  const data = await fetchJson<ProjectsResponse>(portfolioEndpoints.projects, signal);
+  return data[collection].filter((project) => project.enabled);
+}
 
-  const data = (await response.json()) as MediumFeedResponse;
+export const fetchProjects = (signal?: AbortSignal) =>
+  fetchProjectCollection("projects", signal);
+
+export const fetchWorkProjects = (signal?: AbortSignal) =>
+  fetchProjectCollection("workProjects", signal);
+
+export async function fetchBlogs(signal?: AbortSignal): Promise<Blog[]> {
+  const data = await fetchJson<MediumFeedResponse>(portfolioEndpoints.blogs, signal);
   if (data.status !== "ok") throw new Error("Medium RSS feed returned an error");
 
   return data.items.map((item) => {

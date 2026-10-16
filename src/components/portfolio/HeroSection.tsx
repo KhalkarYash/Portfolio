@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import { ArrowDownRight, ArrowUpRight } from "lucide-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { resumeLink } from "@/utils/constants";
+import { resumeLink } from "@/features/portfolio/config";
 
 gsap.registerPlugin(ScrollTrigger);
 

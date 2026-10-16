@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
-import { type ProjectCardProps } from "@/utils/types";
+import { type ProjectCardProps } from "@/features/portfolio/types";
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
   return (

@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { vi } from "vitest";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { fetchBlogs } from "@/utils/api";
+import { fetchBlogs } from "@/features/portfolio/api";
 
 const workspaceFile = (file: string) => resolve(process.cwd(), file);
 

@@ -3,7 +3,7 @@ import {
   fetchBlogs,
   fetchProjects,
   fetchWorkProjects,
-} from "@/utils/api";
+} from "./api";
 
 const portfolioQueryDefaults = {
   staleTime: 5 * 60 * 1000,
@@ -20,21 +20,21 @@ export const portfolioQueryKeys = {
 export const projectsQueryOptions = () =>
   queryOptions({
     queryKey: portfolioQueryKeys.projects,
-    queryFn: fetchProjects,
+    queryFn: ({ signal }) => fetchProjects(signal),
     ...portfolioQueryDefaults,
   });
 
 export const workProjectsQueryOptions = () =>
   queryOptions({
     queryKey: portfolioQueryKeys.workProjects,
-    queryFn: fetchWorkProjects,
+    queryFn: ({ signal }) => fetchWorkProjects(signal),
     ...portfolioQueryDefaults,
   });
 
 export const blogsQueryOptions = () =>
   queryOptions({
     queryKey: portfolioQueryKeys.blogs,
-    queryFn: fetchBlogs,
+    queryFn: ({ signal }) => fetchBlogs(signal),
     ...portfolioQueryDefaults,
   });
 
