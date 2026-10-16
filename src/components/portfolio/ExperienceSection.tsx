@@ -7,7 +7,7 @@ export function ExperienceSection() {
     <section id="experience" className="py-12">
       <SectionHeader number="02" title="Experience" />
 
-      <div className="relative pl-8 border-l-2 border-border space-y-12">
+      <div className="experience-timeline relative space-y-12 border-l border-primary/30 pl-8">
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
@@ -15,7 +15,7 @@ export function ExperienceSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="relative"
+            className="experience-entry relative"
           >
             {/* Timeline dot */}
             <motion.div

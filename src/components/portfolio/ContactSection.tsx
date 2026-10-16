@@ -34,14 +34,13 @@ export function ContactSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.6 }}
-        className="liquid-glass p-6 md:p-8 rounded-2xl"
+        className="contact-content"
       >
-        <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-          Best way to reach me is via LinkedIn or email. I usually respond
-          within 24 hours.
+        <p className="mb-8 max-w-lg font-serif text-2xl leading-relaxed text-muted-foreground md:text-3xl">
+          Have a good problem to solve? I’d be glad to hear about it.
         </p>
 
-        <div className="grid gap-3 sm:grid-cols-3">
+        <div className="grid border-t border-border sm:grid-cols-3">
           {contactLinks.map((link, index) => (
             <motion.a
               key={link.label}
@@ -57,11 +56,14 @@ export function ContactSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.35, delay: index * 0.08 }}
               whileHover={{ y: -2 }}
-              className="rounded-xl border border-border bg-background/40 p-4 hover:bg-primary/5 transition-colors"
+              className="contact-link border-b border-border py-5 transition-colors sm:mr-8"
             >
-              <div className="flex items-center gap-2 text-foreground font-semibold">
+              <div className="flex items-center justify-between text-foreground font-medium">
+                <span className="flex items-center gap-3">
                 <link.icon className="w-4 h-4 text-primary" />
                 {link.label}
+                </span>
+                <span aria-hidden="true" className="text-primary">↗</span>
               </div>
               <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
                 {link.description}

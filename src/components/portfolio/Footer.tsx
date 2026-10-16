@@ -1,21 +1,11 @@
 import { motion } from "framer-motion";
-import { Github, Globe, Mail, Linkedin, XIcon, Instagram } from "lucide-react";
-
 const socialLinks = [
-  { icon: Mail, href: "mailto:yashmk2004@gmail.com", label: "Email" },
-  { icon: Github, href: "https://github.com/khalkaryash", label: "GitHub" },
-  { icon: Globe, href: "https://yashkhalkar.vercel.app", label: "Website" },
-  {
-    icon: Linkedin,
-    href: "https://in.linkedin.com/in/yashkhalkar",
-    label: "LinkedIn",
-  },
-  {
-    icon: Instagram,
-    href: "https://www.instagram.com/yashkhalkar001",
-    label: "Insta",
-  },
-  { icon: XIcon, href: "https://www.x.com/yashkhalkar001", label: "Close" },
+  { href: "mailto:yashmk2004@gmail.com", label: "Email" },
+  { href: "https://github.com/khalkaryash", label: "GitHub" },
+  { href: "https://yashkhalkar.vercel.app", label: "Website" },
+  { href: "https://in.linkedin.com/in/yashkhalkar", label: "LinkedIn" },
+  { href: "https://www.instagram.com/yashkhalkar001", label: "Instagram" },
+  { href: "https://www.x.com/yashkhalkar001", label: "X" },
 ];
 
 export function Footer() {
@@ -25,16 +15,16 @@ export function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="py-12 border-t border-border text-center"
+      className="py-10 border-t border-border text-center"
     >
       <p className="text-muted-foreground text-xs font-medium uppercase tracking-[0.2em] mb-6">
-        Built with precision • 2026 © Yash Khalkar
+        © 2026 Yash Khalkar
       </p>
 
-      <div className="flex justify-center gap-4">
-        {socialLinks.map((social, index) => (
+      <div className="flex flex-wrap justify-center gap-x-7 gap-y-3">
+        {socialLinks.map((social) => (
           <motion.a
-            key={index}
+            key={social.label}
             href={social.href}
             target={social.href.startsWith("mailto") ? undefined : "_blank"}
             rel={
@@ -42,12 +32,10 @@ export function Footer() {
                 ? undefined
                 : "noopener noreferrer"
             }
-            className="p-3 rounded-xl glass hover:bg-primary/10 text-muted-foreground hover:text-primary transition-colors"
-            whileHover={{ scale: 1.1, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            aria-label={social.label}
+            className="text-xs text-muted-foreground transition-colors hover:text-primary"
+            whileHover={{ y: -2 }}
           >
-            <social.icon className="w-5 h-5" />
+            {social.label}
           </motion.a>
         ))}
       </div>

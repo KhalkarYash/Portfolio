@@ -4,19 +4,17 @@ import { type SectionHeaderProps } from "@/utils/types";
 export function SectionHeader({ number, title }: SectionHeaderProps) {
   return (
     <motion.div
-      className="flex items-center gap-3 mb-8"
+      className="section-heading mb-10 flex items-end justify-between gap-6 md:mb-14"
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.5 }}
     >
-      <span className="text-primary text-sm font-mono font-semibold">
-        {number}
-      </span>
-      <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-muted-foreground">
-        {title}
-      </h2>
-      <div className="flex-1 h-px bg-border" />
+      <div>
+        <span className="section-index">{number}</span>
+        <h2 className="mt-3 font-serif text-4xl font-medium tracking-tight text-foreground md:text-5xl">{title}</h2>
+      </div>
+      <div className="mb-2 hidden h-px flex-1 bg-border md:block" />
     </motion.div>
   );
 }

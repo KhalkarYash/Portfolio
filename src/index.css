@@ -1,12 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:wght@400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -14,8 +6,8 @@
 
 @layer base {
   :root {
-    --background: 0 0% 96%;
-    --foreground: 0 0% 9%;
+    --background: 38 30% 96%;
+    --foreground: 24 12% 12%;
 
     --card: 0 0% 98%;
     --card-foreground: 0 0% 9%;
@@ -23,14 +15,14 @@
     --popover: 0 0% 89%;
     --popover-foreground: 0 0% 9%;
 
-    --primary: 20 90% 48%;
-    --primary-foreground: 33 100% 96%;
+    --primary: 17 54% 44%;
+    --primary-foreground: 38 30% 97%;
 
     --secondary: 0 0% 32%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 63%;
-    --muted-foreground: 0 0% 9%;
+    --muted: 28 12% 88%;
+    --muted-foreground: 25 8% 42%;
 
     --accent: 47 100% 96%;
     --accent-foreground: 37 92% 50%;
@@ -38,27 +30,27 @@
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 85% 97%;
 
-    --border: 0 0% 83%;
-    --input: 0 0% 83%;
-    --ring: 20 90% 48%;
+    --border: 25 12% 83%;
+    --input: 25 12% 83%;
+    --ring: 17 54% 44%;
 
     --radius: 0.75rem;
 
-    --surface: 220 15% 97%;
-    --surface-foreground: 220 20% 30%;
+    --surface: 38 24% 93%;
+    --surface-foreground: 25 12% 32%;
 
-    --glass: 0 0% 100% / 0.7;
-    --glass-border: 220 15% 85%;
+    --glass: 38 30% 97% / 0.72;
+    --glass-border: 25 12% 83%;
     --glass-blur: 20px;
 
     --gradient-primary: linear-gradient(
       135deg,
-      hsl(174 72% 46%),
-      hsl(190 80% 50%)
+      hsl(17 54% 44%),
+      hsl(26 48% 55%)
     );
     --gradient-glow: radial-gradient(
       600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-      hsl(174 72% 46% / 0.1),
+      hsl(17 54% 44% / 0.1),
       transparent 40%
     );
 
@@ -68,7 +60,7 @@
       0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
     --shadow-lg:
       0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
-    --shadow-glow: 0 0 40px hsl(174 72% 46% / 0.2);
+    --shadow-glow: 0 0 40px hsl(17 54% 44% / 0.14);
     --chart-1: 27 95% 60%;
     --chart-2: 43 96% 56%;
     --chart-3: 47 95% 53%;
@@ -82,14 +74,10 @@
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 0 0% 83%;
     --sidebar-ring: 20 90% 48%;
-    --font-sans:
-      "Roboto", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-    --font-serif:
-      "Libre Caslon Text", ui-serif, Georgia, Cambria, "Times New Roman", Times,
-      serif;
+    --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-serif: "Playfair Display", ui-serif, Georgia, serif;
     --font-mono:
-      "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
       "Liberation Mono", "Courier New", monospace;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
@@ -103,49 +91,49 @@
   }
 
   .dark {
-    --background: 0 0% 9%;
-    --foreground: 0 0% 98%;
+    --background: 28 9% 8%;
+    --foreground: 38 25% 93%;
 
-    --card: 0 0% 14%;
-    --card-foreground: 0 0% 98%;
+    --card: 28 8% 12%;
+    --card-foreground: 38 25% 93%;
 
-    --popover: 0 0% 25%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 28 8% 14%;
+    --popover-foreground: 38 25% 93%;
 
-    --primary: 27 95% 60%;
-    --primary-foreground: 12 81% 14%;
+    --primary: 22 55% 63%;
+    --primary-foreground: 28 9% 8%;
 
-    --secondary: 0 0% 45%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 28 6% 23%;
+    --secondary-foreground: 38 25% 93%;
 
-    --muted: 0 0% 45%;
-    --muted-foreground: 0 0% 98%;
+    --muted: 28 6% 18%;
+    --muted-foreground: 32 8% 66%;
 
-    --accent: 20 91% 14%;
-    --accent-foreground: 43 96% 56%;
+    --accent: 22 25% 18%;
+    --accent-foreground: 22 55% 72%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 85% 97%;
 
-    --border: 0 0% 32%;
-    --input: 0 0% 32%;
-    --ring: 27 95% 60%;
+    --border: 28 6% 23%;
+    --input: 28 6% 23%;
+    --ring: 22 55% 63%;
 
-    --surface: 220 18% 8%;
-    --surface-foreground: 210 15% 75%;
+    --surface: 28 8% 12%;
+    --surface-foreground: 32 8% 70%;
 
-    --glass: 220 20% 8% / 0.8;
-    --glass-border: 220 15% 20%;
+    --glass: 28 9% 10% / 0.82;
+    --glass-border: 28 6% 25%;
     --glass-blur: 20px;
 
     --gradient-primary: linear-gradient(
       135deg,
-      hsl(174 72% 50%),
-      hsl(190 80% 55%)
+      hsl(22 55% 63%),
+      hsl(31 46% 69%)
     );
     --gradient-glow: radial-gradient(
       600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-      hsl(174 72% 50% / 0.15),
+      hsl(22 55% 63% / 0.15),
       transparent 40%
     );
 
@@ -155,7 +143,7 @@
       0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
     --shadow-lg:
       0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
-    --shadow-glow: 0 0 60px hsl(174 72% 50% / 0.3);
+    --shadow-glow: 0 0 42px hsl(22 55% 63% / 0.14);
     --chart-1: 30 97% 72%;
     --chart-2: 45 96% 64%;
     --chart-3: 48 96% 76%;
@@ -187,11 +175,12 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
   }
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: "Inter", system-ui, sans-serif;
+    font-family: "DM Sans", ui-sans-serif, sans-serif;
   }
 
   ::selection {
@@ -346,5 +335,457 @@
 
   .link-underline:hover::after {
     @apply scale-x-100 origin-left;
+  }
+}
+
+/* Portfolio art direction */
+.font-serif {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.font-mono {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 72rem 48rem at 8% 5%, hsl(var(--primary) / 0.085), transparent 72%),
+    radial-gradient(ellipse 54rem 42rem at 94% 48%, hsl(34 48% 48% / 0.035), transparent 72%),
+    hsl(var(--background));
+}
+
+.portfolio-content {
+  position: relative;
+  isolation: isolate;
+}
+
+.portfolio-content::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 4% 27%, hsl(var(--primary) / 0.045), transparent 32rem),
+    radial-gradient(ellipse at 92% 67%, hsl(var(--primary) / 0.035), transparent 34rem);
+  content: "";
+  pointer-events: none;
+}
+
+.site-nav {
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  background: hsl(28 9% 7% / 0.82);
+  backdrop-filter: blur(16px);
+  color: white;
+}
+
+.site-mark {
+  color: #f6f1e9;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.08em;
+  text-decoration: none;
+}
+
+.site-mark span,
+.hero-period {
+  color: hsl(22 55% 67%);
+}
+
+.site-nav-link {
+  color: rgb(255 255 255 / 72%);
+  font-size: 0.75rem;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.site-nav-link:hover {
+  color: #fff;
+}
+
+.light .site-nav {
+  border-bottom-color: hsl(var(--foreground) / 0.09);
+  background: hsl(var(--background) / 0.88);
+  color: hsl(var(--foreground));
+}
+
+.light .site-mark {
+  color: hsl(var(--foreground));
+}
+
+.light .site-nav-link {
+  color: hsl(var(--foreground) / 0.68);
+}
+
+.light .site-nav-link:hover {
+  color: hsl(var(--foreground));
+}
+
+.mobile-nav > div {
+  scrollbar-width: none;
+}
+
+.mobile-nav > div::-webkit-scrollbar {
+  display: none;
+}
+
+.theme-switch {
+  display: grid;
+  height: 38px;
+  width: 38px;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 50%;
+  background: rgb(255 255 255 / 7%);
+  color: #f4e9dc;
+  backdrop-filter: blur(12px);
+}
+
+.light .theme-switch {
+  border-color: hsl(var(--foreground) / 0.18);
+  background: hsl(var(--background) / 0.82);
+  color: hsl(var(--foreground));
+}
+
+.hero-scene {
+  background: #211f1b;
+}
+
+.hero-photograph {
+  overflow: hidden;
+}
+
+.hero-photograph-image {
+  background-image: url("/yash.jpg");
+  background-size: cover;
+  background-position: center 39%;
+  filter: saturate(0.48) brightness(0.7);
+  transform-origin: center center;
+}
+
+.hero-shade {
+  background:
+    linear-gradient(90deg, rgb(14 14 13 / 82%) 0%, rgb(14 14 13 / 56%) 44%, rgb(14 14 13 / 18%) 100%),
+    linear-gradient(0deg, rgb(14 14 13 / 78%) 0%, rgb(14 14 13 / 18%) 47%, rgb(14 14 13 / 32%) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-name {
+  text-shadow: 0 5px 48px rgb(0 0 0 / 16%);
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  border-bottom: 1px solid hsl(22 55% 67% / 0.75);
+  padding: 0 0 0.65rem;
+  color: #f4e9dc;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  text-decoration: none;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.hero-link:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.hero-link-muted {
+  border-color: rgb(255 255 255 / 32%);
+  color: rgb(255 255 255 / 72%);
+}
+
+.hero-grain {
+  opacity: 0.13;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.24'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+}
+
+.light .hero-photograph-image {
+  filter: saturate(0.62) brightness(0.92);
+}
+
+.light .hero-shade {
+  background:
+    linear-gradient(90deg, hsl(38 30% 96% / 0.9) 0%, hsl(38 30% 96% / 0.68) 42%, hsl(38 30% 96% / 0.12) 100%),
+    linear-gradient(0deg, hsl(38 30% 96% / 0.76) 0%, hsl(38 30% 96% / 0.08) 72%);
+}
+
+.light .hero-name {
+  color: hsl(var(--foreground));
+  text-shadow: 0 2px 36px hsl(38 30% 96% / 0.24);
+}
+
+.light .hero-content p {
+  color: hsl(var(--foreground) / 0.78);
+}
+
+.light .hero-link {
+  border-color: hsl(var(--primary) / 0.76);
+  color: hsl(var(--foreground));
+}
+
+.light .hero-link:hover {
+  border-color: hsl(var(--foreground));
+  color: hsl(var(--foreground));
+}
+
+.light .hero-link-muted {
+  border-color: hsl(var(--foreground) / 0.28);
+  color: hsl(var(--foreground) / 0.72);
+}
+
+.light .hero-grain {
+  opacity: 0.045;
+  mix-blend-mode: multiply;
+}
+
+.portfolio-content > section {
+  padding-top: 6.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.section-index {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: hsl(var(--primary));
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+}
+
+.section-index::before {
+  width: 1.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--primary) / 0.25));
+  content: "";
+}
+
+.section-heading > div:first-child {
+  flex-shrink: 0;
+}
+
+.section-heading > div:last-child {
+  background: linear-gradient(90deg, hsl(var(--primary) / 0.42), hsl(var(--border) / 0.45) 48%, transparent) !important;
+}
+
+.about-copy > p:first-child {
+  max-width: 42rem;
+  color: hsl(var(--foreground) / 0.88);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+  line-height: 1.55;
+}
+
+.about-copy > p:not(:first-child) {
+  max-width: 40rem;
+  font-size: 0.96rem;
+}
+
+.experience-timeline {
+  border-image: linear-gradient(to bottom, hsl(var(--primary) / 0.75), hsl(var(--primary) / 0.08)) 1;
+}
+
+.experience-entry {
+  transition: transform 350ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.experience-entry:hover {
+  transform: translateX(4px);
+}
+
+.project-image-link img {
+  filter: saturate(0.9) contrast(1.025);
+  transition: filter 700ms ease, transform 900ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.project-image-link {
+  position: relative;
+  border: 1px solid hsl(var(--foreground) / 0.09);
+  box-shadow: 0 18px 56px hsl(0 0% 0% / 0.12);
+}
+
+.project-entry:hover .project-image-link img {
+  filter: saturate(1.04) contrast(1.025);
+}
+
+.project-image-wash {
+  background: linear-gradient(135deg, hsl(var(--primary) / 0.16), transparent 58%), linear-gradient(0deg, hsl(var(--background) / 0.12), transparent 50%);
+}
+
+.tech-row {
+  position: relative;
+  transition: padding 280ms ease, background-color 280ms ease;
+}
+
+.tech-row:hover {
+  padding-right: 0.65rem;
+  padding-left: 0.65rem;
+  background: linear-gradient(90deg, hsl(var(--primary) / 0.055), transparent 78%);
+}
+
+.project-icon-link {
+  color: hsl(var(--muted-foreground));
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.project-icon-link:hover {
+  color: hsl(var(--primary));
+  transform: translate(2px, -2px);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 4px;
+}
+
+.project-tools {
+  color: hsl(var(--primary));
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.65rem;
+  line-height: 1.7;
+  letter-spacing: 0.015em;
+}
+
+.contact-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: padding 250ms ease, border-color 250ms ease;
+}
+
+.contact-link:hover {
+  padding-left: 0.65rem;
+  border-color: hsl(var(--primary) / 0.55);
+}
+
+.horizontal-viewport {
+  width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.horizontal-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal-viewport.is-rail-pinned {
+  overflow: hidden;
+  scroll-snap-type: none;
+}
+
+.horizontal-track {
+  display: flex;
+  width: max-content;
+  align-items: stretch;
+  gap: clamp(1.5rem, 5vw, 4.5rem);
+  padding-right: 2rem;
+}
+
+.horizontal-panel {
+  width: min(88vw, 30rem);
+  flex: 0 0 min(88vw, 30rem);
+  scroll-snap-align: start;
+}
+
+.horizontal-panel .project-entry {
+  height: 100%;
+}
+
+.horizontal-more-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid hsl(var(--border));
+  padding-left: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.horizontal-progress {
+  display: none;
+  height: 1px;
+  margin-top: 1.5rem;
+  background: hsl(var(--border));
+}
+
+.horizontal-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
+  background: hsl(var(--primary));
+}
+
+.is-animated-rail .horizontal-progress {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .horizontal-panel {
+    width: min(82vw, 60rem);
+    flex-basis: min(82vw, 60rem);
+    scroll-snap-align: none;
+  }
+
+  .horizontal-more-panel {
+    width: min(44vw, 34rem);
+    flex-basis: min(44vw, 34rem);
+  }
+}
+
+.portfolio-content .liquid-glass,
+.portfolio-content .glass {
+  box-shadow: none;
+}
+
+@media (max-width: 640px) {
+  .hero-photograph-image {
+    background-position: 56% center;
+  }
+
+  .hero-shade {
+    background:
+      linear-gradient(90deg, rgb(14 14 13 / 70%), rgb(14 14 13 / 20%)),
+      linear-gradient(0deg, rgb(14 14 13 / 84%) 0%, rgb(14 14 13 / 16%) 76%);
+  }
+
+  .portfolio-content > section {
+    padding-top: 4.75rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) and (min-width: 768px) {
+  .horizontal-viewport {
+    scrollbar-width: thin;
+  }
+
+  .horizontal-viewport::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+  }
+
+  .horizontal-viewport::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
   }
 }

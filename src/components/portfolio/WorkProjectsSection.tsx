@@ -1,48 +1,19 @@
-"use client";
-
-import { SectionHeader } from "./SectionHeader";
-import { ProjectCard } from "./ProjectCard";
 import { useWorkProjectsQuery } from "@/hooks/usePortfolioQueries";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { HorizontalProjectSection } from "./HorizontalProjectSection";
 
 export function WorkProjectsSection() {
   const { data: workProjects = [], error } = useWorkProjectsQuery();
 
   return (
-    <section id="work-projects" className="py-12">
-      <SectionHeader number="03.1" title="Work Projects" />
-
-      {error ? (
-        <p className="text-sm text-muted-foreground">
-          Unable to load work projects right now.
-        </p>
-      ) : (
-        <div className="grid grid-cols-1 gap-6">
-          {workProjects.slice(0, 3).map((project, index) => (
-            <ProjectCard key={project.title} project={project} index={index} />
-          ))}
-        </div>
-      )}
-
-      {workProjects.length > 2 && (
-        <motion.div
-          className="flex justify-center mt-8"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-        >
-          <Link
-            to="/work-projects"
-            className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl liquid-glass text-sm font-semibold text-primary hover:bg-primary/10 transition-colors"
-          >
-            View All Work Projects
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </Link>
-        </motion.div>
-      )}
-    </section>
+    <HorizontalProjectSection
+      id="work-projects"
+      number="03.1"
+      title="Work Projects"
+      projects={workProjects}
+      error={error}
+      moreHref="/work-projects"
+      moreLabel="All work projects"
+      moreWhen={2}
+    />
   );
 }

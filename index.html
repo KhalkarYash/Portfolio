@@ -3,6 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="preload" as="image" href="/yash.jpg" fetchpriority="high" />
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem("theme");
+      document.documentElement.classList.add(savedTheme === "light" ? "light" : "dark");
+    })();
+  </script>
 
   <style>
     .static-homepage {

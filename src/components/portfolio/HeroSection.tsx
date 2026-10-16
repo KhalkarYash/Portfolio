@@ -1,96 +1,94 @@
-import { motion, Variants } from "framer-motion";
-import { ArrowDown, FileText } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { useLayoutEffect, useRef } from "react";
+import { ArrowDownRight, ArrowUpRight } from "lucide-react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { resumeLink } from "@/utils/constants";
 
-const containerVariants: Variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.15,
-      delayChildren: 0.2,
-    },
-  },
-};
-
-const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6 },
-  },
-};
+gsap.registerPlugin(ScrollTrigger);
 
 export function HeroSection() {
+  const heroRef = useRef<HTMLElement>(null);
+
+  useLayoutEffect(() => {
+    const hero = heroRef.current;
+    if (!hero) return;
+
+    const media = gsap.matchMedia();
+    media.add("(prefers-reduced-motion: no-preference)", () => {
+      const photograph = hero.querySelector(".hero-photograph");
+      const image = hero.querySelector(".hero-photograph-image");
+      const content = hero.querySelector(".hero-content");
+      const name = hero.querySelector(".hero-name");
+      const intro = hero.querySelector(".hero-intro");
+      if (!photograph || !image || !content || !name || !intro) return;
+
+      gsap.fromTo(
+        image,
+        { scale: 1.12 },
+        { scale: 1.08, duration: 2.4, ease: "power2.out" },
+      );
+
+      gsap.timeline({ defaults: { ease: "power3.out" } })
+        .fromTo(name, { autoAlpha: 0, y: 14 }, { autoAlpha: 1, y: 0, duration: 1, delay: 0.12 })
+        .fromTo(intro, { autoAlpha: 0, y: 8 }, { autoAlpha: 1, y: 0, duration: 0.8 }, "-=0.48");
+
+      gsap.to(photograph, {
+        yPercent: 8,
+        ease: "none",
+        scrollTrigger: {
+          trigger: hero,
+          start: "top top",
+          end: "bottom top",
+          scrub: 0.8,
+          invalidateOnRefresh: true,
+        },
+      });
+      gsap.to(content, {
+        yPercent: 8,
+        opacity: 0.35,
+        ease: "none",
+        scrollTrigger: {
+          trigger: hero,
+          start: "top top",
+          end: "bottom top",
+          scrub: 0.8,
+        },
+      });
+    });
+
+    return () => media.revert();
+  }, []);
+
   return (
-    <motion.section
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      className="py-16 md:py-24"
-    >
-      <div className="md:flex md:items-center md:justify-between">
-        <motion.div
-          variants={itemVariants}
-          className="mt-8 w-full md:mt-0 flex items-end flex-row gap-4 justify-between flex-wrap"
-        >
-          <div className="mt-4 text-center">
-            <motion.h1
-              variants={itemVariants}
-              className="text-4xl sm:text-5xl md:text-6xl text-red-600 font-black leading-[1.1] tracking-tight mb-6 text-balance"
-            >
-              Yash Khalkar
-            </motion.h1>
-          </div>
-          <Avatar className="h-56 w-56">
-            <img className="glow" src="/yash-cropped.png" alt="Yash Khalkar" />
-            <AvatarFallback>YK</AvatarFallback>
-          </Avatar>
-        </motion.div>
+    <section ref={heroRef} id="home" className="hero-scene relative isolate flex min-h-[88svh] items-end overflow-hidden text-white md:min-h-[92svh]">
+      <div className="hero-photograph absolute inset-0 -z-20" aria-hidden="true">
+        <div className="hero-photograph-image absolute inset-0" />
       </div>
+      <div className="hero-shade absolute inset-0 -z-10" aria-hidden="true" />
 
-      <motion.h1
-        variants={itemVariants}
-        className="text-4xl sm:text-5xl md:text-6xl font-black leading-[1.1] tracking-tight mb-6 text-balance"
-      >
-        Full-stack developer building{" "}
-        <span className="gradient-text">impactful</span> web applications
-      </motion.h1>
-
-      <motion.p
-        variants={itemVariants}
-        className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl"
-      >
-        Specializing in MERN stack and Next.js with proven experience in cloud
-        deployment and leading tech communities. Former GDG On Campus Lead @
-        MET, Hacktoberfest Nashik '24 Co-organizer. Currently based in Nashik,
-        India.
-      </motion.p>
-
-      <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
-        <motion.a
-          href="#projects"
-          className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold py-3 px-6 rounded-xl hover-lift glow"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          View Projects
-          <ArrowDown className="w-4 h-4" />
-        </motion.a>
-        <motion.a
-          href={resumeLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 glass font-semibold py-3 px-6 rounded-xl hover:bg-primary/10 transition-colors"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          <FileText className="w-4 h-4" />
-          View Resume
-        </motion.a>
-      </motion.div>
-    </motion.section>
+      <div className="hero-content mx-auto w-full max-w-[1440px] px-6 pb-16 pt-32 sm:px-10 sm:pb-20 lg:px-16 lg:pb-24">
+        <div>
+            <h1 className="hero-name max-w-5xl font-serif text-[clamp(4.25rem,11vw,10.5rem)] leading-[0.82] tracking-[-0.065em] text-white">
+              Yash Khalkar<span className="hero-period">.</span>
+            </h1>
+          <div
+            className="mt-8 flex flex-col gap-7 sm:mt-10 sm:flex-row sm:items-end sm:justify-between"
+          >
+            <p className="hero-intro max-w-md text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
+              I build thoughtful digital products, from the first interface to the systems behind it.
+            </p>
+            <div className="flex flex-wrap items-center gap-x-7 gap-y-4">
+              <a href="#work-projects" className="hero-link group">
+                Explore my work <ArrowDownRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:translate-y-1" />
+              </a>
+              <a href={resumeLink} target="_blank" rel="noopener noreferrer" className="hero-link hero-link-muted group">
+                Resume <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="hero-grain pointer-events-none absolute inset-0 -z-[5]" aria-hidden="true" />
+    </section>
   );
 }

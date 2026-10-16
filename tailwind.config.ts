@@ -14,20 +14,9 @@ export default {
   	},
   	extend: {
   		fontFamily: {
-  			sans: [
-  				'Roboto',
-  				'ui-sans-serif',
-  				'system-ui',
-  				'-apple-system',
-  				'BlinkMacSystemFont',
-  				'Segoe UI',
-  				'Helvetica Neue',
-  				'Arial',
-  				'Noto Sans',
-  				'sans-serif'
-  			],
+			sans: ['DM Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
   			mono: [
-  				'Roboto Mono',
+				'IBM Plex Mono',
   				'ui-monospace',
   				'SFMono-Regular',
   				'Menlo',
@@ -38,7 +27,7 @@ export default {
   				'monospace'
   			],
   			serif: [
-  				'Libre Caslon Text',
+				'Playfair Display',
   				'ui-serif',
   				'Georgia',
   				'Cambria',

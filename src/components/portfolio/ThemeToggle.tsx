@@ -8,10 +8,10 @@ export function ThemeToggle() {
   return (
     <motion.button
       onClick={toggleTheme}
-      className="relative flex items-center justify-center w-10 h-10 rounded-full liquid-glass hover:bg-primary/10 transition-colors"
+      className="theme-switch"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      aria-label="Toggle theme"
+      aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
     >
       <motion.div
         initial={false}

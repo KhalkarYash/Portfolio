@@ -1,33 +1,19 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ProjectCard } from "@/components/portfolio/ProjectCard";
 import { useProjectsQuery } from "@/hooks/usePortfolioQueries";
+import { ThemeToggle } from "@/components/portfolio/ThemeToggle";
 
 const Projects = () => {
   const { data: projects = [], isPending, error } = useProjectsQuery();
 
-  useEffect(() => {
-    const stored = localStorage.getItem("theme");
-    if (stored) {
-      document.documentElement.classList.add(stored);
-    } else {
-      document.documentElement.classList.add("dark");
-    }
-  }, []);
-
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Gradient background effect */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px]" />
-        <div className="absolute top-1/3 -right-40 w-[400px] h-[400px] bg-primary/3 rounded-full blur-[80px]" />
-        <div className="absolute bottom-1/4 left-1/4 w-[300px] h-[300px] bg-primary/4 rounded-full blur-[60px]" />
-      </div>
-
-      <main className="relative max-w-2xl mx-auto px-6 pt-24 pb-32">
-        {/* Back button */}
+      <main className="relative mx-auto max-w-[1120px] px-6 pb-24 pt-8 sm:px-10 lg:px-16">
+        <div className="mb-16 flex items-center justify-between border-b border-border pb-5">
+          <Link to="/" className="site-mark" aria-label="Yash Khalkar, home">YK<span>.</span></Link>
+          <ThemeToggle />
+        </div>
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -37,7 +23,7 @@ const Projects = () => {
             to="/"
             className="group inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors mb-8"
           >
-            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+            <span aria-hidden="true" className="transition-transform group-hover:-translate-x-1">←</span>
             Back to Home
           </Link>
         </motion.div>
@@ -49,7 +35,7 @@ const Projects = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <h1 className="text-3xl font-bold text-foreground mb-2">
+          <h1 className="mb-3 font-serif text-4xl font-medium tracking-tight text-foreground md:text-5xl">
             All Projects
           </h1>
           <p className="text-muted-foreground text-sm">

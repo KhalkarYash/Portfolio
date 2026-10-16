@@ -9,46 +9,36 @@ import { BlogsSection } from "@/components/portfolio/BlogsSection";
 import { TechStackSection } from "@/components/portfolio/TechStackSection";
 import { ContactSection } from "@/components/portfolio/ContactSection";
 import { Footer } from "@/components/portfolio/Footer";
-import { DockMenu } from "@/components/portfolio/DockMenu";
 import { EducationSection } from "@/components/portfolio/EducationSection";
 
 const Index = () => {
   // Set dark mode by default on first load
   useEffect(() => {
     const stored = localStorage.getItem("theme");
-    if (!stored) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.add(stored);
-    }
+    const theme = stored === "light" ? "light" : "dark";
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(theme);
+    if (!stored) localStorage.setItem("theme", theme);
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground page-load">
-      {/* Gradient background effect */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px]" />
-        <div className="absolute top-1/3 -right-40 w-[400px] h-[400px] bg-primary/3 rounded-full blur-[80px]" />
-        <div className="absolute bottom-1/4 left-1/4 w-[300px] h-[300px] bg-primary/4 rounded-full blur-[60px]" />
-      </div>
-
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar />
 
-      <main className="relative max-w-2xl mx-auto px-6 pt-24 pb-32">
+      <main className="relative pb-12 md:pb-16">
         <HeroSection />
-        <AboutSection />
-        <ExperienceSection />
-        <WorkProjectsSection />
-        <ProjectsSection />
-        <BlogsSection />
-        <TechStackSection />
-        <EducationSection />
-        <ContactSection />
-        <Footer />
+        <div className="portfolio-content mx-auto max-w-[1120px] px-6 sm:px-10 lg:px-16">
+          <AboutSection />
+          <ExperienceSection />
+          <WorkProjectsSection />
+          <ProjectsSection />
+          <BlogsSection />
+          <TechStackSection />
+          <EducationSection />
+          <ContactSection />
+          <Footer />
+        </div>
       </main>
-
-      <DockMenu />
     </div>
   );
 };
