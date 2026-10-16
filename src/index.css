@@ -929,6 +929,20 @@ body {
   filter: saturate(0.82);
 }
 
+.project-entry > *,
+.project-copy,
+.project-title,
+.project-description,
+.project-tools {
+  min-width: 0;
+}
+
+.project-title,
+.project-description,
+.project-tools {
+  overflow-wrap: anywhere;
+}
+
 .project-image-wash {
   background: linear-gradient(135deg, hsl(var(--background) / 0.14), transparent 58%);
 }
@@ -972,6 +986,7 @@ button:focus-visible {
 }
 
 .horizontal-viewport {
+  min-width: 0;
   width: 100%;
   overflow-x: auto;
   overscroll-behavior-x: contain;
@@ -981,6 +996,20 @@ button:focus-visible {
 
 .horizontal-work-section .section-heading .section-title {
   font-size: clamp(2.5rem, 4.6vw, 3.75rem);
+}
+
+.horizontal-work-section .section-heading {
+  border-top: 1px solid hsl(var(--border));
+  padding-top: clamp(1.5rem, 2.5vw, 2.25rem);
+}
+
+.horizontal-work-section + .horizontal-work-section .section-heading {
+  border-top-color: hsl(var(--primary) / 0.42);
+}
+
+.horizontal-work-section#projects {
+  border-bottom: 1px solid hsl(var(--border));
+  padding-bottom: clamp(3rem, 5vw, 4.5rem);
 }
 
 .horizontal-viewport::-webkit-scrollbar {
@@ -995,6 +1024,7 @@ button:focus-visible {
 .horizontal-track {
   display: flex;
   width: max-content;
+  min-width: 0;
   align-items: stretch;
   gap: clamp(1.5rem, 5vw, 4.5rem);
   padding-right: 2rem;
@@ -1003,6 +1033,7 @@ button:focus-visible {
 .horizontal-panel {
   width: min(88vw, 30rem);
   flex: 0 0 min(88vw, 30rem);
+  min-width: 0;
   scroll-snap-align: start;
 }
 
