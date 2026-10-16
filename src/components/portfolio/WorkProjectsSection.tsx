@@ -2,31 +2,29 @@
 
 import { SectionHeader } from "./SectionHeader";
 import { ProjectCard } from "./ProjectCard";
-import { type Project } from "@/utils/types";
-import { fetchWorkProjects } from "../../utils/api";
-import { useEffect, useState } from "react";
+import { useWorkProjectsQuery } from "@/hooks/usePortfolioQueries";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 export function WorkProjectsSection() {
-  const [workProjects, setWorkProjects] = useState<Project[]>([]);
-
-  useEffect(() => {
-    fetchWorkProjects()
-      .then(setWorkProjects)
-      .catch((error) => console.error("Error fetching work projects:", error));
-  }, []);
+  const { data: workProjects = [], error } = useWorkProjectsQuery();
 
   return (
     <section id="work-projects" className="py-12">
       <SectionHeader number="03.1" title="Work Projects" />
 
-      <div className="grid grid-cols-1 gap-6">
-        {workProjects.slice(0, 3).map((project, index) => (
-          <ProjectCard key={project.title} project={project} index={index} />
-        ))}
-      </div>
+      {error ? (
+        <p className="text-sm text-muted-foreground">
+          Unable to load work projects right now.
+        </p>
+      ) : (
+        <div className="grid grid-cols-1 gap-6">
+          {workProjects.slice(0, 3).map((project, index) => (
+            <ProjectCard key={project.title} project={project} index={index} />
+          ))}
+        </div>
+      )}
 
       {workProjects.length > 2 && (
         <motion.div

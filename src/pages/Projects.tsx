@@ -1,14 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ProjectCard } from "@/components/portfolio/ProjectCard";
-import { type Project } from "@/utils/types";
-import { fetchProjects } from "@/utils/api";
+import { useProjectsQuery } from "@/hooks/usePortfolioQueries";
 
 const Projects = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
-  const [loading, setLoading] = useState(true);
+  const { data: projects = [], isPending, error } = useProjectsQuery();
 
   useEffect(() => {
     const stored = localStorage.getItem("theme");
@@ -17,13 +15,6 @@ const Projects = () => {
     } else {
       document.documentElement.classList.add("dark");
     }
-  }, []);
-
-  useEffect(() => {
-    fetchProjects()
-      .then(setProjects)
-      .catch((error) => console.error("Error fetching projects:", error))
-      .finally(() => setLoading(false));
   }, []);
 
   return (
@@ -67,10 +58,14 @@ const Projects = () => {
         </motion.div>
 
         {/* Projects grid */}
-        {loading ? (
+        {isPending ? (
           <div className="flex justify-center py-20">
             <div className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin" />
           </div>
+        ) : error ? (
+          <p className="py-20 text-center text-sm text-muted-foreground">
+            Unable to load projects right now. Please try again later.
+          </p>
         ) : (
           <div className="grid grid-cols-1 gap-6">
             {projects.map((project, index) => (

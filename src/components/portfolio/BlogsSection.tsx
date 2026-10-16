@@ -1,30 +1,28 @@
 import { SectionHeader } from "./SectionHeader";
 import { BlogCard } from "./BlogCard";
-import { type Blog } from "@/utils/types";
-import { fetchBlogs } from "../../utils/api";
-import { useEffect, useState } from "react";
+import { useBlogsQuery } from "@/hooks/usePortfolioQueries";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 export function BlogsSection() {
-  const [blogs, setBlogs] = useState<Blog[]>([]);
-
-  useEffect(() => {
-    fetchBlogs()
-      .then(setBlogs)
-      .catch((error) => console.error("Error fetching blogs:", error));
-  }, []);
+  const { data: blogs = [], error } = useBlogsQuery();
 
   return (
     <section id="blogs" className="py-12">
       <SectionHeader number="04" title="Latest Blogs" />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        {blogs.slice(0, 2).map((blog, index) => (
-          <BlogCard key={blog.title} blog={blog} index={index} />
-        ))}
-      </div>
+      {error ? (
+        <p className="text-sm text-muted-foreground">
+          Unable to load blogs right now.
+        </p>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          {blogs.slice(0, 2).map((blog, index) => (
+            <BlogCard key={blog.title} blog={blog} index={index} />
+          ))}
+        </div>
+      )}
 
       {blogs.length > 2 && (
         <motion.div

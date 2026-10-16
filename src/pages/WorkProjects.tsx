@@ -1,14 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ProjectCard } from "@/components/portfolio/ProjectCard";
-import { type Project } from "@/utils/types";
-import { fetchWorkProjects } from "@/utils/api";
+import { useWorkProjectsQuery } from "@/hooks/usePortfolioQueries";
 
 const WorkProjects = () => {
-  const [workProjects, setWorkProjects] = useState<Project[]>([]);
-  const [loading, setLoading] = useState(true);
+  const { data: workProjects = [], isPending, error } = useWorkProjectsQuery();
 
   useEffect(() => {
     const stored = localStorage.getItem("theme");
@@ -17,13 +15,6 @@ const WorkProjects = () => {
     } else {
       document.documentElement.classList.add("dark");
     }
-  }, []);
-
-  useEffect(() => {
-    fetchWorkProjects()
-      .then(setWorkProjects)
-      .catch((error) => console.error("Error fetching work projects:", error))
-      .finally(() => setLoading(false));
   }, []);
 
   return (
@@ -68,10 +59,14 @@ const WorkProjects = () => {
         </motion.div>
 
         {/* Projects grid */}
-        {loading ? (
+        {isPending ? (
           <div className="flex justify-center py-20">
             <div className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin" />
           </div>
+        ) : error ? (
+          <p className="py-20 text-center text-sm text-muted-foreground">
+            Unable to load work projects right now. Please try again later.
+          </p>
         ) : (
           <div className="grid grid-cols-1 gap-6">
             {workProjects.map((project, index) => (

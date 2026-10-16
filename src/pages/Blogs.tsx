@@ -1,14 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { BlogCard } from "@/components/portfolio/BlogCard";
-import { type Blog } from "@/utils/types";
-import { fetchBlogs } from "@/utils/api";
+import { useBlogsQuery } from "@/hooks/usePortfolioQueries";
 
 const Blogs = () => {
-  const [blogs, setBlogs] = useState<Blog[]>([]);
-  const [loading, setLoading] = useState(true);
+  const { data: blogs = [], isPending, error } = useBlogsQuery();
 
   useEffect(() => {
     const stored = localStorage.getItem("theme");
@@ -17,13 +15,6 @@ const Blogs = () => {
     } else {
       document.documentElement.classList.add("dark");
     }
-  }, []);
-
-  useEffect(() => {
-    fetchBlogs()
-      .then(setBlogs)
-      .catch((error) => console.error("Error fetching blogs:", error))
-      .finally(() => setLoading(false));
   }, []);
 
   return (
@@ -66,10 +57,14 @@ const Blogs = () => {
         </motion.div>
 
         {/* Blogs grid */}
-        {loading ? (
+        {isPending ? (
           <div className="flex justify-center py-20">
             <div className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin" />
           </div>
+        ) : error ? (
+          <p className="py-20 text-center text-sm text-muted-foreground">
+            Unable to load blogs right now. Please try again later.
+          </p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {blogs.map((blog, index) => (
