@@ -7,44 +7,26 @@ export function ExperienceSection() {
     <section id="experience" className="py-12">
       <SectionHeader number="02" title="Experience" />
 
-      <div className="experience-timeline relative space-y-12 border-l border-primary/30 pl-8">
-        {experiences.map((exp, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="experience-entry relative"
+      <div className="experience-list">
+        {experiences.map((experience, index) => (
+          <motion.article
+            key={`${experience.company}-${experience.year}`}
+            className="experience-item"
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.55, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
           >
-            {/* Timeline dot */}
-            <motion.div
-              className={`absolute -left-[25px] top-1.5 w-4 h-4 rounded-full border-4 border-background ${
-                exp.current ? "bg-primary glow" : "bg-muted-foreground"
-              }`}
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: index * 0.1 + 0.2 }}
-            />
-
-            <div className="space-y-2">
-              <span
-                className={`text-xs font-bold font-mono uppercase tracking-wider ${
-                  exp.current ? "text-primary" : "text-muted-foreground"
-                }`}
-              >
-                {exp.year}
-              </span>
-              <h3 className="text-lg font-bold text-foreground">{exp.role}</h3>
-              <p className="text-sm text-surface-foreground font-medium">
-                {exp.company} • {exp.location}
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {exp.description}
-              </p>
+            <div className="experience-meta">
+              <span className="experience-year">{experience.year}</span>
+              {experience.current && <span className="experience-current">CURRENT</span>}
             </div>
-          </motion.div>
+            <div>
+              <h3 className="experience-role">{experience.role}</h3>
+              <p className="experience-company">{experience.company} <span aria-hidden="true">/</span> {experience.location}</p>
+              <p className="experience-description">{experience.description}</p>
+            </div>
+          </motion.article>
         ))}
       </div>
     </section>

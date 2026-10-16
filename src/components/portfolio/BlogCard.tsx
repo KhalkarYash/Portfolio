@@ -30,8 +30,8 @@ export function BlogCard({ blog, index }: BlogCardProps) {
         <span>{blog.date}{blog.readTime ? ` · ${blog.readTime}` : ""}</span>
         <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
       </div>
-      <h3 className="mb-2 font-serif text-2xl font-medium tracking-tight text-foreground transition-colors group-hover:text-primary">{blog.title}</h3>
-      <p className="line-clamp-2 text-sm leading-6 text-muted-foreground">{blog.description}</p>
+      <h3 className="blog-title mb-2 font-serif tracking-tight text-foreground transition-colors group-hover:text-primary">{blog.title}</h3>
+      <p className="blog-description line-clamp-2 text-muted-foreground">{blog.description}</p>
     </motion.a>
   );
 }

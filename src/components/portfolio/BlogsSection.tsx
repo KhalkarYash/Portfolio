@@ -10,7 +10,7 @@ export function BlogsSection() {
 
   return (
     <section id="blogs" className="py-12">
-      <SectionHeader number="04" title="Latest Blogs" />
+      <SectionHeader number="05" title="Latest Blogs" />
 
       {error ? (
         <p className="text-sm text-muted-foreground">

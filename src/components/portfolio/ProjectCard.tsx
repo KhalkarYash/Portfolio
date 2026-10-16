@@ -31,7 +31,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
       <div className="project-copy">
         <div className="mb-4 flex items-start justify-between gap-5">
-          <h3 className="font-serif text-3xl font-medium tracking-tight text-foreground md:text-4xl">{project.title}</h3>
+          <h3 className="project-title font-serif tracking-tight text-foreground">{project.title}</h3>
           <div className="flex shrink-0 gap-3 pt-2">
             {project.link && (
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-icon-link" aria-label={`View ${project.title} live`}>
@@ -45,8 +45,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             )}
           </div>
         </div>
-        <p className="max-w-lg text-[15px] leading-7 text-muted-foreground">{project.description}</p>
-        <p className="project-tools mt-6">{project.tech.join("  ·  ")}</p>
+        <p className="project-description max-w-lg text-muted-foreground">{project.description}</p>
+        <p className="project-tools">{project.tech.join("  ·  ")}</p>
       </div>
     </motion.article>
   );

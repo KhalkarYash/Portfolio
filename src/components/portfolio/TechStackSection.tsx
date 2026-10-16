@@ -12,8 +12,8 @@ const techStack = [
 
 export function TechStackSection() {
   return (
-    <section className="py-12 border-t border-border">
-      <SectionHeader number="05" title="Tools I work with" />
+    <section className="py-12">
+      <SectionHeader number="06" title="Tools I work with" />
       <div className="grid gap-x-12 sm:grid-cols-2">
         {techStack.map((tech, index) => (
           <motion.div

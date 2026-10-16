@@ -28,9 +28,9 @@ export function HeroSection() {
         { scale: 1.08, duration: 2.4, ease: "power2.out" },
       );
 
-      gsap.timeline({ defaults: { ease: "power3.out" } })
-        .fromTo(name, { autoAlpha: 0, y: 14 }, { autoAlpha: 1, y: 0, duration: 1, delay: 0.12 })
-        .fromTo(intro, { autoAlpha: 0, y: 8 }, { autoAlpha: 1, y: 0, duration: 0.8 }, "-=0.48");
+      gsap.timeline({ defaults: { ease: "power2.out" } })
+        .fromTo(name, { autoAlpha: 0, filter: "blur(1.5px)" }, { autoAlpha: 1, filter: "blur(0px)", duration: 1.05, delay: 0.12 })
+        .fromTo(intro, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.8 }, "-=0.55");
 
       gsap.to(photograph, {
         yPercent: 8,
@@ -68,9 +68,9 @@ export function HeroSection() {
 
       <div className="hero-content mx-auto w-full max-w-[1440px] px-6 pb-16 pt-32 sm:px-10 sm:pb-20 lg:px-16 lg:pb-24">
         <div>
-            <h1 className="hero-name max-w-5xl font-serif text-[clamp(4.25rem,11vw,10.5rem)] leading-[0.82] tracking-[-0.065em] text-white">
-              Yash Khalkar<span className="hero-period">.</span>
-            </h1>
+          <h1 className="hero-name max-w-5xl font-serif text-[clamp(4.25rem,11vw,10.5rem)] leading-[0.82] tracking-[-0.065em] text-white">
+            Yash Khalkar<span className="hero-period">.</span>
+          </h1>
           <div
             className="mt-8 flex flex-col gap-7 sm:mt-10 sm:flex-row sm:items-end sm:justify-between"
           >

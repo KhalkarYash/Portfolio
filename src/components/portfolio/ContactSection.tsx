@@ -27,7 +27,7 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="py-12">
-      <SectionHeader number="07" title="Get In Touch" />
+      <SectionHeader number="09" title="Get In Touch" />
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -36,7 +36,7 @@ export function ContactSection() {
         transition={{ duration: 0.6 }}
         className="contact-content"
       >
-        <p className="mb-8 max-w-lg font-serif text-2xl leading-relaxed text-muted-foreground md:text-3xl">
+        <p className="contact-prompt mb-12 max-w-3xl font-serif leading-[1.25] text-foreground">
           Have a good problem to solve? I’d be glad to hear about it.
         </p>
 

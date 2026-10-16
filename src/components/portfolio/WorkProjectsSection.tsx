@@ -7,7 +7,7 @@ export function WorkProjectsSection() {
   return (
     <HorizontalProjectSection
       id="work-projects"
-      number="03.1"
+      number="04.1"
       title="Work Projects"
       projects={workProjects}
       error={error}
