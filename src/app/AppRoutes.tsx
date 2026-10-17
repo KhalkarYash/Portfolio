@@ -6,6 +6,7 @@ const Projects = lazy(() => import("@/pages/Projects"));
 const WorkProjects = lazy(() => import("@/pages/WorkProjects"));
 const Blogs = lazy(() => import("@/pages/Blogs"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
+const DesignDirections = lazy(() => import("@/pages/DesignDirections"));
 
 export function AppRoutes() {
   return (
@@ -25,6 +26,7 @@ export function AppRoutes() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/work-projects" element={<WorkProjects />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/design-directions" element={<DesignDirections />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

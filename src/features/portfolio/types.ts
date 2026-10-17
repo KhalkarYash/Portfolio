@@ -45,3 +45,8 @@ export interface SectionHeaderProps {
   number: string;
   title: string;
 }
+
+export interface TechStackCategory {
+  category: string;
+  items: string[];
+}

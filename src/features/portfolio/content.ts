@@ -1,5 +1,14 @@
 import { type Experience } from "./types";
 
+export const techStack = [
+  { category: "Interface", items: ["React", "Next.js", "React Native"] },
+  { category: "Systems", items: ["Node.js", "Express", "Hono"] },
+  { category: "Data", items: ["MongoDB", "PostgreSQL", "MySQL"] },
+  { category: "Infrastructure", items: ["AWS", "Vercel", "Cloudflare"] },
+  { category: "Languages", items: ["TypeScript", "Python", "Java"] },
+  { category: "Workflow", items: ["Git", "Docker", "Postman"] },
+];
+
 export const experiences: Experience[] = [
   {
     year: "2026 — PRESENT",

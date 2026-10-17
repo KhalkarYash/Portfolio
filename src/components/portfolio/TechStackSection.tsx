@@ -1,14 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionHeader } from "./SectionHeader";
-
-const techStack = [
-  { category: "Interface", items: "React, Next.js, React Native" },
-  { category: "Systems", items: "Node.js, Express, Hono" },
-  { category: "Data", items: "MongoDB, PostgreSQL, MySQL" },
-  { category: "Infrastructure", items: "AWS, Vercel, Cloudflare" },
-  { category: "Languages", items: "TypeScript, Python, Java" },
-  { category: "Workflow", items: "Git, Docker, Postman" },
-];
+import { techStack } from "@/features/portfolio/content";
 
 export function TechStackSection() {
   return (
@@ -25,7 +17,7 @@ export function TechStackSection() {
             className="tech-row flex min-h-20 items-center justify-between gap-4 border-b border-border py-5"
           >
             <p className="text-xs uppercase tracking-[0.12em] text-muted-foreground">{tech.category}</p>
-            <p className="text-right text-sm text-foreground">{tech.items}</p>
+            <p className="text-right text-sm text-foreground">{tech.items.join(", ")}</p>
           </motion.div>
         ))}
       </div>
